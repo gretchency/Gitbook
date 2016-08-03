@@ -102,6 +102,17 @@ TC: O(n)
 http://www.lintcode.com/en/problem/intersection-of-two-linked-lists/
 ![](Screen Shot 2016-08-03 at 6.53.43 PM.png)
 
+这题需要得到两个链表的交接点，也就是c1，这一题也很简单。
+
+遍历A，到结尾之后，将A最后的节点连接到B的开头，也就是c3 -> b1
+
+使用两个指针fast和slow，从a1开始，判断是否有环
+
+如果没环，在返回之前记得将c3 -> b1给断开
+
+如果有环，则按照第二题的解法得到c1，然后断开c3 -> b1
+
+
 ```java
 public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // Write your code here
