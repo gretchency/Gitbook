@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * 2. Binary Search
 * [1. Linked List](chapter1.md)
    * [1.1 Linked List Cycle](11_linked_list_cycle.md)
 
