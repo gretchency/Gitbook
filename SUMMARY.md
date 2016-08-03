@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* Linked List
+* [Linked List](linked_list.md)
 
