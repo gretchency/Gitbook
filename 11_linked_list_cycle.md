@@ -1,6 +1,7 @@
 # 1.1 Linked List Cycle
-Test
-```/**
+
+```java
+/**
  * Definition for ListNode.
  * public class ListNode {
  *     int val;
@@ -18,6 +19,8 @@ public class Solution {
      */
     public boolean hasCycle(ListNode head) {  
         // write your code here
+        if (head == null || head
     }
-}```
+}
+```
 Test
