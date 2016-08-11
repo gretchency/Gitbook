@@ -47,6 +47,7 @@ http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 Related Problems:
 
 Minimum Depth of Binary Tree
+http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
 
 ```java
     public int minDepth(TreeNode root) {
@@ -68,5 +69,32 @@ Minimum Depth of Binary Tree
         }
         return Math.min(left, right) + 1;
     
+    }
+```
+
+ Balanced Binary Tree
+
+http://www.lintcode.com/en/problem/balanced-binary-tree/
+```java
+public boolean isBalanced(TreeNode root) {
+        if (root == null) return true;
+        //左右子树是否平衡
+        if (!isBalanced(root.left) || !isBalanced(root.right)) {
+            return false;
+        }
+        //左右子树高度差
+        int dif = getHeight(root.left) - getHeight(root.right);
+        
+        return dif >= -1 && dif <= 1;
+         
+        
+    }
+    
+    private int getHeight(TreeNode node) {
+        if (node == null) return 0;
+        int left = getHeight(node.left);
+        int right = getHeight(node.right);
+        
+        return Math.max(left, right) + 1;
     }
 ```
