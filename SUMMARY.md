@@ -7,5 +7,5 @@
    * [Binary Tree Preorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
    * [Lowest Common Ancester](lowest_common_ancester.md)
-   *  Binary Tree Maximum Path Sum 简单 难
+   * [Binary Tree Maximum Path Sum 简单 难](binary_tree_maximum_path_sum_jian_dan_nan.md)
 
