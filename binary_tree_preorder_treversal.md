@@ -23,6 +23,11 @@ http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/#
 
 先把根Push进去
 
+result记录结果
+
+**While stack不为空，pop,push right,push left
+**
+
 **注意while里先push右子树，再push左子树（stack 先进后出）
 **
 ```java
