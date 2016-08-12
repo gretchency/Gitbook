@@ -1,7 +1,13 @@
 # Maximum Depth of Binary Tree
 http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 
-普通递归
+**分治和普通递归的区别**：分治一般helper函数会return东西，而普通递归一般都是void方法
+
+
+
+**普通递归**
+
+用全局变量记录深度，helper函数currDepth更新深度，一旦curr>depth,更新depth
 
 时间复杂度：O(n) 每个点都访问一次
 
@@ -28,7 +34,9 @@ http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 ```
 
 
-分治
+**分治**
+
+Divide and Conquer, 左右子树最大高度，再加根节点的一
 
 ```java
     public int maxDepth(TreeNode root) {
@@ -46,12 +54,14 @@ http://www.lintcode.com/en/problem/maximum-depth-of-binary-tree/
 
 Related Problems:
 
-Minimum Depth of Binary Tree
-http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
+**Minimum Depth of Binary Tree
+**http://www.lintcode.com/en/problem/minimum-depth-of-binary-tree/
 
+一定要判断左右子树为空的情况，若为空 只比另一边子树
+
+因为子树为空并不是说该子树为最小深度
 ```java
     public int minDepth(TreeNode root) {
-        // write your code here
         if (root == null) {
             return 0;
         }
