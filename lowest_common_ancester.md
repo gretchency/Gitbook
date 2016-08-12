@@ -6,6 +6,7 @@ http://www.lintcode.com/en/problem/lowest-common-ancestor/
 不告诉Parent节点，自顶向下，分治的解法。
 
 
+
 ```java
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
         //若root上有A或B,返回root
