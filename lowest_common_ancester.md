@@ -5,7 +5,14 @@ http://www.lintcode.com/en/problem/lowest-common-ancestor/
 
 不告诉Parent节点，自顶向下，分治的解法。
 
+base case:若root == null 或有A 或有B,返回root
 
+
+A,B分居左右，祖先root
+
+左边有A,B，返回左
+
+右边有A,B, 返回右
 
 ```java
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
