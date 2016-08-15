@@ -39,7 +39,7 @@ maxValue = Math.max(maxValue, left + right + node.val);
 
     int[] max = new int[1];
 
-![](Screen Shot 2016-08-12 at 8.26.07 AM.png)
+![](cc.png)
 ```java
 //维护一个全局变量
 int maxValue;
