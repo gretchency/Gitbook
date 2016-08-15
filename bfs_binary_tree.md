@@ -43,7 +43,9 @@
 
 DFS做BFS
 
-
+maxLevel记录最大子树
+currLevel逐层遍历
+while里每次new一个level记录新level
 ```java
     //Deep-limited DFS
     
@@ -56,6 +58,7 @@ DFS做BFS
         
         int maxLevel = 0;
         while (true) {
+            //**注意每次要在while循环里new level
             ArrayList<Integer> level = new ArrayList<Integer>();
             
             
@@ -72,10 +75,13 @@ DFS做BFS
     }
     
     private void dfs(TreeNode root, ArrayList<Integer> level, int currLevel, int maxLevel) {
+    
+        //curr>max就跳出
         if (root == null || currLevel > maxLevel) {
             return;
         }
         
+        //curr == max就加入level
         if (currLevel == maxLevel) {
             level.add(root.val);
             return;
