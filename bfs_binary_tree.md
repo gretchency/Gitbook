@@ -25,6 +25,7 @@
                 TreeNode head = queue.poll();
                 level.add(head.val);
                 
+                //一定要判断是否null
                 if (head.left != null) {
                     queue.offer(head.left);
                 }
@@ -37,6 +38,18 @@
             result.add(level);
         }
         
+        return result;
+    }
+```
+reverse
+
+http://www.lintcode.com/en/problem/binary-tree-level-order-traversal-ii/
+
+```java
+private ArrayList<ArrayList<Integer>> reverse(ArrayList<ArrayList<Integer>> result) {
+        for (int i = 0, j = result.size() - 1; i < j; i++) {
+            result.add(i, result.remove(j));
+        }
         return result;
     }
 ```
