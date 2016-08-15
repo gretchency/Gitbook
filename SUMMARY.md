@@ -9,4 +9,5 @@
    * [Lowest Common Ancester](lowest_common_ancester.md)
    * [Binary Tree Maximum Path Sum 简单 难](binary_tree_maximum_path_sum_jian_dan_nan.md)
    * [BFS Binary Tree](bfs_binary_tree.md)
+   * Validate Binary Search Tree
 
