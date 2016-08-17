@@ -52,3 +52,40 @@ public ArrayList<Integer> preorderTraversal(TreeNode root) {
         return result;
     }
 ```
+
+Inorder
+
+ Binary Search Tree Iterator
+ 
+ http://www.lintcode.com/en/problem/binary-search-tree-iterator/
+ 
+ ```java
+ public class BSTIterator {
+    private TreeNode curr;
+    private Stack<TreeNode> stack = new Stack<TreeNode>();
+    //@param root: The root of binary tree.
+    public BSTIterator(TreeNode root) {
+        curr = root;
+    }
+
+    //@return: True if there has next node, or false
+    public boolean hasNext() {
+        return (curr != null || !stack.isEmpty());
+    }
+    
+    //@return: return next node
+    public TreeNode next() {
+    //先一直压左，然后 到底了就pop, 加入结果， 最后往右
+
+        while(curr != null) {
+            stack.push(curr);
+            curr = curr.left;
+        }
+        curr = stack.pop();
+        TreeNode node = curr;
+        curr = curr.right;
+        
+        return node;
+    }
+}
+ ```
