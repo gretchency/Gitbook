@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Dynamic Programming
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
 * [Binary Tree](binary_tree.md)
