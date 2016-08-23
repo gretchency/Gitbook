@@ -11,5 +11,4 @@
    * [BFS Binary Tree](bfs_binary_tree.md)
    * [Validate Binary Search Tree](validate_binary_search_tree.md)
    * [Inorder successor in BST](inorder_successor_in_bst.md)
-* Dynamic Programming
 
