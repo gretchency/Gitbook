@@ -16,5 +16,5 @@
    * [Jump Games I II](jump_games_i_ii.md)
    * [Triangle](triangle.md)
    * Double Sequence
-       * Longest Common Subsequence
+       * [Longest Common Subsequence](longest_common_subsequence.md)
 
