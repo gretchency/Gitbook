@@ -4,7 +4,7 @@
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
-   * Reverse Linked List
+   * [Reverse Linked List](reverse_linked_list.md)
 * [Binary Tree](binary_tree.md)
    * [Binary Tree Preorder/ Inorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
