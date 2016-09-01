@@ -7,6 +7,7 @@
    * [Reverse Linked List](reverse_linked_list.md)
    * [Partition List](partition_list.md)
    * [Sort List](sort_list.md)
+   * Reorder List (reverse+findMid+Merge)
 * [Binary Tree](binary_tree.md)
    * [Binary Tree Preorder/ Inorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
