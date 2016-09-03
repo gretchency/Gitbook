@@ -8,7 +8,8 @@ public class Solution {
      * @param head: The first node of linked list.
      * @return: a tree node
      */
-     
+    
+    //维护一个全局变量curr
     private ListNode curr;
      
     public int getSize(ListNode head) {
