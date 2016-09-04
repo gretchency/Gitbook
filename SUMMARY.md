@@ -27,5 +27,5 @@
    * Double Sequence
        * [Longest Common Subsequence](longest_common_subsequence.md)
 * [Array](array.md)
-   *  Merge Sorted Array
+   * [Merge Sorted Array](merge_sorted_array.md)
 
