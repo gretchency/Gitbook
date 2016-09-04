@@ -26,4 +26,5 @@
    * [Triangle](triangle.md)
    * Double Sequence
        * [Longest Common Subsequence](longest_common_subsequence.md)
+* Array
 
