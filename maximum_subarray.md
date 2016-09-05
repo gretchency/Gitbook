@@ -156,3 +156,9 @@ Minimum Subarray
 http://www.lintcode.com/en/problem/minimum-subarray/
 
 取相反数 算Maximum SubArray, 最后再反一下
+
+
+
+Maximum Subarray Difference
+
+左右分割 分别求出左边的最小和最大subArray 右边最小最大subArray 然后去最大difference
