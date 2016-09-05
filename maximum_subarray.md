@@ -99,4 +99,52 @@ http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/#
     }
 ```
  
- 
+ Maximum Subarray II
+
+http://www.lintcode.com/en/problem/maximum-subarray-ii/
+
+```java
+    public int maxTwoSubArrays(ArrayList<Integer> nums) {
+        // 中间切一刀，找出左边最大的和右边最大的
+        
+        int size = nums.size();
+        
+        int left[] = new int[size];
+        int right[] = new int[size];
+        
+        int maxCur = nums.get(0); 
+        int maxAll = nums.get(0);
+        
+        left[0] = maxAll;
+        
+        for (int i = 1; i < size; i++) {
+            maxCur = Math.max(nums.get(i), maxCur + nums.get(i));
+            maxAll = Math.max(maxAll, maxCur);
+            
+            left[i] = maxAll;
+        }
+        
+        
+        //右侧从右往左走
+        maxCur = nums.get(size - 1);
+        maxAll = nums.get(size - 1);
+        
+        right[size - 1] = maxAll;
+        
+        for (int i = size - 2; i >= 0; i--) {
+            maxCur = Math.max(nums.get(i), maxCur + nums.get(i));
+            maxAll = Math.max(maxAll, maxCur);
+            
+            right[i] = maxAll;
+        }
+        
+        maxAll = Integer.MIN_VALUE;
+        
+        for (int i = 0; i < size - 1; i++) {
+            maxAll = Math.max(maxAll, left[i] + right[i + 1]);
+        }
+        
+        return maxAll;
+        
+    }
+```
