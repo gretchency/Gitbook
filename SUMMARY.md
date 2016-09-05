@@ -30,4 +30,5 @@
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
 * Binary Search
+   * Wood Cut(二分答案）
 
