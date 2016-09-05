@@ -2,6 +2,10 @@
 
 O(n)
 
+分治的思想
+curr做根节点 慢慢往后挪
+
+
 ```java
 public class Solution {
     /**
