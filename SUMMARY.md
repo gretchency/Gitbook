@@ -30,6 +30,7 @@
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
    * [Maximum Subarray](maximum_subarray.md)
+   * Two Sum
 * [Binary Search](binary_search.md)
    * [Wood Cut(二分答案）](wood_cuter_fen_da_an_ff09.md)
 
