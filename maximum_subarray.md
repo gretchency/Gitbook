@@ -12,6 +12,8 @@ https://en.wikipedia.org/wiki/Maximum_subarray_problem
 public int maxSubArray(int[] nums) {
         int maxCur = nums[0];
         int maxAll = nums[0];
+        
+        //一定注意从1开始循环！！！
         for (int i = 1; i < nums.length; i++) {
             maxCur = Math.max(maxCur + nums[i], nums[i]);
             maxAll = Math.max(maxCur, maxAll);
