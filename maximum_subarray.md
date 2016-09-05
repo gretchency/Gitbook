@@ -148,3 +148,7 @@ http://www.lintcode.com/en/problem/maximum-subarray-ii/
         
     }
 ```
+
+Minimum Subarray
+
+取相反数 算Maximum SubArray, 最后再反一下
