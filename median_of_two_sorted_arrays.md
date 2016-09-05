@@ -7,6 +7,7 @@ http://www.lintcode.com/en/problem/median-of-two-sorted-arrays/
 时间复杂度：
 log(m + n / 2) log(k)
 
+http://blog.csdn.net/yutianzuijin/article/details/11499917
 ```
     //log(m + n / 2)
     //换成找到第k个点思考
