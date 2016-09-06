@@ -38,5 +38,5 @@
    * [Wood Cut(二分答案）](wood_cuter_fen_da_an_ff09.md)
 * Data Structure
    * [Stack](stack.md)
-       * Min Stack
+       * [Min Stack](min_stack.md)
 
