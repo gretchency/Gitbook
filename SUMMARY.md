@@ -32,6 +32,7 @@
    * [Maximum Subarray](maximum_subarray.md)
    * [Two Sum](two_sum.md)
    * [Three Sum](three_sum.md)
+   * Partition Array
 * [Binary Search](binary_search.md)
    * [Wood Cut(二分答案）](wood_cuter_fen_da_an_ff09.md)
 
