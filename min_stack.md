@@ -25,6 +25,7 @@ public class MinStack {
         stack.push(number);
         if (minStack.empty()) {
             minStack.push(number);
+        //****注意这里：相同的最小值也应该放进minStack
         } else if (minStack.peek() >= number) {
             minStack.push(number);
         }
