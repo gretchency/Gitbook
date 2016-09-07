@@ -39,5 +39,5 @@
 * [Data Structure](data_structure.md)
    * [Stack](stack.md)
        * [Min Stack](min_stack.md)
-       * 递增栈
+       * [递增栈](di_zeng_zhan.md)
 
