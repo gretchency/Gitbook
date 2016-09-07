@@ -47,3 +47,8 @@ public class MinStack {
 }
 
 ```
+
+
+Related Problem:
+
+http://www.lintcode.com/en/problem/implement-queue-by-two-stacks/#
