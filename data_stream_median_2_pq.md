@@ -55,16 +55,25 @@ public class Solution {
             maxQ.offer(minQ.poll());
         }
         
-        // //max queue is always larger or equal to min queue
-        // max.offer(num);
-        // min.offer(max.poll());
-        // if (max.size() < min.size()){
-        //     max.offer(min.poll());
-        // }
     }
     
     private int getMid() {
         return maxQ.peek();
     }
 }
+```
+
+巧妙解法
+
+max queue is always larger or equal to min queue
+
+
+```java
+    public void addNum(int num) {
+        max.offer(num);
+        min.offer(max.poll());
+        if (max.size() < min.size()){
+            max.offer(min.poll());
+        }
+    }
 ```
