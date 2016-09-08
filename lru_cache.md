@@ -2,6 +2,7 @@
 
 http://www.lintcode.com/en/problem/lru-cache/
 
+分析： 序列： 从中间删除一个数 再append到尾巴上 ==> lineked list
 HashMap + LinkedList
 
 ```java
