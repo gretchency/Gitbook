@@ -40,5 +40,5 @@
    * [Stack](stack.md)
        * [Min Stack](min_stack.md)
        * [递增递减栈](di_zeng_zhan.md)
-   * LRU Cache
+   * [LRU Cache](lru_cache.md)
 
