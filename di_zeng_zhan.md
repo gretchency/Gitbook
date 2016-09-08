@@ -5,6 +5,8 @@ Largest Rectangle in Histogram
 
 http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/
 
+遍历全部高度， 找每个数左右第一个比他小的数在哪 
+
 ![](Screen Shot 2016-09-06 at 11.15.11 PM.png)
 ```java
     public int largestRectangleArea(int[] height) {
