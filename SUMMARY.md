@@ -41,5 +41,5 @@
        * [Min Stack](min_stack.md)
        * [递增递减栈](di_zeng_zhan.md)
    * [LRU Cache](lru_cache.md)
-   * data stream median (2 PQ)
+   * [data stream median (2 PQ)](data_stream_median_2_pq.md)
 
