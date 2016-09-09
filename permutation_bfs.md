@@ -97,9 +97,19 @@ Subsets
             当中也应该排在前面，这样就保证了唯一性。所以当前面的2还没有使用的时候，就
             不应该让后面的2使用。
             */
- if (visited[i] == 1 || (i != 0 && nums[i - 1] == nums[i] && visited[i -1] == 0)) {
+if (visited[i] == 1 || (i != 0 && nums[i - 1] == nums[i] && visited[i -1] == 0)) {
                 continue;
             }
+            
+            //访问过
+            visited[i] = 1;
+            
+            list.add(nums[i]);
+            helper(res, list, nums, visited);
+            list.remove(list.size() - 1);
+            
+            //初始化
+            visited[i] = 0;
  ```
  
   Subsets II
