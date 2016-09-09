@@ -5,6 +5,8 @@ http://www.lintcode.com/en/problem/clone-graph/#
 
 BFS: ArrayList + HashMap
 
+Ralated: Copy List with Random Pointer
+
 ```java
 /**
  * Definition for undirected graph.
