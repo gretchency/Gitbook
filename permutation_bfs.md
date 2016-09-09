@@ -2,6 +2,8 @@
 
 http://www.lintcode.com/en/problem/permutations/
 
+![](Screen Shot 2016-09-09 at 11.29.34 AM.png)
+
 ```java
     public List<List<Integer>> permute(int[] nums) {
         ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
