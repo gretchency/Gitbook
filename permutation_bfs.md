@@ -4,6 +4,10 @@ http://www.lintcode.com/en/problem/permutations/
 
 ![](Screen Shot 2016-09-09 at 11.29.34 AM.png)
 
+results.add(new ArrayList<Integer>(list))
+
+http://www.jiuzhang.com/qa/663/
+
 ```java
     public List<List<Integer>> permute(int[] nums) {
         ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
