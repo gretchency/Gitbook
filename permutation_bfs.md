@@ -86,3 +86,11 @@ Subsets
         }
     }
 ```
+
+ Permutations II
+ 
+ ```java
+ if (visited[i] == 1 || (i != 0 && nums[i - 1] == nums[i] && visited[i -1] == 0)) {
+                continue;
+            }
+ ```
