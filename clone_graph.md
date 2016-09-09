@@ -3,6 +3,7 @@
 http://www.lintcode.com/en/problem/clone-graph/#
 
 
+BFS: ArrayList + HashMap
 
 ```java
 /**
