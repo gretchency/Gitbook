@@ -4,6 +4,9 @@ http://www.lintcode.com/en/problem/permutations/
 
 ![](Screen Shot 2016-09-09 at 11.29.34 AM.png)
 
+把1开头的list全加进去，然后remove[1],把2开头的list加进去，以此类推
+
+
 results.add(new ArrayList<Integer>(list))
 
 http://www.jiuzhang.com/qa/663/
