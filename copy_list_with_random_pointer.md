@@ -4,6 +4,9 @@ http://www.lintcode.com/en/problem/copy-list-with-random-pointer/#
 
 Hashmap O(n)时空
 
+
+用Hashmap 记录映射关系
+
 ```java
     public RandomListNode copyRandomList(RandomListNode head) {
         if (head == null) return null;
