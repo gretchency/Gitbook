@@ -86,3 +86,16 @@ public int ladderLength(String start, String end, Set<String> dict) {
     }
 
 ```
+
+
+Related
+
+Word Ladder ii
+
+http://www.lintcode.com/en/problem/word-ladder-ii/#
+
+BFS+DFS
+
+BFS: Trace every node's distance from the start node (level by level).
+
+DFS: output all paths with the shortest distance.
