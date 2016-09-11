@@ -46,6 +46,6 @@
 * Graph & Search
    * [Clone Graph](clone_graph.md)
    * [Topological Sorting](topological_sorting.md)
-   * [Permutation BFS](permutation_bfs.md)
+   * [Permutation DFS](permutation_bfs.md)
    * [WordLadder](wordladder.md)
 
