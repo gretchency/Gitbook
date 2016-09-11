@@ -1,4 +1,4 @@
-# Permutation BFS
+# Permutation DFS
 
 http://www.lintcode.com/en/problem/permutations/
 
