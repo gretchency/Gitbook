@@ -66,7 +66,7 @@ Combination sum
 
 http://www.lintcode.com/en/problem/combination-sum/
 
-
+N-queen
 
 Subsets
 
