@@ -58,6 +58,16 @@ http://www.jiuzhang.com/qa/663/
 
 Related Problem
 
+Palindrome Partitioning
+
+http://www.lintcode.com/en/problem/palindrome-partitioning/
+
+Combination sum
+
+http://www.lintcode.com/en/problem/combination-sum/
+
+
+
 Subsets
 
 ```java
