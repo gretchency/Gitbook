@@ -25,7 +25,7 @@ public class Solution {
         for(int i = 1; i < A.length; i++) {
             for (int j = 0; j < i; j++) {
                 //j是true且从j能一步走到A[i]
-                if(can[j] && j + A[j] >= A[i]) {
+                if(can[j] && j + A[j] >= i) {
                     can[i] = true;
                     //一旦走得到i 就break
                     break;
@@ -62,9 +62,9 @@ public class Solution {
             steps[i] = Integer.MAX_VALUE;
             for (int j = 0; j < i; j++) {
                 if (steps[j] != Integer.MAX_VALUE && j + A[j] >= i) {
-                    //可以一步跳到
-                    steps[i] = steps[j] + 1;
-                    break; 
+                    //可以一步跳到的所有方案的最小值
+                    steps[i] = Math.min(steps[i], steps[j] + 1);
+
                 }
             }
         }
