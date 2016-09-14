@@ -4,6 +4,12 @@ http://www.lintcode.com/en/problem/triangle/
 
 ![](Screen Shot 2016-08-24 at 3.48.08 PM.png)
 
+Related Problem
+
+Minimum Path sum
+
+http://www.lintcode.com/en/problem/minimum-path-sum/
+
 遍历
 
 ```java
