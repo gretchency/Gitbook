@@ -45,7 +45,7 @@
    * [LRU Cache](lru_cache.md)
    * [data stream median (2 PQ)](data_stream_median_2_pq.md)
    * [Ugly Number](ugly_number.md)
-* Graph & Search
+* [Graph & Search](graph_&_search.md)
    * [Clone Graph](clone_graph.md)
    * [Topological Sorting](topological_sorting.md)
    * [Permutation DFS](permutation_bfs.md)
