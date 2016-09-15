@@ -26,6 +26,7 @@ Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1
         }
         
         //最少三个字符
+        //区间动归先for 区间长度
         for (int len = 2; len <= s.length(); len++) {
             for (int start = 0; start + len < s.length(); start++) {
                 res[start][start + len] = (s.charAt(start) == s.charAt(start + len) && res[start + 1][start + len - 1]);
