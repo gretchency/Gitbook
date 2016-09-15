@@ -26,7 +26,7 @@
    * [Triangle](triangle.md)
    * Double Sequence
        * [Longest Common Subsequence](longest_common_subsequence.md)
-   *  Palindrome Partitioning II
+   * [Palindrome Partitioning II](palindrome_partitioning_ii.md)
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
