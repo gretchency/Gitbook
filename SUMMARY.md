@@ -22,9 +22,9 @@
    * [Inorder successor in BST](inorder_successor_in_bst.md)
 * [Dynamic Programming](dynamic_programming.md)
    * [Climbing Stairs](climbing_stairs.md)
-   * [Palindrome Partitioning II](palindrome_partitioning_ii.md)
    * [Jump Games I II](jump_games_i_ii.md)
    * [Triangle](triangle.md)
+   * [Palindrome Partitioning II](palindrome_partitioning_ii.md)
    * Double Sequence
        * [Longest Common Subsequence](longest_common_subsequence.md)
 * [Array](array.md)
