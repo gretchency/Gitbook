@@ -25,7 +25,7 @@
    * [Jump Games I II](jump_games_i_ii.md)
    * [Triangle](triangle.md)
    * [Palindrome Partitioning II](palindrome_partitioning_ii.md)
-   * Double Sequence
+   * [Double Sequence](double_sequence.md)
        * [Longest Common Subsequence](longest_common_subsequence.md)
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
