@@ -40,6 +40,9 @@ Related
 Edit distance
 
 https://leetcode.com/problems/edit-distance/
+
+f[i][j] a的前i个字符最少编辑几次变成b的前j个字符
+
 ```java
     public int minDistance(String word1, String word2) {
         //state
@@ -75,3 +78,8 @@ https://leetcode.com/problems/edit-distance/
         return dp[m][n];
     }
 ```
+
+ Distinct Subsequences
+
+http://www.lintcode.com/en/problem/distinct-subsequences/
+
