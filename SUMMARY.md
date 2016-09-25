@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [刷题日志](shua_ti_ri_zhi.md)
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
@@ -51,5 +52,4 @@
    * [Permutation DFS](permutation_bfs.md)
    * [WordLadder BFS (ii BFS + DFS)](wordladder.md)
 * [Sorting](sorting.md)
-* [刷题日志](shua_ti_ri_zhi.md)
 
