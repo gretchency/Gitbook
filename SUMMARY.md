@@ -51,5 +51,5 @@
    * [Permutation DFS](permutation_bfs.md)
    * [WordLadder BFS (ii BFS + DFS)](wordladder.md)
 * [Sorting](sorting.md)
-* 刷题日志
+* [刷题日志](shua_ti_ri_zhi.md)
 
