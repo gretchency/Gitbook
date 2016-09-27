@@ -7,7 +7,7 @@
        * [24点](24dian.md)
        * [DetectCycle](detectcycle.md)
        * [Friends](friends.md)
-       * Maze
+       * [Maze](maze.md)
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
