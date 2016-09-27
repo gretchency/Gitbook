@@ -5,6 +5,7 @@
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
+   * String
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
