@@ -14,7 +14,7 @@
    * [DataStruc](datastruc.md)
        * [BloomFilter](bloomfilter.md)
        * [LRU](lru.md)
-       * MinStack
+       * [MinStack](minstack.md)
    * [Tree](tree.md)
        * [ConstructTree](constructtree.md)
    * [Trie](trie.md)
