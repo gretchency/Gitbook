@@ -5,7 +5,7 @@
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
-       * DetectCycle
+       * [DetectCycle](detectcycle.md)
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
