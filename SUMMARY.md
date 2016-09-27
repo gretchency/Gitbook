@@ -22,7 +22,7 @@
        * [ConstructTree](constructtree.md)
    * [Trie](trie.md)
        * Dictionary
-       * TabComp
+       * [TabComp](tabcomp.md)
    * [DP](dp.md)
        * [Palindrome](palindrome.md)
    * BinarySearch
