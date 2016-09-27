@@ -6,7 +6,7 @@
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
        * [DetectCycle](detectcycle.md)
-       * Friends
+       * [Friends](friends.md)
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
