@@ -12,7 +12,7 @@
        * [BigInt](bigint.md)
    * [DataStruc](datastruc.md)
        * [BloomFilter](bloomfilter.md)
-       * LRU
+       * [LRU](lru.md)
    * [Tree](tree.md)
        * [ConstructTree](constructtree.md)
    * [Trie](trie.md)
