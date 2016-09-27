@@ -13,7 +13,7 @@
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
        * [MinWindow](minwindow.md)
-       * Reverse Word
+       * [Reverse Word](reverse_word.md)
    * [DataStruc](datastruc.md)
        * [BloomFilter](bloomfilter.md)
        * [LRU](lru.md)
