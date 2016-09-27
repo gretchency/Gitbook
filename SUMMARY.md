@@ -11,6 +11,7 @@
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
+       * MinWindow
    * [DataStruc](datastruc.md)
        * [BloomFilter](bloomfilter.md)
        * [LRU](lru.md)
