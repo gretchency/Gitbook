@@ -8,7 +8,7 @@
        * [DetectCycle](detectcycle.md)
        * [Friends](friends.md)
        * [Maze](maze.md)
-       * Permutationii && P Sequence
+       * [Permutationii && P Sequence](permutationii_&&_p_sequence.md)
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
