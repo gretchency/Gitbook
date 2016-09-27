@@ -9,6 +9,7 @@
        * [Friends](friends.md)
        * [Maze](maze.md)
        * [Permutationii && P Sequence](permutationii_&&_p_sequence.md)
+       * WordBreak
    * [String](string.md)
        * [Anagrams](anagrams.md)
        * [BigInt](bigint.md)
