@@ -20,6 +20,7 @@
        * [MinStack](minstack.md)
    * [Tree](tree.md)
        * [ConstructTree](constructtree.md)
+       * Vertical Order Treversal
    * [Trie](trie.md)
        * Dictionary
        * [TabComp](tabcomp.md)
