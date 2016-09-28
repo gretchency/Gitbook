@@ -79,5 +79,6 @@
    * [Topological Sorting](topological_sorting.md)
    * [Permutation DFS](permutation_bfs.md)
    * [WordLadder BFS (ii BFS + DFS)](wordladder.md)
+   * Course Schedule
 * [Sorting](sorting.md)
 
