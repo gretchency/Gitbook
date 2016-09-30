@@ -2,7 +2,7 @@
 
 192.222.211.222
 
-Valid or not
+Valid IPV4
 
 ```java
 case 1: null
