@@ -86,5 +86,5 @@
    * [FreeWheel](freewheel.md)
 * [Data Structure](data_structure_.md)
    * [ArrayList](arraylist.md)
-   * Hashing
+   * [Hashing](hashing.md)
 
