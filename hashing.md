@@ -21,3 +21,5 @@
 
 
 1. LinkedList
+
+HashMap resolve collisions by using seperate chaining
