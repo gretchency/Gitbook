@@ -49,6 +49,9 @@ class Solution {
 
 
 DP:
+
+http://wdxtub.com/interview/14520604920730.html
+
 ```java
     public int nthUglyNumber(int n) {
         if (n < 1) return -1;
