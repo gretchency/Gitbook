@@ -2,6 +2,12 @@
 
 http://www.lintcode.com/en/problem/3sum/
 
+二刷的坑
+* for loop 的length - 2
+* 跳过重复
+* 找到一个sum后，start++, end-- 此时两个while判断是否重复
+
+
 Sort 整个array
 
 先确定一个数 然后从后面找两个数 三个数之和为0
