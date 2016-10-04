@@ -23,7 +23,8 @@ public class Solution {
         
 
         for(int i = 1; i < A.length; i++) {
-            for (int j = 0; j < i; j++) {
+            //注意这里j从后往前走省时间
+            for (int j = i - ; j >= 0; j--) {
                 //j是true且从j能一步走到A[i]
                 if(can[j] && j + A[j] >= i) {
                     can[i] = true;
