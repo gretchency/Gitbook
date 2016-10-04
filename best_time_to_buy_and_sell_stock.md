@@ -14,6 +14,8 @@ public class Solution {
         left[1] = 0;  
         int min = prices[0];
         for (int i = 2; i <= prices.length; i++) {
+            //逢低买 逢高卖 从左往右时候记录波谷
+
             min = Math.min(min, prices[i - 1]);
             left[i] = Math.max(left[i - 1], prices[i - 1] - min);
         }
@@ -23,6 +25,8 @@ public class Solution {
         right[prices.length] = 0;
         int max = prices[prices.length - 1];
         for (int i = prices.length - 1; i >= 1; i--) {
+            //逢低买 逢高卖 从右往左时候记录波峰，因为右边是卖，所以要找最大的！
+
             max = Math.max(max, prices[i - 1]);
             right[i] = Math.max(right[i + 1], max - prices[i - 1]);
         }
