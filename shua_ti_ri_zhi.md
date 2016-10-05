@@ -86,6 +86,9 @@ http://www.lintcode.com/en/problem/subarray-sum/#
 
 * sum[i ~ j] = sum[j] - sum[i - 1] = 0
 * sum[j] = sum[i - 1]
+* sumArray Sum k的话 sum[j] - sum[i - 1] = k
+
+
 
 
 
