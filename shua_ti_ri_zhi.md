@@ -66,6 +66,15 @@ https://leetcode.com/problems/distinct-subsequences/
 * dp[i][j] 分为最后一位相等或不等两种情况
 
 
+### LinkedList
+
+Remove Nth Node From End of List
+* 在删除节点的前一个节点停住 while (fast.next != null)
+
+
+
+
+
 
 
 
