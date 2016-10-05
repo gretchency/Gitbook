@@ -71,6 +71,13 @@ https://leetcode.com/problems/distinct-subsequences/
 Remove Nth Node From End of List
 * 在删除节点的前一个节点停住 while (fast.next != null)
 
+Partition List
+
+https://leetcode.com/problems/partition-list/
+
+* two dummy node & 注意这里原链表可能big后面还有点 要把他指向空
+
+
 
 
 
