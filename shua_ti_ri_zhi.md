@@ -55,10 +55,16 @@ Unique Paths II
 
 
 ### DP II
-Edit Distance
-
+**Edit Distance
+**
 https://leetcode.com/problems/edit-distance/
 * dp[i][j] 分为最后一位相等或不等两种情况
+
+**Distinct Subsequences
+**
+https://leetcode.com/problems/distinct-subsequences/
+* dp[i][j] 分为最后一位相等或不等两种情况
+
 
 
 
