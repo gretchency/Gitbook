@@ -78,6 +78,21 @@ https://leetcode.com/problems/partition-list/
 * two dummy node & 注意这里原链表可能big后面还有点 要把他指向空
 
 
+### Arrays & Numbers
+
+Subarray Sum
+
+http://www.lintcode.com/en/problem/subarray-sum/#
+
+* sum[i ~ j] = sum[j] - sum[i - 1] = 0
+* sum[j] = sum[i - 1]
+
+
+
+
+
+
+
 
 
 
