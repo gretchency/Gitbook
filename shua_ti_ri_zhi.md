@@ -44,6 +44,15 @@ if (nums[mid] == target)
                 end = mid;
 ```
 
+**Search in a big Sorted Array**
+https://adambillylee.gitbooks.io/lintcode/content/chapter2.3.html
+```java
+// find an end to start with
+    while(reader.get(end) != -1 && reader.get(end)<target) {
+        end = end * 2 + 1;
+    }
+```
+
 
 
 
