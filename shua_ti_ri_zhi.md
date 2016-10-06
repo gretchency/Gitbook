@@ -108,6 +108,8 @@ https://leetcode.com/problems/merge-k-sorted-lists/
 Top K Frequent Elements
 
 https://leetcode.com/problems/top-k-frequent-elements/
+* HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
+
 
 
 
