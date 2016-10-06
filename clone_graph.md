@@ -3,13 +3,45 @@
 http://www.lintcode.com/en/problem/clone-graph/#
 
 
-BFS: ArrayList + HashMap
+BFS: Queue + HashMap
+
+```java
+public class Solution {
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+        if (node == null) return null;
+        Map<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<>();
+        Queue<UndirectedGraphNode> queue = new LinkedList<>();
+        
+        UndirectedGraphNode newNode = new UndirectedGraphNode(node.label);
+        map.put(node, newNode);
+        queue.offer(node);
+        
+        while (!queue.isEmpty()) {
+            UndirectedGraphNode curr = queue.poll();
+            for (UndirectedGraphNode neighbor: curr.neighbors) {
+                if (!map.containsKey(neighbor)) {
+                    queue.offer(neighbor);
+                    UndirectedGraphNode newNeighbor = new UndirectedGraphNode(neighbor.label);
+                    map.put(neighbor, newNeighbor);
+                }
+                //新curr和新neighbor建立neighbor关系
+                map.get(curr).neighbors.add(map.get(neighbor));
+            }
+
+        }
+        
+        return newNode;
+    }
+}
+```
 
 Ref:
 http://www.cnblogs.com/springfor/p/3874591.html
 
 Ralated: Copy List with Random Pointer
 
+
+BFS: ArrayList + HashMap
 ```java
 /**
  * Definition for undirected graph.
