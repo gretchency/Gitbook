@@ -82,6 +82,10 @@ Unique Paths I
 Unique Paths II
 * 判断如果 ==1 路径数为0
 
+Climbing Stairs
+
+Minimum Path Sum
+
 
 ### DP II
 **Edit Distance**
@@ -93,6 +97,10 @@ https://leetcode.com/problems/edit-distance/
 **
 https://leetcode.com/problems/distinct-subsequences/
 * dp[i][j] 分为最后一位相等或不等两种情况
+
+Word Break
+* i - j <= MaxLen 来节省时间
+
 
 
 ### LinkedList
