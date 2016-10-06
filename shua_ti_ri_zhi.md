@@ -39,7 +39,7 @@ https://leetcode.com/problems/search-a-2d-matrix/
 
 **First Position of Target**
 ```java
-if (nums[mid] == target) {
+if (nums[mid] == target)
                 //cannot return, cuz it may not be the first position
                 end = mid;
 ```
