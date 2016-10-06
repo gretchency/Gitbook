@@ -37,6 +37,14 @@ https://leetcode.com/problems/search-a-2d-matrix/
 * matrix[mid / col][mid % col] == target
 * Search a 2D Matrix II: left bottom to top right
 
+**First Position of Target**
+```java
+if (nums[mid] == target) {
+                //cannot return, cuz it may not be the first position
+                end = mid;
+```
+
+
 
 
 
