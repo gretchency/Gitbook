@@ -7,6 +7,10 @@ First Solution: Priority Queue
 
 O(nlog(k))
 
+时间上，我们需要维护一个大小为k的最小值堆，每次维护复杂度O(logk)，由于一共有n个数据，每个数据都会加入最小值堆，故总体时间复杂度O(nlogk)。由于每个list至少有一个数据，故n一定大于等于k。相比于完全无序的n个数据排序(所需时间O(nlogn))，我们的算法将复杂度降至O(nlogk)。原因在于数据是部分有序的。事实上，在通常面试中，如果数据已经部分有序，我们理应能够实现时间复杂度优于O(nlogn)的算法。
+
+空间上，我们需要大小为k的最小值堆。同时，在不允许破坏原有链表的情况下，我们需要额外O(n)的空间构建新链表，故总体空间复杂度O(n+k)。如果可以直接修改原有数据的next指针，则总体空间复杂度即为O(k)。至于是否能够破坏原始数据，需要与面试官进行沟通。
+
 ```java
 private Comparator<ListNode> ListNodeComparator = new Comparator<ListNode>() {
         public int compare(ListNode left, ListNode right) {
