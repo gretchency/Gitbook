@@ -60,7 +60,19 @@ https://adambillylee.gitbooks.io/lintcode/content/chapter2.3.html
 ### Binary Tree
 Maximum depth of a Binary Tree
 
-Binary Tree Preorder Traveral
+Binary Tree Preorder Travesal
+
+Binary Tree Maximum Path Sum
+https://leetcode.com/problems/binary-tree-maximum-path-sum/
+* 全局变量的使用
+
+inorder successor in binary search tree
+* inorder travesal 在traversal的过程中有一个Boolean 一开始false 后面相等时变true,下一个节点就是successor
+
+
+
+
+
 
 
 ### DP I
@@ -139,6 +151,8 @@ https://leetcode.com/problems/palindrome-partitioning/
 
 https://leetcode.com/problems/clone-graph/
 * Queue + HashMap
+
+
 
 
 
