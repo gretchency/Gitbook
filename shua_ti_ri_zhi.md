@@ -99,6 +99,21 @@ Maximum Subarray
 https://leetcode.com/problems/maximum-subarray/
 
 
+### Data Structure
+
+Merge k Sorted Lists & Merge k sorted array
+
+https://leetcode.com/problems/merge-k-sorted-lists/
+
+Top K Frequent Elements
+
+https://leetcode.com/problems/top-k-frequent-elements/
+
+
+
+
+
+
 
 
 
