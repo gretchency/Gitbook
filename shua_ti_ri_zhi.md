@@ -120,6 +120,10 @@ https://leetcode.com/problems/partition-list/
 
 * two dummy node & 注意这里原链表可能big后面还有点 要把他指向空
 
+Remove Duplicates from Sorted List II
+* 如果相等存一个value 和head.next比较
+
+
 
 ### Arrays & Numbers
 
