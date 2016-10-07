@@ -15,6 +15,7 @@ Friends Dictionary Permutation相关
 
 
 ## Ladder
+https://postimg.org/image/7ij1m0wh5/
 
 
 ### Pre
@@ -63,8 +64,7 @@ Maximum depth of a Binary Tree
 Binary Tree Preorder Travesal
 
 Binary Tree Maximum Path Sum
-* 
-
+![](https://postimg.org/image/7ij1m0wh5/)
 https://leetcode.com/problems/binary-tree-maximum-path-sum/
 * 全局变量的使用
 
