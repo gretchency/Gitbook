@@ -59,6 +59,12 @@ public class Solution {
 }
 ```
 
+Best Solution:
+
+O(n^2)
+* 二刷时候没想清楚区间动归的初始化长度 这里初始化为string length方便和charAt的index一起比较
+* 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
+
 
 ```java
 //区间 + 序列动归
