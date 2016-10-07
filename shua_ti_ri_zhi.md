@@ -126,6 +126,7 @@ Remove Duplicates from Sorted List II
 Convert Sorted Array to Binary Search Tree
 
 ***Convert Sorted List to Binary Search Tree***
+[link](https://gretchency.gitbooks.io/leetcode/content/convert_sorted_list_to_balanced_bst.html)
 * 每个链表节点被访问一次，故时间复杂度为 O(n)
 * 分治法 利用len求得链表的中点 注意右边的Len = len - len/2 - 1 分别减去左子树长度和根节点
 
