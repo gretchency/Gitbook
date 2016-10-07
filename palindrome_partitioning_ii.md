@@ -9,6 +9,55 @@ Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1
 把一个字符串分成j, j + 1 ~ i，
 
 保证j + 1 ~ i是回文，求f(j)的最小分割数，最后加上最后一刀1
+* s(j~i)回文    dp[i] = min(dp[i],dp[j] + 1)
+* 注意
+
+
+naive solution:
+
+O(n^3)
+
+```java
+public class Solution {
+    //dp[s.length]
+    //j+1- i回文 dp[i] = dp[j] + 1
+    public int minCut(String s) {
+        if (s == null && s.length() == 0) return 0;
+        
+        int[] dp = new int[s.length() + 1];
+        for (int i = 0; i <= s.length(); i++) {
+            dp[i] = i - 1;
+        }
+        
+        
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = i - 1; j >= 0; j--) {
+                if (isPal(s.substring(j, i))) {
+                    dp[i] = Math.min(dp[i], dp[j] + 1);
+                }
+            }
+        }
+        
+        return dp[s.length()];
+    }
+    
+    private boolean isPal(String s) {
+        int start = 0;
+        int end = s.length() - 1;
+        while (start < end) {
+            if (s.charAt(start) == s.charAt(end)) {
+                start++; 
+                end--;
+                continue;
+            } else {
+                return false;
+            }
+        }
+        
+        return true;
+    }
+}
+```
 
 
 ```java
