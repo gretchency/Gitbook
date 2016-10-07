@@ -15,26 +15,21 @@ Friends Dictionary Permutation相关
 
 
 ## Ladder
-https://postimg.org/image/7ij1m0wh5/
 
 
 ### Pre
 
-**Implement strStr()**
+**Implement strStr()** [leet](https://leetcode.com/problems/implement-strstr/)
 
-https://leetcode.com/problems/implement-strstr/
+
 
 
 ### Binary Search
 
-**Search Insert Position**
-
-https://leetcode.com/problems/search-insert-position/
+**Search Insert Position** [leet](https://leetcode.com/problems/search-insert-position/)
 * find first position that value is >= target
 
-**Search a 2D Matrix**
-
-https://leetcode.com/problems/search-a-2d-matrix/
+**Search a 2D Matrix** [leet](https://leetcode.com/problems/search-a-2d-matrix/)
 * matrix[mid / col][mid % col] == target
 * Search a 2D Matrix II: left bottom to top right
 
@@ -45,8 +40,8 @@ if (nums[mid] == target)
                 end = mid;
 ```
 
-**Search in a big Sorted Array**
-https://adambillylee.gitbooks.io/lintcode/content/chapter2.3.html
+**Search in a big Sorted Array** [leet](https://adambillylee.gitbooks.io/lintcode/content/chapter2.3.html)
+
 ```java
 // find an end to start with
     while(reader.get(end) != -1 && reader.get(end)<target) {
@@ -63,9 +58,8 @@ Maximum depth of a Binary Tree
 
 Binary Tree Preorder Travesal
 
-***Binary Tree Maximum Path Sum***
+***Binary Tree Maximum Path Sum*** [leet](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 
-https://leetcode.com/problems/binary-tree-maximum-path-sum/
 * 全局变量的使用
 
 inorder successor in binary search tree
@@ -90,14 +84,10 @@ Minimum Path Sum
 
 
 ### DP II
-**Edit Distance**
-
-https://leetcode.com/problems/edit-distance/
+**Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
 * dp[i][j] 分为最后一位相等或不等两种情况
 
-**Distinct Subsequences
-**
-https://leetcode.com/problems/distinct-subsequences/
+**Distinct Subsequences** [leet](https://leetcode.com/problems/distinct-subsequences/)
 * dp[i][j] 分为最后一位相等或不等两种情况
 
 Word Break
@@ -114,10 +104,7 @@ Word Break
 Remove Nth Node From End of List
 * 在删除节点的前一个节点停住 while (fast.next != null)
 
-Partition List
-
-https://leetcode.com/problems/partition-list/
-
+Partition List [leet](https://leetcode.com/problems/partition-list/)
 * two dummy node & 注意这里原链表可能big后面还有点 要把他指向空
 
 Remove Duplicates from Sorted List II
@@ -126,7 +113,7 @@ Remove Duplicates from Sorted List II
 Convert Sorted Array to Binary Search Tree
 
 ***Convert Sorted List to Binary Search Tree***
-[link](https://gretchency.gitbooks.io/leetcode/content/convert_sorted_list_to_balanced_bst.html)
+[leet](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) [link](https://gretchency.gitbooks.io/leetcode/content/convert_sorted_list_to_balanced_bst.html)
 * 每个链表节点被访问一次，故时间复杂度为 O(n)
 * 分治法 利用len求得链表的中点 注意右边的Len = len - len/2 - 1 分别减去左子树长度和根节点
 
