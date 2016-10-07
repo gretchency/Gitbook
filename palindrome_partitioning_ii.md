@@ -10,7 +10,7 @@ Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1
 
 保证j + 1 ~ i是回文，求f(j)的最小分割数，最后加上最后一刀1
 * s(j~i)回文    dp[i] = min(dp[i],dp[j] + 1)
-* 注意
+* 注意初始化dp[i] = i - 1,表示最多割几刀  dp[0]就是-1刀 这样才能比较！
 
 
 naive solution:
