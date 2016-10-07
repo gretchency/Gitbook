@@ -59,7 +59,7 @@ public class Solution {
 
 
 
-
+一刷
 
 分治的思想
 curr做根节点 慢慢往后挪
