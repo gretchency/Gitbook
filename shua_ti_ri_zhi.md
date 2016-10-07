@@ -123,6 +123,13 @@ https://leetcode.com/problems/partition-list/
 Remove Duplicates from Sorted List II
 * 如果相等存一个value 和head.next比较
 
+Convert Sorted Array to Binary Search Tree
+
+***Convert Sorted List to Binary Search Tree***
+* 每个链表节点被访问一次，故时间复杂度为 O(n)
+* 分治法 利用len求得链表的中点 注意右边的Len = len - len/2 - 1 分别减去左子树长度和根节点
+
+
 
 
 ### Arrays & Numbers
