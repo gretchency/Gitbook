@@ -106,7 +106,6 @@ Word Break
 ***Palindrome Partitioning II***
 * 区间动归来省时间 O(n^2)
 * 序列动归：ispal(s(j~i-1)) dp[i] = min(dp[i], dp[j] + 1)
-
 * 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
 
 
