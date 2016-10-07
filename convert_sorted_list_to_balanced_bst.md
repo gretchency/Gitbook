@@ -1,5 +1,8 @@
 # Convert Sorted List to Balanced BST
 二刷
+分治递归：类比Convert sorted array,想到要找到list的中点，要知道list中点必须要知道list的长度。所以可以传入长度和头节点来递归，每次递归通过长度一半遍历得到中间节点，然后根据中间节点分治左右子数 
+
+
 ```java
 public class Solution {
     private int findLen(ListNode head) {
@@ -14,7 +17,6 @@ public class Solution {
     }
     
     public TreeNode sortedListToBST(ListNode head) {
-        //O(n)
         if (head == null) return null;
         
         int len = findLen(head);
