@@ -48,6 +48,7 @@ sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res
             int currValue = sums[i].sum - sums[i - 1].sum;
             if (minValue > currValue) {
                 minValue = currValue;
+                //这里用tmp先比较下哪个index小 然后再用res存，因为res里小的数要在前面
                 int[] tmp = new int[2];
                 tmp[0] = sums[i].index;
                 tmp[1] = sums[i - 1].index;
