@@ -4,15 +4,50 @@
 
 二刷
 
+* 先把0，2的走完 这样逻辑更清楚
 ```java
+public class Solution {
+    public void sortColors(int[] nums) {
+        if (nums == null || nums.length == 0) return;
+        
+        int left = 0;
+        int right = nums.length - 1;
+        
         while(left < nums.length && nums[left] == 0) {
             left++;
         }
 
         while(right >= 0 && nums[right] == 2) {
             right--;
-        }   
+        }    
+        
+        int i = left;
+        
+        while (i <= right) {
+            if (nums[i] == 1) {
+                i++;
+            } else if (nums[i] == 0) {
+                swap(nums, left, i);
+                left++;
+                i++;
+            } else if (nums[i] == 2) {
+                swap(nums, i, right);
+                right--;
+            }
+            
+        }
+        
+    }
+    
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+}
 ```
+
+
 ```java
     public void sortColors(int[] nums) {
 
