@@ -122,23 +122,18 @@ Convert Sorted Array to Binary Search Tree
 
 ### Arrays & Numbers
 
-Subarray Sum
-
-http://www.lintcode.com/en/problem/subarray-sum/#
-
+Subarray Sum [leet](http://www.lintcode.com/en/problem/subarray-sum/#)
 * sum[i ~ j] = sum[j] - sum[i - 1] = 0
 * sum[j] = sum[i - 1]
 * sumArray Sum k的话 sum[j] - sum[i - 1] = k
 
-Merge Sorted Array
-
-https://leetcode.com/problems/merge-sorted-array/
-
+Merge Sorted Array [leet](https://leetcode.com/problems/merge-sorted-array/)
 * 从后往前比 大的放最后 最后挪B数组剩余的
 
-Maximum Subarray
+Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 
-https://leetcode.com/problems/maximum-subarray/
+
+
 
 
 ### Data Structure
