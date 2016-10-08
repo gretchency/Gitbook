@@ -132,6 +132,9 @@ Merge Sorted Array [leet](https://leetcode.com/problems/merge-sorted-array/)
 
 Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 
+Sort Colors [leet](https://gretchency.gitbooks.io/leetcode/content/sort_colors.html)
+* red green blue三个指针 一个指针记录first not red, 一个用来走，一个记录first not blue,直到走到first not blue为止。
+
 
 
 
