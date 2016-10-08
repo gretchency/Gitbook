@@ -132,8 +132,20 @@ Merge Sorted Array [leet](https://leetcode.com/problems/merge-sorted-array/)
 
 Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 
-Sort Colors [leet](https://gretchency.gitbooks.io/leetcode/content/sort_colors.html)
+***Sort Colors*** [link](https://gretchency.gitbooks.io/leetcode/content/sort_colors.html)
 * 要求排序成red green blue  用三个指针 一个指针记录first not red, 一个用来走，一个记录first not blue,直到走到first not blue为止。
+
+Subarray Sum Closest [leet](http://www.lintcode.com/en/problem/subarray-sum-closest/)
+
+1. 首先遍历一次数组求得子串和。
+2. 对子串和排序。
+3. 逐个比较相邻两项差值的绝对值，返回差值绝对值最小的两项。
+
+
+ 
+ 
+
+
 
 
 
@@ -149,6 +161,9 @@ Sort Colors [leet](https://gretchency.gitbooks.io/leetcode/content/sort_colors.h
 **Top K Frequent Elements** [leet](https://leetcode.com/problems/top-k-frequent-elements/)
 * 取pq的最小值和新的比较
 * HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
+
+Rehashing [leet](http://www.lintcode.com/en/problem/rehashing/)
+* 注意在rehashing时候要考虑新table是否已经有数，已经有数的情况下用dummy node遍历到末尾再接上。
 
 
 ### Graph & Search
