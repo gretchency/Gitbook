@@ -138,9 +138,10 @@ Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 
 ### Data Structure
 
-**Merge k Sorted Lists & Merge k sorted array**
+**Merge k Sorted Lists & Merge k sorted array** [leet](https://leetcode.com/problems/merge-k-sorted-lists/) [link](https://gretchency.gitbooks.io/leetcode/content/merge_k_sorted_linkedlist.html)
+* 注意List里面可能有null节点，此时要跳过
 
-https://leetcode.com/problems/merge-k-sorted-lists/
+
 
 **Top K Frequent Elements**
 
