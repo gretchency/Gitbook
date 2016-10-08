@@ -191,6 +191,10 @@ Combination Sum I II III
 ```while(i < nums.length() - 1 && nums[i] == nums[i + 1]) i++;```
 提前预判 避免重复
 
+Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topological_sorting.html)
+* 判断有无环的话就是最后结果的length是否小于nodes的个数
+
+
 
 
 
