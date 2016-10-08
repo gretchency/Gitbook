@@ -2,6 +2,10 @@
 
 http://www.lintcode.com/en/problem/topological-sorting/#
 
+二刷
+* 需要理解的是入度的概念，前面的相关入度全部完成后，才能走后面的入度
+
+
 Queue BFS
 
 以 V 表示顶点数，E 表示有向图中边的条数。
