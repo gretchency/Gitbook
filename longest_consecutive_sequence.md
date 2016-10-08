@@ -6,6 +6,9 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 
 Longest Consecutive Sequence: 从无序的数列中找出最长的连续数列的长度，用O(n)时间。这种很诡异的时间限制基本就要想到hashmap, 这道用hashset就能做，因为只要存一个value。全存到hashset以后遍历hashset里的值，分别往左往右找，找到连续的值就删，因为包含一个特定数的序列只有一个（仔细体会）。找不到了就返回序列长度。
 
+二刷
+* 如果不remove会超时
+
 ```java
 public class Solution {
     /**
