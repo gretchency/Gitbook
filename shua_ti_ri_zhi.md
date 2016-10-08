@@ -143,9 +143,8 @@ Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 
 
 
-**Top K Frequent Elements**
-
-https://leetcode.com/problems/top-k-frequent-elements/
+**Top K Frequent Elements** [leet](https://leetcode.com/problems/top-k-frequent-elements/)
+* 取pq的最小值和新的比较
 * HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
 
 
