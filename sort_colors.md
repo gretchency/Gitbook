@@ -2,6 +2,17 @@
 
 左右指针记录边界
 
+二刷
+
+```java
+        while(left < nums.length && nums[left] == 0) {
+            left++;
+        }
+
+        while(right >= 0 && nums[right] == 2) {
+            right--;
+        }   
+```
 ```java
     public void sortColors(int[] nums) {
 
