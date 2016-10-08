@@ -181,6 +181,19 @@ https://leetcode.com/problems/palindrome-partitioning/
 https://leetcode.com/problems/clone-graph/
 * Queue + HashMap
 
+Combination Sum I II III
+两种方法跳过重复数字
+* for loop一开始： 
+ 
+ ```if(i > pos && nums[i] == nums[i - 1]) continue;```
+ 不能i > 0, i == pos时，i处所代表的变量即为某一层遍历中得「第一个元素」，那如果前面的已经用过的元素和i相等，就要跳过
+* remove 后：
+```while(i < nums.length() - 1 && nums[i] == nums[i + 1]) i++;```
+
+
+
+
+
 
 
 
