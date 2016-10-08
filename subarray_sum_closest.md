@@ -1,6 +1,9 @@
 # SubArray Sum Closest
 
-分析
+
+## 分析
+
+
 
 1. 遍历一遍数组求得子串和
 2. 对子串和有小到大排序
@@ -11,7 +14,7 @@
 
 获取index注意
 
-sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res
+**sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res**
 
 ```java
     class Pair {
@@ -53,6 +56,7 @@ sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res
                 tmp[0] = sums[i].index;
                 tmp[1] = sums[i - 1].index;
                 Arrays.sort(tmp);
+                //**小的加一存入res
                 res[0] = tmp[0] + 1;
                 res[1] = tmp[1];
             }
@@ -61,3 +65,22 @@ sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res
         return res;
     }
 ```
+
+
+### 时间复杂度： O(nlog(n)) 
+
+* 遍历原数组O(n)
+* sort O(nlog(n))
+* 遍历pair数组来取得最小差值O(n)
+
+总的来说O(nlog(n))
+
+
+### 空间：O(n)
+
+* 空间上维护了一个pair数组 O(n)
+
+
+
+
+
