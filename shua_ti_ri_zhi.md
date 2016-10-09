@@ -109,6 +109,12 @@ Minimum Path Sum
 Triangle
 * 三角形两边初始化，top-down，比较最后一行
 
+Jump Game I
+* 注意循环里一旦为True就break
+
+Jump Game II
+* dp[i] = Min(dp[j] + 1) && j + nums[j] >= i:循环j比较当前i的最小值
+
 
 
 
