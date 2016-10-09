@@ -85,7 +85,7 @@
    * [Course Schedule](course_schedule.md)
    * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
    * [Restore IP Addresses](restore_ip_addresses.md)
-   * Palindrome Partitioning I
+   * [Palindrome Partitioning I](palindrome_partitioning_i.md)
 * [Sorting](sorting.md)
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
