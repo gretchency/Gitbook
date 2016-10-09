@@ -1,9 +1,15 @@
 # Letter Combinations of a Phone Number
 https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
+题解
+* 根据数字index建立String数组存放对应字母
+* 用len记录数字位置，然后根据len取得对应数字的字母
+* 递归取得字母组合
+* prefix + letters.charAt(i)就不用最后remove一下了
+
 O(3^m)  3是每个数字有三个字母 m是有几个数字
 
-prefix + letters.charAt(i)就不用最后remove一下了
+
 ```java
     public List<String> letterCombinations(String digits) {
         List<String> res = new ArrayList<>();
