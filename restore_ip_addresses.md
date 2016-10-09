@@ -7,6 +7,12 @@ Given "25525511135",
 
 return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 
+* 可以一个字符两个字符三个字符的按规定排列组合，所以递归
+* 每取一个字符短要判断是不是valid，所以需要一个valid函数
+* 递归的return条件：count为3时直接判断最后剩余长度是否valid
+* 如果valid s取substring, prefix增加长度，count++,
+
+
 ```java
 public List<String> restoreIpAddresses(String s) {
         List<String> res = new ArrayList<>();
