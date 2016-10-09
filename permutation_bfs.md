@@ -11,6 +11,22 @@ results.add(new ArrayList<Integer>(list))
 
 http://www.jiuzhang.com/qa/663/
 
+二刷：
+* 引入visited数组可以节省一点时间
+
+```java
+for (int i = 0; i < nums.length; i++) {
+            if(!visited[i]) {
+                visited[i] = true;
+                list.add(nums[i]);
+                dfs(nums, list, res, visited);
+                list.remove(list.size() - 1);
+                visited[i] = false;
+            }
+            
+        }
+```
+
 ```java
     public List<List<Integer>> permute(int[] nums) {
         ArrayList<List<Integer>> res = new ArrayList<List<Integer>>();
