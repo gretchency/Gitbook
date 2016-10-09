@@ -49,6 +49,16 @@ if (nums[mid] == target)
     }
 ```
 
+Find Minimum in Rotated Sorted Array
+* find first position <= the last number
+
+**Search in Rotated Sorted Array**
+* 注意截取的时候 ```target >= nums[start] && target <= nums[mid]``` 才能保证在那一小段里
+
+
+
+
+
 
 
 
@@ -64,6 +74,11 @@ Binary Tree Preorder Travesal
 
 inorder successor in binary search tree
 * inorder travesal 在traversal的过程中有一个Boolean 一开始false 后面相等时变true,下一个节点就是successor
+
+Validate Binary Search Tree
+* 递归要用long
+* 非递归就是inorder traversal一遍看是否升序
+
 
 
 
