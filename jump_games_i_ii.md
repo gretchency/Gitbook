@@ -4,6 +4,20 @@ http://www.lintcode.com/en/problem/jump-game/#
 
 ![](Screen Shot 2016-08-24 at 3.36.58 PM.png)
 
+二刷 Jump II
+* 其中break即体现了MIN操作，最开始满足条件的j即为最小步数。
+```java
+for (int i = 1; i < nums.length; i++) {
+            //steps[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < i; j++) {
+                if (j + nums[j] >= i) {
+                    steps[i] = steps[j] + 1;
+                    break;
+                }
+            }
+        }
+```
+
 ```java
 public class Solution {
     /**
