@@ -17,6 +17,11 @@ Return
 * 一个字符串，可以本身substring来缩短s长度，s为0时候就return
 * substring(beginindex)里beiginindex可以为自身长度，此时返回""
 
+
+### 时间复杂度：O(方案个数*string长度)
+
+
+
 ```java
     public List<List<String>> partition(String s) {
         List<List<String>> res = new ArrayList<>();
