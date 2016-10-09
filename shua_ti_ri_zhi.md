@@ -204,7 +204,7 @@ Combination Sum I II III
 * 左括号还没用完
 * 左括号比右括号用掉的多 left < right
 
-**Letter Combinations of a Phone Number** [leet](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+**Letter Combinations of a Phone Number** [leet](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) [link](https://gretchency.gitbooks.io/leetcode/content/letter_combinations_of_a_phone_number.html)
 * index是数字 String[]存字母
 * tmp直接添加字符传入递归参数，这样返回后不用截取tmp，就不用remove,自动回溯
 
