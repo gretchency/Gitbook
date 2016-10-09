@@ -106,6 +106,12 @@ Climbing Stairs
 
 Minimum Path Sum
 
+Triangle
+* 三角形两边初始化，top-down，比较最后一行
+
+
+
+
 
 ### DP II
 **Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
