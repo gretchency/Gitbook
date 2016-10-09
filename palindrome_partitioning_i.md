@@ -69,7 +69,9 @@ Return
 ```
 
 
+一刷：
 
+pos保证位置往后走 不重复
 ```java
     public List<List<String>> partition(String s) {
         List<List<String>> res = new ArrayList<>();
