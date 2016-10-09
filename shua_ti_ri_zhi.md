@@ -214,6 +214,9 @@ Combination Sum I II III
 ```dfs(s.substring(i), res, prefix + sub + ".", count + 1);```
 * return条件： count == 3 && isValid(s)
 
+***Palindrome Partitioning I*** [link](https://gretchency.gitbooks.io/leetcode/content/palindrome_partitioning_i.html)
+
+
 
 
 
