@@ -12,6 +12,26 @@ O(log(n))是平衡二叉树的复杂度
        6
 ```
 
+二刷
+
+```java
+    public boolean isValidBST(TreeNode root) {
+        if (root == null) return true;
+        
+        return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+    
+    public boolean helper(TreeNode node, long min, long max) {
+        if (node == null) {
+            return true;
+        }
+        
+        if (node.val <= min || node.val >= max) return false;
+        
+        return helper(node.left, min, node.val) && helper(node.right, node.val, max);
+    }
+```
+
 
 左根右递增 递归整棵树 看min 和 max是否fit in
 ```java
