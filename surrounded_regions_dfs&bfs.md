@@ -52,6 +52,9 @@ public class Solution {
 ```
 
 BFS
+* 相同的思想用BFS来实现
+* xy坐标配对入列 配对出列
+
 
 ```java
 public class Solution {
@@ -93,6 +96,7 @@ public class Solution {
         while (!q.isEmpty()) {
             int i = q.poll(); int j= q.poll();
             if (i < 0 || i >= m || j < 0 || j >= n) continue;
+            //这里要再判断下
             if (board[i][j] != 'O') continue;
             board[i][j] = 'Y';
             q.offer(i - 1); q.offer(j);
