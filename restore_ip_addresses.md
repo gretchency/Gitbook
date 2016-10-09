@@ -12,6 +12,13 @@ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter)
 * 递归的return条件：count为3时直接判断最后剩余长度是否valid
 * 如果valid s取substring, prefix增加长度，count++,
 
+*判断时候注意 002 032 这些都是false* 
+
+
+### 时间复杂度：O(方案个数*string长度)
+
+
+
 
 ```java
 public List<String> restoreIpAddresses(String s) {
