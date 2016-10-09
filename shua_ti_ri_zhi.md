@@ -209,6 +209,10 @@ Combination Sum I II III
 * tmp直接添加字符传入递归参数，这样返回后不用截取tmp，就不用remove,自动回溯
 
 ***Restore IP Addresses*** [leet](https://leetcode.com/problems/restore-ip-addresses/) [link](https://gretchency.gitbooks.io/leetcode/content/restore_ip_addresses.html)
+* 一个字符串，在dfs时候可以减少当前字符串，增加prefix字符串
+
+```dfs(s.substring(i), res, prefix + sub + ".", count + 1);```
+* return条件： count == 3 && isValid(s)
 
 
 
