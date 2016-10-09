@@ -215,6 +215,9 @@ Combination Sum I II III
 * return条件： count == 3 && isValid(s)
 
 ***Palindrome Partitioning I*** [link](https://gretchency.gitbooks.io/leetcode/content/palindrome_partitioning_i.html)
+* 类比Restore IP Address,我们可以选1个字母，2个字母，直到字符串长度的字母
+* 一个字符串，可以本身substring来缩短s长度，s为0时候就return
+* substring(beginindex)里beiginindex可以为自身长度，此时返回""
 
 
 
