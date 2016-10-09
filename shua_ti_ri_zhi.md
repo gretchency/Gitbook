@@ -74,6 +74,13 @@ Binary Tree Preorder Travesal
 * 在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
 * 巧妙利用0。若子树为负，则取值0
 
+Binary Tree Maximum Path Sum II
+* 注意最后如果小于0就不要
+* ```return root.val + Math.max(0, Math.max(left, right));```
+
+
+
+
 inorder successor in binary search tree
 * inorder travesal 在traversal的过程中有一个Boolean 一开始false 后面相等时变true,下一个节点就是successor
 
