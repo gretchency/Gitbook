@@ -13,6 +13,8 @@ O(log(n))是平衡二叉树的复杂度
 ```
 
 二刷
+* 用Long防止数字很大无法比较
+
 
 ```java
     public boolean isValidBST(TreeNode root) {
