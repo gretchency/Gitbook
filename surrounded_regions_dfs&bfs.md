@@ -3,6 +3,8 @@
 ![](Screen Shot 2016-10-09 at 1.29.29 PM.png)
 
 DFS
+* 发现四条边的O都不能翻牌，就找到这些O并对每个O DFS 找到所有领接的O,把这些O标记成Y
+* 遍历矩阵 Y的变回O,还是O的就可以翻牌。
 
 ```java
 public class Solution {
