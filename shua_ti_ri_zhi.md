@@ -69,8 +69,10 @@ Maximum depth of a Binary Tree
 Binary Tree Preorder Travesal
 
 ***Binary Tree Maximum Path Sum*** [leet](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
-
-* 全局变量的使用
+* 全局变量maxValue记录全局最大和
+* 递归函数返回子树中经过当前节点的局部最大和
+* 在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
+* 巧妙利用0。若子树为负，则取值0
 
 inorder successor in binary search tree
 * inorder travesal 在traversal的过程中有一个Boolean 一开始false 后面相等时变true,下一个节点就是successor
