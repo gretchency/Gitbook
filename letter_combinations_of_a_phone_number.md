@@ -20,19 +20,19 @@ O(3^m)  3是每个数字有三个字母 m是有几个数字
         return res;
     }
     
-    private void dfs(String[] table, List<String> res, String digits, String tmp, int len) {
+    private void dfs(String[] table, List<String> res, String digits, String prefix, int len) {
         if (len == digits.length()) {
-            res.add(tmp);
+            res.add(prefix);
             return;
         }
         String letters = table[digits.charAt(len) - '0'];
         for (int i = 0; i < letters.length(); i++) {
-            // String newTmp = tmp + letters.charAt(i);
-            // dfs(table, res, digits, newTmp, len + 1);
-            // //这里要修改newTmp
-            // tmp = newTmp.substring(0, newTmp.length() - 1);
+            // String newPrefix = prefix + letters.charAt(i);
+            // dfs(table, res, digits, newPrefix, len + 1);
+            // //这里要修改newPrefix，而不是prefix
+            // prefix = newPrefix.substring(0, newPrefix.length() - 1);
             
-            dfs(table, res, digits, tmp + letters.charAt(i), len + 1);
+            dfs(table, res, digits, prefix + letters.charAt(i), len + 1);
         }
     }
 ```
