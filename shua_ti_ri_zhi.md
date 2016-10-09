@@ -219,6 +219,15 @@ Combination Sum I II III
 * 一个字符串，可以本身substring来缩短s长度，s为0时候就return
 * substring(beginindex)里beiginindex可以为自身长度，此时返回""
 
+二维DFS
+
+**Surrounded Regions DFS&BFS** [link](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)
+* 类比[Number of Islands](https://leetcode.com/problems/number-of-islands/): 遍历矩阵找1，找到1后count++；dfs周围所有1，标记为2；接着找1
+* 发现四条边的O都不能翻牌，就找到这些O并对每个O DFS 找到所有领接的O,把这些O标记成Y
+* 遍历矩阵 Y的变回O,还是O的就可以翻牌。
+
+
+
 
 
 
