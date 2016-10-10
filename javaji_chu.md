@@ -65,3 +65,20 @@ public class BinaryTreeToDoublyLinkedList {
     }
 }
 ```
+---
+
+### Shallow Copy VS Deep Copy
+http://javaconceptoftheday.com/difference-between-shallow-copy-vs-deep-copy-in-java/
+
+* Deep copy: Clone this object and every reference to every other object it has
+* Shallow copy: Clone this object and keep its references
+
+
+In java, ```clone()``` method creates the shallow copy of an object.
+
+The **shallow copy** of an object will have exact copy of all the fields of original object. That means any changes made to those objects through clone object will be reflected in original object or vice-versa.
+![](http://javaconceptoftheday.com/wp-content/uploads/2015/04/ShallowCopy.png)
+
+**Deep copy** of an object will have exact copy of all the fields of original object just like shallow copy. But in additional, if original object has any references to other objects as fields, then copy of those objects are also created by calling clone() method on them.
+
+![](http://javaconceptoftheday.com/wp-content/uploads/2015/04/DeepCopy.png)
