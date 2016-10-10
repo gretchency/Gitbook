@@ -37,3 +37,31 @@ Reason: ArrayList need to shift all the trailing elemnets after removal.
 *ArrayList is better for **storing and accessing data**.*
 
 *LinkedList is better for **manipulating data**.*
+
+---
+
+### Java Inner Class vs Nested Class
+
+Inner class is subset of nested class, Inner class is non-static nested class
+
+* When you want to instantiate an **inner class** object, you need to instantiate the **outer class** first.
+
+* But with **static nested class**, you can simply instantiate the class object
+```java
+public class BinaryTreeToDoublyLinkedList {
+     class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        public TreeNode(int val) {
+            this.val = val;
+        } 
+    }
+    
+    public static void main(String[] args) {
+        //instantiate class first
+        BinaryTreeToDoublyLinkedList list = new BinaryTreeToDoublyLinkedList();
+        TreeNode root = list.new TreeNode(10);
+    }
+}
+```
