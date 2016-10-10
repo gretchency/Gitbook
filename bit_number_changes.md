@@ -2,7 +2,9 @@
 
 Write a Java method that will return the number of bits that will need to be changed in order to convert an integer, X, into another integer, Y and vice versa. The method should accept two different integers as input. For example, if your method is passed the integers 12 and 16 then your method should return a 3 .
 
-Using XOR  a XOR b 数有多少1就是要改几位
+Using XOR  
+* a ```^``` b 数有多少1就是要改几位
+
 ```java
 public static int findNumberOfBits(int x, int y)
 {
