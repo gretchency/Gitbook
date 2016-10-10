@@ -9,7 +9,6 @@
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
 * [Sorting](sorting.md)
-* Bit Manipulation
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
@@ -38,6 +37,7 @@
    * BinarySearch
        * [Sqrtx](sqrtx.md)
    * [ZigZagPrint](zigzagprint.md)
+* Bit Manipulation
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
