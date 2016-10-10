@@ -16,4 +16,4 @@ What happens after you typed a URL in your browser and pressed return key?
 2. Cache or DNS server return the IP address
 3. The browser get the TCP connection with the server through three-way handshake. Connecting to Port: 80 at the server.
 4. After obtaining the IP the browser sends a HTTP request to the web server and get the HTTP respond
-5. Then the browser parses the HTML to render the page.
+5. Then the browser parses the HTML data to render the page.
