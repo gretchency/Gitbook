@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [刷题日志](shua_ti_ri_zhi.md)
 * [Java基础](javaji_chu.md)
-* 算法基础
+* [算法基础](suan_fa_ji_chu.md)
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
 * [Sorting](sorting.md)
