@@ -10,3 +10,10 @@ What happens after you typed a URL in your browser and pressed return key?
 4. 浏览器与服务器建立HTTP会话(session)，接收来自服务器的HTTP数据。
 5. 浏览器解析HTTP数据，在本地窗口内渲染并显示网页。
 6. 当浏览器页面被关闭时，终止HTTP会话并关闭链接。
+
+1. The browser Parse the ip address, and search the cache if it has the same ip, if it does, query for the same ip; else, go to the DNS server to do domain name resolution.
+
+2. Cache or DNS server return the IP address
+3. The browser get the TCP connection with the server through three-way handshake. Connecting to Port: 80 at the server.
+4. After obtaining the IP the browser sends a HTTP request to the web server and get the HTTP respond
+5. Then the browser parses the HTML to render the page.
