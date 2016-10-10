@@ -116,7 +116,10 @@ Jump Game II
 * dp[i] = Min(dp[j] + 1) && j + nums[j] >= i:循环j比较当前i的最小值
 * 或者从头开始走j走到第一个满足的就是最小值 break;
 
-
+***Longest Increasing Subsequence***
+* dp[i]代表前i个数字中以第i个数结尾的lis
+* 然后逐个比较dp[i]
+* 有的时候dp问题的解决需要找到问题的根源，而不是一味的简单求解
 
 
 
