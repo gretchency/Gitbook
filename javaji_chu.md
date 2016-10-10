@@ -69,9 +69,9 @@ public class BinaryTreeToDoublyLinkedList {
 
 ### Shallow Copy VS Deep Copy
 http://javaconceptoftheday.com/difference-between-shallow-copy-vs-deep-copy-in-java/
+* **Shallow copy**: Clone this object and keep its references
+*** Deep copy**: Clone this object and every reference to every other object it has
 
-* Deep copy: Clone this object and every reference to every other object it has
-* Shallow copy: Clone this object and keep its references
 
 
 In java, ```clone()``` method creates the shallow copy of an object.
