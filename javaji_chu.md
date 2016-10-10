@@ -1,7 +1,10 @@
 # Java基础
 
 
-### Collections
+
+
+
+# Collections
 ---
 
 | Interface | Implementaion |
@@ -11,7 +14,10 @@
 | Map | HashMap, TreeMap |
 
 
-ArrayList VS LinkedList
+
+### ArrayList VS LinkedList
+
+
 
 1) **Search**: ArrayList search operation is pretty fast compared to the LinkedList search operation. ```get(int index)``` in ArrayList gives the performance of ```O(1)``` while LinkedList performance is ```O(n)```.
 
@@ -28,3 +34,6 @@ Reason: ArrayList need to shift all the trailing elemnets after removal.
 
 2) Search (get method) operations are fast in Arraylist (```O(1)```) but not in LinkedList (```O(n)```) so If there are less add and remove operations and more search operations requirement, ArrayList would be your best bet.
 
+*ArrayList is better for **storing and accessing data**.*
+
+*LinkedList is better for **manipulating data**.*
