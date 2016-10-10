@@ -5,6 +5,7 @@
 * Java基础
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
+* [Sorting](sorting.md)
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
@@ -91,7 +92,6 @@
    * [Restore IP Addresses](restore_ip_addresses.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
-* [Sorting](sorting.md)
 * [Data Structure](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
