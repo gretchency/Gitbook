@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [刷题日志](shua_ti_ri_zhi.md)
+* Java基础
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
@@ -94,5 +95,4 @@
 * [Data Structure](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
-* Java基础
 
