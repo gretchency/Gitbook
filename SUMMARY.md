@@ -4,6 +4,7 @@
 * [刷题日志](shua_ti_ri_zhi.md)
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
+       * Bit Manipulation
 * [算法基础](suan_fa_ji_chu.md)
    * [位运算](bit_manipulation.md)
 * [面试总结](mian_shi_zong_jie.md)
