@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [刷题日志](shua_ti_ri_zhi.md)
 * [Java基础](javaji_chu.md)
+* 算法基础
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
 * [Sorting](sorting.md)
@@ -95,5 +96,4 @@
 * [Data Structure](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
-* 算法基础
 
