@@ -1,8 +1,8 @@
 # ABC
 
-What happend after URL
+1. What happend after URL
 
-Map function
+2. Map function
 
 传入一个Method要求对collection的所有元素执行该method
 
