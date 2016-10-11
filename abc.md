@@ -19,7 +19,8 @@ public class ABC {
         //     newList.add(newNum);
         // }
         // return newList;
-
+        
+        //****这里跪了，要传入0，并慢慢增加直到取完
         helper(list, newList, function, 0);
 
         return newList;
