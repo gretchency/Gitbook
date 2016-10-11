@@ -1,6 +1,13 @@
 # Sorting
 
 MergeSort
+
+* void函数里不能直接A = mergeSort(A)
+
+When you pass array to this method, you pass it by value - that is, you make a brand new variable that ALSO points to the same object. If you edit the variable array in your method to point to a new array, it doesn't also make the other variable point to your new array - it still points to the old array. So when you return you haven't done any edits to the array that was passed in.
+
+
+
 ```java
 public void sortIntegers2(int[] A) {
         // Write your code here
@@ -9,6 +16,7 @@ public void sortIntegers2(int[] A) {
             A[i] = B[i];
         }
         //A = B.clone();
+        //
     }
     
     public int[] mergeSort(int[] unsorted) {
