@@ -9,6 +9,7 @@
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
 * [Sorting](sorting.md)
+* [Behavior Questions](behavior_questions.md)
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
@@ -102,5 +103,4 @@
    * [Hashing](hashing.md)
 * [网络](wang_luo.md)
    * [After URL](after_url.md)
-* [Behavior Questions](behavior_questions.md)
 
