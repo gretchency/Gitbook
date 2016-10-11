@@ -4,7 +4,7 @@
 
 2. Map function
 
-传入一个Method要求对collection的所有元素执行该method
+传入一个Method要求对collection的所有元素执行该method（递归非递归）
 
 * 非递归秒了
 * 要求写递归，写递归的时候没传入index，这样没法对list取值
