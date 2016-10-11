@@ -35,11 +35,12 @@ public boolean isValidBST(TreeNode root) {
     }
 ```
 
-2. Set Matrix Zero
+**2.Set Matrix Zero**
+
 三种解法可以优化空间
-naive O(mn)
-basic O(m + n)
-perfect O(1)
+* naive O(mn)
+* basic O(m + n)
+* perfect O(1)
 
 飞快写出basic以后优化时候蒙蔽了，没往O(1)处想。
 
@@ -47,6 +48,7 @@ perfect O(1)
 
 空间O(1)解法
 
+先初始标记第0行第0列是否要变，然后遍历1-m 1-n矩阵，在第0行第0列标0，根据0变1-1矩阵。最后考虑根据初始标记第0行第0列要不要变。
 ```java
 public class Solution {
     public void setZeroes(int[][] matrix) {
