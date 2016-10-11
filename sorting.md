@@ -70,6 +70,8 @@ public void sortIntegers2(int[] A) {
 
 Quick Sort
 
+i, j各自移不动的时候swap, 终止条件i <= j
+
 ```java
     private void quickSort(int[] A, int left, int right) {
         if (left >= right) {
