@@ -108,3 +108,37 @@ private static String filter(String s) {
         */
     }
 ```
+
+```java
+    public static String reverse(String s) {
+        if (s == null || s.length() == 0) return "";
+        
+        String[] words = s.split("\\s");
+        System.out.println(Arrays.toString(words));
+        StringBuilder sb = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            String reversed = reverseHelper(words[i]);
+            sb.append(reversed + " ");
+        }
+        return sb.substring(0, sb.length() - 1);
+    }
+    
+    private static String reverseHelper(String s) {
+        if (s.length() == 1) return s;
+//        char[] chars = s.toLowerCase().toCharArray();
+//        int i = 0;
+//        int j = s.length() - 1;
+//        while (i < j) {
+//            char tmp = chars[i];
+//            chars[i] = chars[j];
+//            chars[j] = tmp;
+//            i++;
+//            j--;
+//        }
+//        chars[0] = Character.toUpperCase(chars[0]);
+        String s2 = new StringBuilder(s.toLowerCase()).reverse().toString();
+        Character c = Character.toUpperCase(s2.charAt(0));
+        String res = c + s2.substring(1);
+        return res;
+    }
+```
