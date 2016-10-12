@@ -142,3 +142,20 @@ private static String filter(String s) {
         return res;
     }
 ```
+
+```java
+    public static String filter(String s) {
+        if (s == null || s.length() == 0) return null;
+        
+        String[] words = s.split("\\s");
+        StringBuilder sb = new StringBuilder();
+        for (String word: words) {
+            if (word.charAt(word.length() - 1) == ')') {
+                word = word.substring(0, word.indexOf(')'));
+                sb.append(word + " ");
+            }
+        }
+        
+        return sb.substring(0, sb.length() - 1);
+    }
+```
