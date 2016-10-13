@@ -9,3 +9,11 @@ txtUserId = getRequestString("UserId");
 txtSQL = "SELECT * FROM Users WHERE UserId = @0";
 db.Execute(txtSQL,txtUserId);
 ```
+
+SQL Select Top 5
+
+```java
+SELECT *
+FROM Persons
+LIMIT 5;
+```
