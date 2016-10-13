@@ -5,7 +5,7 @@
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
 * [算法基础](suan_fa_ji_chu.md)
-   * [位运算](bit_manipulation.md)
+   * [位运算](bitmanipulation_md.md)
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
    * [微软](wei_ruan.md)
