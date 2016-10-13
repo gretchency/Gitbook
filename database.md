@@ -33,4 +33,11 @@ SELECT * FROM Customers
 WHERE City LIKE '%s';
 ```
 
+The following SQL statement selects all customers with a Country containing the pattern "land":
+
+```java
+SELECT * FROM Customers
+WHERE Country LIKE '%land%';
+```
+
 
