@@ -106,8 +106,7 @@ Balanced Binary Tree
 * 左右分治，左右都不为空就在root,左边不空右边空返回左边，反之返回右边。
 
 **Binary Tree Level Order Traversal**
-按层遍历 for循环每一层的节点个数
-
+* 按层遍历 遍历前先确定每一层的size for循环将该层节点加入list
 
 
 
