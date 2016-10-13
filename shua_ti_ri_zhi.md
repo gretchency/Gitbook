@@ -110,7 +110,9 @@ Balanced Binary Tree
 
 **Binary Search Tree Iterator**
 * Binary Tree的非递归中序遍历分开来写
-* 全局变量curr记录节点位置
+* 实例变量curr记录节点位置
+
+
 
 
 
