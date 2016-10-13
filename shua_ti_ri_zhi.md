@@ -102,6 +102,10 @@ Balanced Binary Tree
 **Lowest Common Ancestor**
 1. BST
 * 根据bst性质只要root!=null就往下找，遇到p，q分列root左右子树的时候就return root.
+2. Binary Tree
+* 左右分治，左右都不为空就在root,左边不空右边空返回左边，反之返回右边。
+
+
 
 
 
