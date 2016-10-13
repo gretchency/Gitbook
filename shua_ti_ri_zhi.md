@@ -99,6 +99,12 @@ Validate Binary Search Tree
 Balanced Binary Tree
 * 求出左右子树的高度，相减绝对值>1就不平衡，左右递归求证
 
+**Lowest Common Ancestor**
+1. BST
+* 根据bst性质只要root!=null就往下找，遇到p，q分列root左右子树的时候就return root.
+
+
+
 
 
 
