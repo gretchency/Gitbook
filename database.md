@@ -12,8 +12,19 @@ db.Execute(txtSQL,txtUserId);
 
 SQL Select Top 5
 
+MySQL syntax
 ```java
 SELECT *
 FROM Persons
 LIMIT 5;
 ```
+
+SQL LIKE Operation
+
+The following SQL statement selects all customers with a City starting with the letter "s":
+```java
+SELECT * FROM Customers
+WHERE City LIKE 's%';
+```
+
+
