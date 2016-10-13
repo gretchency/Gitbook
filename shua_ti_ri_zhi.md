@@ -59,6 +59,10 @@ Find Minimum in Rotated Sorted Array
 * 砍掉一半的方法
 * 根据题意，该数组必定至少存在一个peak,由此可知若A[mid - 1] > A[mid],peak在mid左半边，A[mid] < A[mid + 1],peak在右半边，由此可求得Peak.
 
+**Search for a Range**
+* 两次二分，找first position和last postion
+
+
 
 
 
