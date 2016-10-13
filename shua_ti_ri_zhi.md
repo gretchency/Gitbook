@@ -96,6 +96,12 @@ Validate Binary Search Tree
 * 递归要用long
 * 非递归就是inorder traversal一遍看是否升序
 
+Balanced Binary Tree
+* 求出左右子树的高度，相减绝对值>1就不平衡，左右递归求证
+
+
+
+
 
 
 
