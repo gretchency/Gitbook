@@ -27,4 +27,10 @@ SELECT * FROM Customers
 WHERE City LIKE 's%';
 ```
 
+The following SQL statement selects all customers with a City ending with the letter "s":
+```java
+SELECT * FROM Customers
+WHERE City LIKE '%s';
+```
+
 
