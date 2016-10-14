@@ -174,6 +174,17 @@ Longest Common Substring
 * dp[i][j]表示A的前i个字符和B的前j个字符的LCS且**A[i - 1] == B[j - 1]**,否则清0重新算
 * 最后双重循环找到最大的
 
+**Interleaving String**
+
+S1 S2 能否凑成 S3
+状态：s1的前i个字符和s2的前j个字符能否凑成s3的前i+j个字符
+
+* 状态方程dp[i][j]满足两种条件：
+* 由于S3的每一位都由s1或s2中相应位置字符构成
+
+1. dp[i - 1][j] 然后s1和s3相应位置最后一位相等
+2. dp[i][j - 1] 然后s2和s3相应位置最后一位相等
+
 
 Word Break
 * i - j <= MaxLen 来节省时间
