@@ -6,6 +6,7 @@ http://www.lintcode.com/en/problem/copy-list-with-random-pointer/#
 Hashmap O(n)时空
 
 二刷
+* Map处理映射关系，先copy链表元素再copy Random指针指向元素，每次copy前在map里判断
 
 ```java
 /**
