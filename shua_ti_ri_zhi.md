@@ -160,8 +160,10 @@ Jump Game II
 **Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
 * dp[i][j] 分为最后一位相等或不等两种情况
 
-**Distinct Subsequences** [leet](https://leetcode.com/problems/distinct-subsequences/)
+***Distinct Subsequences*** [leet](https://leetcode.com/problems/distinct-subsequences/)
 * dp[i][j] 分为最后一位相等或不等两种情况
+* 最后一位不等靠前面dp[i - 1][j]
+* 最后一位相等：dp[i - 1][j - 1] + dp[i - 1][j]
 
 **Longest Common Subsequences** [link](https://gretchency.gitbooks.io/leetcode/content/longest_common_subsequence.html)
 * dp[i][j] 分为最后一位相等或不等两种情况
