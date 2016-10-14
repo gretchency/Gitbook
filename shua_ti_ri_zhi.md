@@ -213,6 +213,9 @@ Convert Sorted Array to Binary Search Tree
 * 每个链表节点被访问一次，故时间复杂度为 O(n)
 * 分治法 利用len求得链表的中点 注意右边的Len = len - len/2 - 1 分别减去左子树长度和根节点
 
+**Copy list with Random Pointer**
+* 运用dummy和curr node往下copy
+* Map处理映射关系，先copy链表元素再copy Random指针指向元素，每次copy前在map里判断是否已经生成，避免出现重复节点
 
 
 
