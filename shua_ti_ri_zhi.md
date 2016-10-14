@@ -174,7 +174,7 @@ Longest Common Substring
 * dp[i][j]表示A的前i个字符和B的前j个字符的LCS且**A[i - 1] == B[j - 1]**,否则清0重新算
 * 最后双重循环找到最大的
 
-***Interleaving String*** link
+***Interleaving String*** [link](https://gretchency.gitbooks.io/leetcode/content/interleaving_string.html)
 
 S1 S2 能否凑成 S3
 状态：s1的前i个字符和s2的前j个字符能否凑成s3的前i+j个字符
