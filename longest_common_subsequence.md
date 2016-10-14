@@ -1,5 +1,7 @@
 # Longest Common Subsequence
 
+二刷
+* 如果最后一位俩字符不相等，那么他就不可能同时出现在subsequence当中，根据这一特性缩小范围。
 
 
 注意判断最后一个字符是否相等
