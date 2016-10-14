@@ -169,6 +169,11 @@ Jump Game II
 * dp[i][j] 分为最后一位相等或不等两种情况
 * 如果最后一位俩字符不相等，那么他俩就不可能同时出现在subsequence当中，根据这一特性缩小范围。
 
+Longest Common Substring
+* substring必须要相连，所以普通状态转移不行
+* dp[i][j]表示A的前i个字符和B的前j个字符的LCS且**A[i - 1] == B[j - 1]**,否则清0重新算
+* 最后双重循环找到最大的
+
 
 Word Break
 * i - j <= MaxLen 来节省时间
