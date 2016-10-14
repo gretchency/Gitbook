@@ -2,7 +2,54 @@
 
 http://www.lintcode.com/en/problem/copy-list-with-random-pointer/#
 
+
 Hashmap O(n)时空
+
+二刷
+
+```java
+/**
+ * Definition for singly-linked list with a random pointer.
+ * class RandomListNode {
+ *     int label;
+ *     RandomListNode next, random;
+ *     RandomListNode(int x) { this.label = x; }
+ * };
+ */
+public class Solution {
+    public RandomListNode copyRandomList(RandomListNode head) {
+        if (head == null) return null;
+        
+        Map<RandomListNode, RandomListNode> map = new HashMap<>();
+        RandomListNode dummy = new RandomListNode(0);
+        RandomListNode curr = dummy;
+        while (head != null) {
+            RandomListNode newNode = null;
+            if(map.containsKey(head)) {
+                newNode = map.get(head);
+            } else {
+                newNode = new RandomListNode(head.label);
+                map.put(head, newNode);
+            }
+            
+            if (head.random != null) {
+                if (map.containsKey(head.random)) {
+                    newNode.random = map.get(head.random);
+                } else {
+                    newNode.random = new RandomListNode(head.random.label);
+                    map.put(head.random, newNode.random);
+                }
+            }
+            
+            curr.next = newNode;
+            curr = curr.next;
+            head = head.next;
+        }
+        
+        return dummy.next;
+    }
+}
+```
 
 
 用Hashmap 记录映射关系
