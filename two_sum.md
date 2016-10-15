@@ -6,7 +6,8 @@ http://www.lintcode.com/en/problem/two-sum/#
 
 A + B = target  B = target - A
 
-注意返回值不是0-based 所以放进map的时候要i + 1
+* map的key是与target的差值，也就是需要的第二个数，value是当前index
+* 注意返回值不是0-based 所以放进map的时候要i + 1
 
 ```java
 public int[] twoSum(int[] numbers, int target) {
