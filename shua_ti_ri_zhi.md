@@ -228,6 +228,12 @@ Sort List
 * 把右半边reverse
 * 左右一一Merge,注意merge的时候，小心处理链表节点的断开及链接！next value要处理前先存成tmp.
 
+Reverse Linked List II
+* 注意最后首尾相连
+* 遍历过程中要存放preM和mNode
+* preM和prev连首部，mNode和curr连尾部
+
+
 
 
 
