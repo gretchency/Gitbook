@@ -248,6 +248,7 @@ Merge Sorted Array [leet](https://leetcode.com/problems/merge-sorted-array/)
 * 从后往前比 大的放最后 最后挪B数组剩余的
 
 Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
+* 先区域后全局
 
 ***Sort Colors*** [link](https://gretchency.gitbooks.io/leetcode/content/sort_colors.html)
 * 要求排序成red green blue  用三个指针 一个指针记录first not red, 一个用来走，一个记录first not blue,直到走到first not blue为止。
