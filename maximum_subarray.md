@@ -1,15 +1,19 @@
 # Maximum Subarray
 
 http://www.lintcode.com/en/problem/maximum-subarray/
+https://www.youtube.com/watch?v=epTQfFlhQBo
 
 解法一
 
 Kadane's Algorithm
-
 https://en.wikipedia.org/wiki/Maximum_subarray_problem
+* 如果之前数组和为负，则自立门户，自己就是目前为止最高的maxSubarray中的值
+* 如果之前数组和为正，则热烈投入其怀抱，加入其中
+* 即 dp[i] = dp[i-1]>0? dp[i-1]+nums[i] : nums[i]
 
 ```java
 public int maxSubArray(int[] nums) {
+        
         int maxCur = nums[0];
         int maxAll = nums[0];
         
