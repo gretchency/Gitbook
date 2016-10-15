@@ -223,7 +223,7 @@ Sort List
 * 注意先判断head是否只有一个节点
 * merge里面判断lList或者rList是否没走完完用if， while会死循环！
 
-***Reorder List***
+***Reorder List*** [leet](https://leetcode.com/problems/reorder-list/)
 * 快慢指针找中点，分成左右两半
 * 把右半边reverse
 * 左右一一Merge,注意merge的时候，小心处理链表节点的断开及链接！next value要处理前先存成tmp.
