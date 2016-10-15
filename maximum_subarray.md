@@ -30,16 +30,23 @@ public int maxSubArray(int[] nums) {
 ```java
 public class Solution {
 public int maxSubArray(int[] A) {
-    int max = Integer.MIN_VALUE, sum = 0;
-    for (int i = 0; i < A.length; i++) {
-        if (sum < 0) 
-            sum = A[i];
-        else 
-            sum += A[i];
-        if (sum > max)
-            max = sum;
-    }
-    return max;
+       if (nums == null || nums.length == 0) return -1;
+       
+       int sum = 0;
+       int res = Integer.MIN_VALUE;
+       
+       for (int i = 0; i < nums.length; i++) {
+           sum += nums[i];
+           //记录当前最大
+           res = Math.max(sum, res); 
+           //如果sum < 0 就割肉，如果大于0，即使变小也保留着看下次是否变大
+           if (sum < 0) {
+               sum = 0;
+           }
+           
+       }
+       
+       return res;
 }
 ```
 
