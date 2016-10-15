@@ -260,6 +260,14 @@ Maximum Subarray [leet](https://leetcode.com/problems/maximum-subarray/)
 **Longest Consecutive Sequence** [link](https://gretchency.gitbooks.io/leetcode/content/longest_consecutive_sequence.html)
 * Hashset 左右找最大可能
 
+Three Sums Cloest
+* 注意比的是3sum和target绝对值之差最小，但返回要返回sum
+```java
+if (Math.abs(sum - target) < Math.abs(min - target)) {
+                    min = sum;
+         }
+```
+
 Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_ruan.html)
 * O(m*n) 建立克隆矩阵 放0
 * O(m+n) 对行和列建立两个boolean数组，一旦扫到0就标记该行列boolean为
