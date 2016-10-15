@@ -272,6 +272,9 @@ if (Math.abs(sum - target) < Math.abs(min - target)) {
          }
 ```
 
+Partition Array
+* Quick Sort思想,返回left
+
 Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_ruan.html)
 * O(m*n) 建立克隆矩阵 放0
 * O(m+n) 对行和列建立两个boolean数组，一旦扫到0就标记该行列boolean为
