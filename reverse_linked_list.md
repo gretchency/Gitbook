@@ -16,6 +16,29 @@
 
 翻转从m到n
 
+二刷
+* 先存一下mNode
+* preM和prev相连
+* mNode和curr相连
+
+```java
+        ListNode prev = null;
+        ListNode mNode = preM.next;
+        ListNode curr = mNode;
+        while (m <= n) {
+            ListNode tmp = curr.next;
+            curr.next =  prev;
+            prev = curr;
+            curr = tmp;
+            m++;
+        }
+        
+        preM.next = prev;
+        mNode.next = curr;
+        
+        return dummy.next;
+```
+
 
 注意最后接上首尾！！
 
