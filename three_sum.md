@@ -3,9 +3,10 @@
 http://www.lintcode.com/en/problem/3sum/
 
 二刷的坑
+* 先sort
 * for loop 的length - 2
 * 跳过重复
-* 找到一个sum后，start++, end-- 此时两个while判断是否重复
+* 找到一个sum后，```left++```, ```right--``` 此时两个while判断是否重复, ```right``` 和 ```right + 1```比
 
 
 Sort 整个array
