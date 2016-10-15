@@ -11,3 +11,11 @@
 
 
 ![](Screen Shot 2016-10-11 at 10.15.46 AM.png)
+
+During this summer, I worked with a local Consulting Company to develop a "Smart Survey" web platform for them. As you know, normal survey contains few data value since survey takers just want to finish it as soon as possible, and taking survey is not fun at all.
+
+For our platform, we have user-end and consultant-end. For users when they are taking surveys, we tried to do gamification on the user interface, we have a progress bar keeps going up if they type more words for a question, also, we keeps showing hints of "how many people they beat" in the site, which encourages them to type more words.
+
+After we collect enough data, we tried to use NLP for analyzing the survey. We generate key terms by calculating TF-IDF scores, also we have our own algorithms to define whether the key term is positive or negative. For example "negative salary" may indicate that the user is not satisfied with his salary now. This saves great time for the consultants because they do not need to read the whole survey to get the idea, we will provide the information to them. We also utilized IBM watson api to do tone and emotion analysis for the consultants. Our client is impressed by our work and they are using the platform now.
+
+That's the project that I am proud of!
