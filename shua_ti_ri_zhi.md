@@ -218,6 +218,11 @@ Convert Sorted Array to Binary Search Tree
 * 运用dummy和curr node往下copy
 * Map处理映射关系，先copy链表元素再copy Random指针指向元素，每次copy前在map里判断是否已经生成，避免出现重复节点
 
+Sort List
+* MergeSort
+* 注意先判断head是否只有一个节点
+* merge里面判断lList或者rList是否没走完完用if， while会死循环！
+
 
 
 
