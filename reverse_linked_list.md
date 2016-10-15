@@ -23,8 +23,10 @@
 
 ```java
         ListNode prev = null;
+        //保存mNode
         ListNode mNode = preM.next;
         ListNode curr = mNode;
+        //这是m <= n 找例子体会
         while (m <= n) {
             ListNode tmp = curr.next;
             curr.next =  prev;
