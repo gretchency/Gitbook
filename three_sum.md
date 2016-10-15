@@ -85,3 +85,39 @@ public class Solution {
     }
 }
 ```
+
+HashSet + 2Sum
+```java
+public class Solution {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+
+        if (nums == null || nums.length < 3) return res;
+        
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i > 0 && nums[i - 1] == nums[i]) continue;
+            int target = 0 - nums[i];
+            
+            //Map<Integer, Integer> map = new HashMap<>();
+            Set<Integer> set = new HashSet<>();
+            
+            for (int j = i + 1; j < nums.length; j++) {
+                if (j > 1 && nums[j - 1] == nums[j]) continue;
+                int num = target - nums[j];
+                if (set.contains(num)) {
+                    List<Integer> list = new ArrayList<>();
+                    list.add(nums[i]);
+                    list.add(num);
+                    list.add(nums[j]);
+                    res.add(list);
+                } else {
+                    set.add(nums[j]);
+                }
+            }
+        }
+        
+        return res;
+    }
+}
+```
