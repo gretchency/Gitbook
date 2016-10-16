@@ -17,15 +17,14 @@ public int ladderLength(String start, String end, Set<String> dict) {
         }
         
         
-        //注意先把start end 加入dict 才能get到他的next word
-        dict.add(start);
+        //注意先把end 加入dict 才可能get到end word
         dict.add(end);
         
         
         HashSet<String> set = new HashSet<String>();
         Queue<String> q = new LinkedList<String>();
         
-        
+        //加入start word
         set.add(start);
         q.offer(start);
         
