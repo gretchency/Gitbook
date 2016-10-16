@@ -302,8 +302,6 @@ Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_rua
 **Merge k Sorted Lists & Merge k sorted array** [leet](https://leetcode.com/problems/merge-k-sorted-lists/) [link](https://gretchency.gitbooks.io/leetcode/content/merge_k_sorted_linkedlist.html)
 * 注意List里面可能有null节点，此时要跳过
 
-
-
 **Top K Frequent Elements** [leet](https://leetcode.com/problems/top-k-frequent-elements/)
 * 取pq的最小值和新的比较
 * HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
