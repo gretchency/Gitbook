@@ -16,6 +16,7 @@ http://blog.csdn.net/yutianzuijin/article/details/11499917
         if (length % 2 == 1) {
             return findKth(A, 0, B, 0, length / 2 + 1);
         } else {
+            //这里要除以2.0来变成double!
             return (findKth(A, 0, B, 0, length / 2) + findKth (A, 0, B, 0, length / 2 + 1)) / 2.0;
         }
         
@@ -23,29 +24,30 @@ http://blog.csdn.net/yutianzuijin/article/details/11499917
     }
     
     private int findKth(int[] A, int A_start, int[] B, int B_start, int k) {
-        //A全舍弃了
+        //A全舍弃了 找B的第k个点
         if (A_start >= A.length) {
             return B[B_start + k - 1];
         }
         
         
-        //B全舍弃了
+        //B全舍弃了 找A的第k点
         if (B_start >= B.length) {
             return A[A_start + k - 1];
         }
         
-        //找第一个点
+        //return 条件 找第一个点
         if (k == 1) {
             return Math.min(A[A_start], B[B_start]);
         }
         
-        int A_key;
-        int B_key;
+        int A_key = 0;
+        int B_key = 0;
         
         //找到A的k / 2点
         if ((A_start + k / 2 - 1) < A.length) {
             A_key = A[A_start + k / 2 - 1];
         } else {
+            //不舍弃A
             A_key = Integer.MAX_VALUE;
         }
         
@@ -53,6 +55,7 @@ http://blog.csdn.net/yutianzuijin/article/details/11499917
         if ((B_start + k / 2 - 1) < B.length) {
             B_key = B[B_start + k / 2 - 1];
         } else {
+            //不舍弃B
             B_key = Integer.MAX_VALUE;
         }
         
