@@ -32,9 +32,10 @@ http://www.lintcode.com/en/problem/largest-rectangle-in-histogram/
             }
             
             //当curt比递增栈最大值小
-            while (!stack.isEmpty() && curt <= height[stack.peek()]) {
+            while (!stack.isEmpty() && curt < height[stack.peek()]) {
                 int h = height[stack.pop()];
                 int w;
+                //第一个或者最后一个
                 if (stack.isEmpty()) {
                     w = i;
                 } else {
