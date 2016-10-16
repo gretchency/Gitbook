@@ -5,10 +5,15 @@ http://www.lintcode.com/en/problem/lru-cache/
 分析： 序列： 从中间删除一个数 再append到尾巴上 ==> lineked list
 HashMap + LinkedList
 
+二刷
+* 根据题意要存放node,每个node都有key, val，所以根据此建立node class
+* 由于node删除操作要知道前后的点，所以用doubly linked list
+* 注意capacity满了以后 不仅要删除第一个node 还要删除map的对应node!
+
 ```java
 public class LRUCache {
     
-    private class Node {
+    private static class Node {
         private int key;
         private int value;
         private Node prev;
@@ -17,9 +22,6 @@ public class LRUCache {
         public Node(int key, int value) {
             this.key = key;
             this.value = value;
-            
-            prev = null;
-            next = null;
         }
     }
     
