@@ -311,6 +311,13 @@ Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_rua
 Rehashing [leet](http://www.lintcode.com/en/problem/rehashing/)
 * 注意在rehashing时候要考虑新table是否已经有数，已经有数的情况下用dummy node遍历到末尾再接上。
 
+***LRU CACHE*** [LINK](https://gretchency.gitbooks.io/leetcode/content/lru_cache.html)
+* 根据题意要存放node,每个node都有key, val，所以根据此建立node class
+* 由于node删除操作要知道前后的点，所以用doubly linked list
+* 注意capacity满了以后 不仅要删除第一个node 还要删除map的对应node!
+* set时候如果Cache里已经有key，要更新value!
+
+
 
 ### Graph & Search
 **Palindrome Partitioning**
