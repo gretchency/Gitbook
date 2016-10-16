@@ -3,7 +3,8 @@
 http://www.lintcode.com/en/problem/word-ladder/#
 
 ![](Screen Shot 2016-09-10 at 10.26.57 AM.png)
-
+二刷
+* 在getNextWords时候换字符时候跪了，内外循环搞反。还是写个helper函数清楚。
 
 ```java
 public int ladderLength(String start, String end, Set<String> dict) {
