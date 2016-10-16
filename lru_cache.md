@@ -9,10 +9,11 @@ HashMap + LinkedList
 * 根据题意要存放node,每个node都有key, val，所以根据此建立node class
 * 由于node删除操作要知道前后的点，所以用doubly linked list
 * 注意capacity满了以后 不仅要删除第一个node 还要删除map的对应node!
+* set时候如果Cache里已经有key，要更新value!
 
 ```java
 public class LRUCache {
-    
+    //可以无视outer class独立存在
     private static class Node {
         private int key;
         private int value;
@@ -32,6 +33,7 @@ public class LRUCache {
     
     public LRUCache(int capacity) {
         this.capacity = capacity;
+        //Construct里接好head和tail
         head.next = tail;
         tail.prev = head;
     }
@@ -50,7 +52,7 @@ public class LRUCache {
         //move to tail
         moveToTail(curr);
         
-        return map.get(key).value;
+        return curr.value;
     }
     
     public void set(int key, int value) {
