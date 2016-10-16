@@ -7,6 +7,14 @@ http://www.lintcode.com/en/problem/word-ladder/#
 * 在getNextWords时候换字符时候跪了，内外循环搞反。还是写个helper函数清楚。
 * 由于set一开始就加入了start word,所以getNextWords时候可以不用判断和start word相同String的情况
 
+
+# **时间复杂度**：
+
+对于每个节点构图需要的时间复杂度是O(26*L)，BFS不重复地至多走过n个节点，故算法复杂度O(26*L*n)
+
+
+
+
 ```java
 public int ladderLength(String start, String end, Set<String> dict) {
         // BFS
