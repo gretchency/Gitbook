@@ -323,6 +323,11 @@ Ugly Number ||
 * PQ + HashSet 注意要用Long防止溢出！
 * pq用来排序,set用来判断是否重复
 
+Largest Rectangle in Histogram	
+* 遍历全部高度， 找每个数左右第一个比他小的数在哪
+* 维护一个递增栈，发现比栈顶小的时候就计算面积
+* stack存index,如果stack直接存高度会丢失index信息
+
 
 
 ### Graph & Search
