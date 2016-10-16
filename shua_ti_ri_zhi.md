@@ -275,6 +275,12 @@ if (Math.abs(sum - target) < Math.abs(min - target)) {
 Partition Array & Sort letters by Case
 * Quick Sort思想,返回left
 
+***Median of Two Sorted Array*** [link](https://gretchency.gitbooks.io/leetcode/content/median_of_two_sorted_arrays.html)
+* 转换为找第k大个数，再转换为切割掉k/2个数，找k-k/2个数，找到找第一个数
+* 切割靠比较A,B数字各自第k/2个数，哪个小就把哪个的左半边割掉，因为这半边肯定没有第k个数
+* 如果不够k/2个数，肯定割另一块数组的前k/2个数
+* base case是k只剩1，比较第一个点就行
+
 
 Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_ruan.html)
 * O(m*n) 建立克隆矩阵 放0
