@@ -272,8 +272,9 @@ if (Math.abs(sum - target) < Math.abs(min - target)) {
          }
 ```
 
-Partition Array
+Partition Array & Sort letters by Case
 * Quick Sort思想,返回left
+
 
 Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_ruan.html)
 * O(m*n) 建立克隆矩阵 放0
