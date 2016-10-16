@@ -7,6 +7,47 @@ It should support push, pop and min operation all in O(1) cost.
 
 维护一个minStack 在push第一个stack的时候把他的大小关系存进minStack 最小的放最上面
 
+二刷
+* minStack记录每层stack的最小值， 同时pop()出去
+
+```java
+public class MinStack {
+
+    Stack<Integer> stack = new Stack<>();
+    Stack<Integer> minStack = new Stack<>();
+    
+    /** initialize your data structure here. */
+    public MinStack() {
+        
+    }
+    
+    public void push(int x) {
+        stack.push(x);
+        if (minStack.isEmpty()) {
+            minStack.push(x);
+        } else {
+            if (minStack.peek() < x) {
+                minStack.push(minStack.peek());
+            } else {
+                minStack.push(x);
+            }
+        }
+    }
+    
+    public void pop() {
+        stack.pop();
+        minStack.pop();
+    }
+    
+    public int top() {
+        return stack.peek();
+    }
+    
+    public int getMin() {
+        return minStack.peek();
+    }
+}
+```
 ```java
 public class MinStack {
     
