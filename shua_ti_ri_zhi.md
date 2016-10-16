@@ -315,6 +315,10 @@ Rehashing [leet](http://www.lintcode.com/en/problem/rehashing/)
 * 注意capacity满了以后 不仅要删除第一个node 还要删除map的对应node!
 * set时候如果Cache里已经有key，要更新value!
 
+Implement Queue By two stacks
+* 一个用来push 一个用来pop peek, 
+* LILO + LILO = FIFO 把s1的所有元素加入s2，s2的顺序就是FIFO的
+
 
 
 ### Graph & Search
