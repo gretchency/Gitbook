@@ -105,6 +105,7 @@
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
    * [Permutation DFS](permutation_bfs.md)
    * DFS
+       * Word Search (2D)
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
