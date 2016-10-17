@@ -20,6 +20,7 @@ Select (Select Distinct Salary From Employee Order By Salary DESC limit 1 offset
 
 ---
 *Delete Duplicate Email*
+* 注意要判断大小保留最前的，否则全删掉了
 ```sql
 Delete p2 from Person as p1
 join Person as p2 ON p1.Email = p2.Email
