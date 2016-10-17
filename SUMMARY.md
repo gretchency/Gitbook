@@ -107,6 +107,7 @@
        * [Restore IP Addresses](restore_ip_addresses.md)
        * [Permutation DFS](permutation_bfs.md)
        * [Word Search (2D)](word_search_2d.md)
+       * N-Queen
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
