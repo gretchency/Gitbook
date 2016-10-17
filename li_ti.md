@@ -28,6 +28,7 @@ Where p2.Id >p1.Id;
 ```
 ---
 *Rank Scores*
+* 找每一个score比自己大的score有几个，因为没有比自己大的话就是1，所以要>=,同时自己只能算一次,用```Count(DISTINCT)```
 ```sql
 Select Score, (Select Count(DISTINCT Score) from Scores WHERE Score >= s.Score) as Rank 
 From Scores as s
