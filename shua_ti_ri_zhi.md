@@ -11,7 +11,7 @@
 **Implement strStr()** [leet](https://leetcode.com/problems/implement-strstr/)
 
 
-
+---
 
 ### Binary Search
 
@@ -57,7 +57,7 @@ Find Minimum in Rotated Sorted Array
 
 
 
-
+---
 
 
 ### Binary Tree
@@ -113,7 +113,7 @@ Balanced Binary Tree
 
 
 
-
+---
 
 
 
@@ -183,6 +183,7 @@ Word Break
 * 序列动归：ispal(s(j~i-1)) dp[i] = min(dp[i], dp[j] + 1)
 * 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
 
+---
 
 ### LinkedList
 
@@ -223,7 +224,7 @@ Reverse Linked List II
 * preM和prev连首部，mNode和curr连尾部
 
 
-
+---
 
 
 ### Arrays & Numbers
@@ -283,7 +284,7 @@ Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_rua
 
 
 
-
+---
 
 
 ### Data Structure
@@ -317,7 +318,7 @@ Largest Rectangle in Histogram
 * 维护一个递增栈，发现比栈顶小的时候就计算面积
 * stack存index,如果stack直接存高度会丢失index信息
 
-
+---
 
 ### Graph & Search
 **Palindrome Partitioning**
@@ -397,7 +398,10 @@ Combination Sum I II III
 
 
 
+---
+**Two Pointer**
 
+Minimum Window SubString [link](https://gretchency.gitbooks.io/leetcode/content/minwindow.html)
 
 
 
