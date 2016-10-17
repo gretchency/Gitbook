@@ -8,6 +8,12 @@ Given a 2D board and a word, find if the word exists in the grid.
 2. 不用visited数组，直接标记当前字母为"#"，最后返回时再标记回来
 
 
+### 时间复杂度：
+
+从一个字符矩阵中搜索某个字符串是否存在，可以向四个方向延伸。那么dfs和bfs的时间复杂度是指数级别的，大概是4的字符串长度次方，因为每次都可能走四个方向
+
+Time : m*n*4^(k-1). 也就是m*n*4^k
+
 ```java
 public class Solution {
     public boolean exist(char[][] board, String word) {
