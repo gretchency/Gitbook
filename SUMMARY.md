@@ -105,7 +105,7 @@
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
        * [Restore IP Addresses](restore_ip_addresses.md)
        * [Permutation DFS](permutation_bfs.md)
-       * Word Search (2D)
+       * [Word Search (2D)](word_search_2d.md)
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
