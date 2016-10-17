@@ -1,4 +1,12 @@
 # Word Search (2D)
+Given a 2D board and a word, find if the word exists in the grid.
+* 先找到满足第一个字母的点，然后从这个点上下左右DFS
+* 注意要记录访问过的点，return时候再变回来
+
+优化方案
+1. String变成char[]来处理
+2. 不用visited数组，直接标记当前字母为"#"，最后返回时再标记回来
+
 
 ```java
 public class Solution {
