@@ -14,7 +14,7 @@
    * [IBM](ibm.md)
    * [大摩](da_mo.md)
 * [Database](database.md)
-   * 例题
+   * [例题](li_ti.md)
 * [Sorting](sorting.md)
 * [Behavior Questions](behavior_questions.md)
 * [SnapChat](snapchat.md)
