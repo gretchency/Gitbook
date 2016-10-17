@@ -15,7 +15,8 @@ Select (Select Distinct Salary From Employee Order By Salary DESC limit 1 offset
 ```
 
 * offset会把第一行的数据exclude掉，limit: x, 所以返回往下的x条数据。
-* 第四高 ```limit 1 offset 3```
+* 第四高 ```limit 1 offset 3``` 或者```limit 3,1```
+* 这里```limit 3,1```代表```LIMIT offset, count;```
 * 在外围再放一个Select 可以在没有第二高的时候输出Null
 
 ---
@@ -28,7 +29,7 @@ Where p2.Id >p1.Id;
 ```
 ---
 *Rank Scores*
-* 找每一个score比自己大的score有几个，因为没有比自己大的话就是1，所以要>=,同时自己只能算一次,用```Count(DISTINCT)```
+* 找每一个score比自己大的score有几个，因为没有比自己大的话就是1，所以要>=,同时相同的数只能算一次,用```Count(DISTINCT)```
 ```sql
 Select Score, (Select Count(DISTINCT Score) from Scores WHERE Score >= s.Score) as Rank 
 From Scores as s
