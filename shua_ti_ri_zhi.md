@@ -388,6 +388,12 @@ Combination Sum I II III
 * 先找到满足第一个字母的点，然后从这个点上下左右DFS
 * 注意要记录访问过的点，return时候再变回来
 
+N-Queen
+* 分为dfs,验证可行，画棋盘 三个主要函数
+* 只需要一个int array存放col位置，其index就是row位置
+* 对角线用```Math.abs```
+* 
+
 
 
 
