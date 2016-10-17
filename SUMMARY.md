@@ -104,7 +104,7 @@
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
    * [Permutation DFS](permutation_bfs.md)
-   * DFS
+   * [DFS](dfs.md)
        * Word Search (2D)
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
