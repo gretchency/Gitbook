@@ -389,6 +389,7 @@ Combination Sum I II III
 * 注意要记录访问过的点，return时候再变回来
 
 N-Queen
+* 大体思想就是在每一行放一粒棋子，然后dfs验证可行性
 * 分为dfs,验证可行，画棋盘 三个主要函数
 * 只需要一个int array存放col位置，其index就是row位置
 * 对角线用```Math.abs```
