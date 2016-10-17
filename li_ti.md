@@ -26,3 +26,10 @@ Delete p2 from Person as p1
 join Person as p2 ON p1.Email = p2.Email
 Where p2.Id >p1.Id;
 ```
+---
+*Rank Scores*
+```sql
+Select Score, (Select Count(DISTINCT Score) from Scores WHERE Score >= s.Score) as Rank 
+From Scores as s
+ORDER BY Score DESC
+```
