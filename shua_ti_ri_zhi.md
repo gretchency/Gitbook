@@ -392,7 +392,7 @@ N-Queen
 * 分为dfs,验证可行，画棋盘 三个主要函数
 * 只需要一个int array存放col位置，其index就是row位置
 * 对角线用```Math.abs```
-* 
+
 
 
 
