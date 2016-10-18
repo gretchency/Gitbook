@@ -3,6 +3,36 @@
 http://www.lintcode.com/en/problem/word-ladder/#
 
 ![](Screen Shot 2016-09-10 at 10.26.57 AM.png)
+三刷
+* 可以用个map存每个单词到start word的最短距离信息, 同时map也可以完成去重工作
+* 好处是不用for每一层来控制计算length
+```java
+    public int ladderLength(String beginWord, String endWord, Set<String> wordList) {
+        if (wordList == null || wordList.size() == 0) return 0;
+        
+        wordList.add(endWord);
+        
+        Queue<String> q = new LinkedList<>();
+        //map用来去重和存距离信息
+        Map<String, Integer> map = new HashMap<>();
+        q.offer(beginWord);
+        map.put(beginWord, 1);
+        while (!q.isEmpty()) {
+            String curr = q.poll();
+            int nextD = map.get(curr) + 1;
+            for (String nextWord: getNextWords(curr, wordList)) {
+                if (map.containsKey(nextWord)) continue;
+                if (nextWord.equals(endWord)) return nextD;
+                
+                q.offer(nextWord);
+                map.put(nextWord, nextD);
+            }
+        }
+        return 0;
+    }
+```
+
+
 二刷
 * 在getNextWords时候换字符时候跪了，内外循环搞反。还是写个helper函数清楚。
 * 由于set一开始就加入了start word,所以getNextWords时候可以不用判断和start word相同String的情况
