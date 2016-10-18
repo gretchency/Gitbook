@@ -110,6 +110,7 @@
        * [Word Search (2D)](word_search_2d.md)
        * [N-Queen I II](n-queen.md)
    * BFS
+       * Walls And Gates
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
