@@ -99,7 +99,7 @@
 * [Graph & Search](graph_&_search.md)
    * [Clone Graph](clone_graph.md)
    * [Topological Sorting](topological_sorting.md)
-   * [WordLadder BFS (ii BFS + DFS)](wordladder.md)
+   * [Word Ladder BFS (ii BFS + DFS)](wordladder.md)
    * [Course Schedule](course_schedule.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
