@@ -1,7 +1,9 @@
 # BFS
 
+![](http://images.cnitblog.com/blog/478779/201309/15211654-c4a145b912674952ba260946413aeba7.png)
 
 BFS套路
+
 
 * HashMap记录最短距离和去重
 ```java
@@ -29,3 +31,5 @@ public class BFS {
     }
 }
 ```
+
+参考：http://www.cnblogs.com/developerY/p/3323264.html
