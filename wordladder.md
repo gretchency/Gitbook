@@ -3,6 +3,9 @@
 http://www.lintcode.com/en/problem/word-ladder/#
 
 ![](Screen Shot 2016-09-10 at 10.26.57 AM.png)
+---
+
+
 三刷
 * 可以用个map存每个单词到start word的最短距离信息, 同时map也可以完成去重工作
 * 好处是不用for每一层来控制计算length
@@ -31,7 +34,7 @@ http://www.lintcode.com/en/problem/word-ladder/#
         return 0;
     }
 ```
-
+---
 
 二刷
 * 在getNextWords时候换字符时候跪了，内外循环搞反。还是写个helper函数清楚。
