@@ -111,7 +111,7 @@
        * [N-Queen I II](n-queen.md)
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
-       * Dijkstra算法实现
+       * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
 * [Data Structure基础知识](data_structure_.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
