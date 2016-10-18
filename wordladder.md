@@ -1,4 +1,4 @@
-# WordLadder
+# Word Ladder
 
 http://www.lintcode.com/en/problem/word-ladder/#
 
