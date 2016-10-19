@@ -1,5 +1,6 @@
 # DetectCycle
 
+分析： [link](https://gretchency.gitbooks.io/leetcode/content/detect_cycle_in_a_directed_graph.html)
 ```java
 //经典有向图的环查找 dfs
 
