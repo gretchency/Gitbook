@@ -5,6 +5,8 @@
 * 可以用两个HashSet,一个Visiting表示在栈上递归，一个Visited表示已经递归完这个节点，某一节点结束递归调用后将其从visiting中移除，并将其加入visited set.
 
 ```java
+
+
 class Snap {
     List<Snap> next = new ArrayList<>();
 
@@ -32,5 +34,19 @@ class Snap {
         
         return false;
     }
+
+public class DetectCircle {
+    public static void main(String[] args) {
+        Snap s1 = new Snap(), s2 = new Snap(), s3 = new Snap(), s4 = new Snap(), s5 = new Snap(), s6 = new Snap();
+        s1.next.add(s5);
+        s1.next.add(s2);
+        s2.next.add(s3);
+        s2.next.add(s5);
+        s5.next.add(s4);
+        s5.next.add(s6);
+
+        System.out.println(s1.hasCycle());
+    }
 }
 ```
+
