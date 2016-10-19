@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Behavior Questions](behavior_questions.md)
 * [刷题日志](shua_ti_ri_zhi.md)
 * [待做题](dai_zuo_ti.md)
 * [Java基础](javaji_chu.md)
@@ -16,7 +17,6 @@
 * [Database](database.md)
    * [例题](li_ti.md)
 * [Sorting](sorting.md)
-* [Behavior Questions](behavior_questions.md)
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
