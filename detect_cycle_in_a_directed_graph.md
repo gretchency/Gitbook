@@ -4,9 +4,10 @@
 
 * 可以用两个HashSet,一个Visiting表示在栈上递归，一个Visited表示已经递归完这个节点，某一节点结束递归调用后将其从visiting中移除，并将其加入visited set.
 
-![](Screen Shot 2016-10-19 at 9.41.26 AM.png)
+![](Screen Shot 2016-10-19 at 9.43.22 AM.png)
 
-这张图
+* 这张图的情况下先调用s1->s5的路线，而后s5被标记为visited,所以当s2->s5的时候不会误认为环存在。
+
 ```java
 class Snap {
     List<Snap> next = new ArrayList<>();
