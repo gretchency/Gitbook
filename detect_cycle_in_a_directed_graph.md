@@ -4,9 +4,10 @@
 
 * 可以用两个HashSet,一个Visiting表示在栈上递归，一个Visited表示已经递归完这个节点，某一节点结束递归调用后将其从visiting中移除，并将其加入visited set.
 
+![](Screen Shot 2016-10-19 at 9.41.26 AM.png)
+
+这张图
 ```java
-
-
 class Snap {
     List<Snap> next = new ArrayList<>();
 
