@@ -61,7 +61,7 @@
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
        * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
-   * Detect Circle In a directed graph
+   * Detect Cycle In a directed graph
 * Bit Manipulation
    * [Bit number changes](bit_number_changes.md)
 * [Linked List](linked_list.md)
