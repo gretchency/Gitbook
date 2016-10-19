@@ -9,38 +9,37 @@ When you pass array to this method, you **pass it by value** - that is, you make
 
 
 ```java
-public void sortIntegers2(int[] A) {
+   public void sortIntegers(int[] A) {
         // Write your code here
         int[] B = mergeSort(A);
         for (int i = 0; i < A.length; i++) {
             A[i] = B[i];
         }
-        //A = B.clone();
-        //
     }
     
-    public int[] mergeSort(int[] unsorted) {
-        if (unsorted.length <= 1) {
-            return unsorted;
+    public static int[] sort(int[] A) {
+        if (A.length <= 1) {
+            return A;
         }
+        return mergeSort(A, 0, A.length - 1);
+    }
+    
+    public static int[] mergeSort(int[] A, int start, int end) {
+        //BASE CASE不能忘！
+        if (start == end) return new int[]{A[start]};
         
-        int mid = unsorted.length / 2;
-        int[] left = new int[mid];
-        System.arraycopy(unsorted, 0, left, 0, mid);
-        int[] right = new int[unsorted.length - mid];
-        System.arraycopy(unsorted, mid, right, 0, unsorted.length - mid);
-        
-        left = mergeSort(left);
-        right = mergeSort(right);
+        int mid = start + (end - start) / 2;
+        int[] left = mergeSort(A, start, mid);
+        int[] right = mergeSort(A, mid + 1, end);
         
         return merge(left, right);
     }
-    
-    public int[] merge(int[] left, int[] right) {
+
+    public static int[] merge(int[] left, int[] right) {
         int indexLeft = 0;
         int indexRight = 0;
         int index = 0;
-        
+
         int[] merged = new int[left.length + right.length];
         while (indexLeft < left.length && indexRight < right.length) {
             if (left[indexLeft] < right[indexRight]) {
@@ -52,7 +51,7 @@ public void sortIntegers2(int[] A) {
             }
             index++;
         }
-        
+
         if (indexLeft < left.length) {
             for (int i = indexLeft; i < left.length; i++) {
                 merged[index++] = left[i];
@@ -62,7 +61,7 @@ public void sortIntegers2(int[] A) {
                 merged[index++] = right[i];
             }
         }
-        
+
         return merged;
     }
 ```
