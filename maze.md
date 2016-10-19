@@ -14,6 +14,12 @@
 Follow Up:打印路径，记录路径组数。
 ```
 
+* DFS求解，visited数组标记访问过的点，因为只要求一条路径，所以递归完后visited不用再标记回false.
+* 打印路径：一旦找到可行的点加入path arraylist,由于递归是最后的先加入，打印path时候要reverse一下
+* 
+### 时间复杂度是遍历整个矩阵O(mn) 空间上boolea数组O(mn).
+
+
 
 
 ```java
@@ -79,3 +85,4 @@ public class Maze {
     
 }
 ```
+
