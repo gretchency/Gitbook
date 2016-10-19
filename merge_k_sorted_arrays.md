@@ -1,5 +1,6 @@
 # Merge K Sorted Arrays
-
+* Lattice面到了 自己居然用了naive的（nklog(nk)）解法
+* 
 ```java
 public class MergeKArrays {
     public static int[] mergeK(List<int[]> lists) {
