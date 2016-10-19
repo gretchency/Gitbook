@@ -35,3 +35,14 @@ Select Score, (Select Count(DISTINCT Score) from Scores WHERE Score >= s.Score) 
 From Scores as s
 ORDER BY Score DESC
 ```
+---
+Calculate Probablity
+
+```sql
+SELECT ShipperName, Count(OrderID) * 1.0 / (Select Count(*) from Orders) as prob
+From Shippers as s
+JOIN Orders as o ON s.ShipperID = o.ShipperID
+Group By ShipperName;
+```
+
+![](Screen Shot 2016-10-19 at 4.09.10 PM.png)
