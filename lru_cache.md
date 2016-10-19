@@ -58,6 +58,7 @@ public class LRUCache {
     public void set(int key, int value) {
         //如果已经在cache了 更新value
         if (get(key) != -1) {
+            //更新的是node的value
             map.get(key).value = value;
             return;
         }
