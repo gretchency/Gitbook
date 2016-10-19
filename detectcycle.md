@@ -22,9 +22,9 @@ class Snap {
     List<Snap> next = new ArrayList<>();;
 
     boolean hasCycle() {
-        //visiting 记录前检查哪个点
+        //visiting 记录递归调用中的点
         Set<Snap> visiting = new HashSet<>();
-        //visited 表示已经检查过的点
+        //visited 表示已经递归调用完成的点
         Set<Snap> visited = new HashSet<>();
         return dfs(this, visiting, visited);
     }
