@@ -53,6 +53,7 @@
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
    * [DFS](dfs.md)
+       * [Detect Cycle In a directed graph](detect_cycle_in_a_directed_graph.md)
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
        * [Restore IP Addresses](restore_ip_addresses.md)
        * [Permutation DFS](permutation_bfs.md)
@@ -61,7 +62,6 @@
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
        * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
-   * [Detect Cycle In a directed graph](detect_cycle_in_a_directed_graph.md)
 * Bit Manipulation
    * [Bit number changes](bit_number_changes.md)
 * [Linked List](linked_list.md)
