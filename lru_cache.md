@@ -71,7 +71,7 @@ public class LRUCache {
             head.next = head.next.next;
             head.next.prev = head;
         }
-        
+        //建立新Node
         Node node = new Node(key, value);
         map.put(key, node);
         moveToTail(node);
