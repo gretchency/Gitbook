@@ -95,7 +95,7 @@
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
-   * Merge K Sorted Arrays
+   * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
    * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
    * [Maximum Subarray](maximum_subarray.md)
    * [Two Sum](two_sum.md)
