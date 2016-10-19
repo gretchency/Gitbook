@@ -1,6 +1,6 @@
 # Merge K Sorted Arrays
-* Lattice面到了 自己居然用了naive的（nklog(nk)）解法
-* 
+* Lattice面到了 自己居然用了naive的（Nlog(N)）解法
+* 分治解法O(Nlog(k))：一共log(k)层，每层都要比较N个数。
 ```java
 public class MergeKArrays {
     public static int[] mergeK(List<int[]> lists) {
