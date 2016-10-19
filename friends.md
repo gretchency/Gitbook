@@ -1,5 +1,6 @@
 # Friends
 
+* 如果要控制距离的话可以用个dist，然后bfs时候for loop每层的size控制距离
 ```java
 public class Friends {
 
