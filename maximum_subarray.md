@@ -98,14 +98,10 @@ http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/#
 
         int min = Integer.MAX_VALUE;  //just remember the smallest price
         int profit = 0;
-        for (int i : prices) {
-            if (i < min) {
-                min = i;
-            }
-            
-            if ((i - min) > profit) {
-                profit = i - min;
-            }
+        
+        for(int price: prices) {
+          min = Math.min(min, price);
+          profit = Math.max(profit, price - min);
         }
 
         return profit;
