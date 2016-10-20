@@ -88,7 +88,7 @@ http://www.lintcode.com/en/problem/best-time-to-buy-and-sell-stock/#
 ```
 
 解法二：
-
+记录波谷，更新最大差值
 ```java
     public int maxProfit(int[] prices) {
         // 这种方法是for 其中一个数， 然后让另外的变量最优
