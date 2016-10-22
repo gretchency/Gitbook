@@ -83,7 +83,7 @@ public class Solution {
         }
      
         //track visited courses
-        boolean[] visited = new boolean[numCourses];
+        int[] visited = new int[numCourses];
      
         // use the map to store what courses depend on a course 
         HashMap<Integer,ArrayList<Integer>> map = new HashMap<Integer,ArrayList<Integer>>();
@@ -105,12 +105,15 @@ public class Solution {
         return true;
     }
      
-    private boolean canFinishDFS(HashMap<Integer,ArrayList<Integer>> map, boolean[] visited, int i){
-        if(visited[i]) 
+    private boolean canFinishDFS(HashMap<Integer,ArrayList<Integer>> map, int[] visited, int i){
+        if(visited[i] == 1) 
             return false;
+            
+        if(visited[i] == -1) 
+            return true;
         
      
-        visited[i]= true;
+        visited[i]= 1;
         if(map.containsKey(i)){
             for(int j: map.get(i)){
                 if(!canFinishDFS(map, visited, j)) 
@@ -118,7 +121,7 @@ public class Solution {
             }
         }
      
-        visited[i]= false;
+        visited[i]= -1;
      
         return true;
     }
