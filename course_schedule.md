@@ -5,6 +5,10 @@ https://leetcode.com/problems/course-schedule/
 
 我们定义二维数组graph来表示这个有向图，一位数组in来表示每个顶点的入度。我们开始先根据输入来建立这个有向图，并将入度数组也初始化好。然后我们定义一个queue变量，将所有入度为0的点放入队列中，然后开始遍历队列，从graph里遍历其连接的点，每到达一个新节点，将其入度减一，如果此时该点入度为0，则放入队列末尾。直到遍历完队列中所有的值，若此时还有节点的入度不为0，则说明环存在，返回false，反之则返回true。
 
+* 这里-1代表访问过 1代表正在访问 0代表没访问
+* 由于-1表示访问过且走的通的dfs，所以下次访问到他的时候直接return true
+* 但是如果boolean数组的话 只有两种状态 访问中和没访问 所以就不行
+
 ```java
 public boolean canFinish(int numCourses, int[][] prerequisites) {
         int len = prerequisites.length;
