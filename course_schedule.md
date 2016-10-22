@@ -75,6 +75,11 @@ public boolean canFinish(int numCourses, int[][] prerequisites) {
 * 由于-1表示访问过且走的通的dfs，所以下次访问到他的时候直接return true
 * 但是如果boolean数组的话 只有两种状态 访问中和没访问 所以就不行
 
+* 参考
+
+http://www.cnblogs.com/zmyvszk/p/5348786.html
+http://www.jyuan92.com/blog/leetcode-course-schedule-ii/
+
 ```java
 public class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
