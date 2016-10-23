@@ -2,6 +2,8 @@
 
 http://www.lintcode.com/en/problem/copy-list-with-random-pointer/#
 
+* Deep Copy,既要拷贝本身，又要拷贝reference
+* 用Hashmap 记录映射关系
 
 Hashmap O(n)时空
 
@@ -25,8 +27,9 @@ public class Solution {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         RandomListNode dummy = new RandomListNode(0);
         RandomListNode curr = dummy;
-        RandomListNode newNode = null;
+        RandomListNode newNode = dummy;
         while (head != null) {
+            //先copy节点
             if(map.containsKey(head)) {
                 newNode = map.get(head);
             } else {
@@ -34,6 +37,7 @@ public class Solution {
                 map.put(head, newNode);
             }
             
+            //再copy random指向节点
             if (head.random != null) {
                 if (map.containsKey(head.random)) {
                     newNode.random = map.get(head.random);
@@ -54,7 +58,7 @@ public class Solution {
 ```
 
 
-用Hashmap 记录映射关系
+
 
 ```java
     public RandomListNode copyRandomList(RandomListNode head) {
