@@ -1,3 +1,3 @@
 # My Awesome Book
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+仅供本人学习算法数据结构只用，一切引用需要注释请提醒我。
