@@ -29,7 +29,7 @@ Jump Game II
 * 然后逐个比较dp[i]
 * 有的时候dp问题的解决需要找到问题的根源，而不是一味的简单求解
 
-
+---
 
 ### DP II
 **Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
@@ -68,3 +68,5 @@ Word Break
 * 区间动归来省时间 O(n^2)
 * 序列动归：ispal(s(j~i-1)) dp[i] = min(dp[i], dp[j] + 1)
 * 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
+
+---
