@@ -4,7 +4,7 @@
 * [Behavior Questions](behavior_questions.md)
 * [刷题日志](shua_ti_ri_zhi.md)
    * [Binary Search 整合](binary_search_zheng_he.md)
-   * String处理 整合
+   * [String处理 整合](stringchu_li_zheng_he.md)
 * [待做题](dai_zuo_ti.md)
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
