@@ -101,7 +101,8 @@ Balanced Binary Tree
 * Binary Tree的非递归中序遍历分开来写
 * 实例变量curr记录节点位置
 
-Largest BST SubTree
+**Largest BST SubTree**
+
 非常好的一道题目，问题包含了三个block,求最大BST节点个数，求子树节点个数，和判断Valid BST.
 
 递归求解，分为三种状态
