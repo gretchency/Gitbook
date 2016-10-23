@@ -25,8 +25,8 @@ public class Solution {
         Map<RandomListNode, RandomListNode> map = new HashMap<>();
         RandomListNode dummy = new RandomListNode(0);
         RandomListNode curr = dummy;
+        RandomListNode newNode = null;
         while (head != null) {
-            RandomListNode newNode = null;
             if(map.containsKey(head)) {
                 newNode = map.get(head);
             } else {
