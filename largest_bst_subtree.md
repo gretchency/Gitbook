@@ -9,6 +9,11 @@
 2. 遇到了valid bst,返回该tree节点个数（递归求解）
 3. 本身不是valid bst,返回左右子树中最大的valid bst节点个数
 
+
+### 时间复杂度：从下往上遍历整棵数，O(n)
+
+
+
 ```java
 public int largestBST(TreeNode root) {
     if (root == null) return 0;
