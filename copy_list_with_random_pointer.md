@@ -60,40 +60,7 @@ public class Solution {
 
 
 
-```java
-    public RandomListNode copyRandomList(RandomListNode head) {
-        if (head == null) return null;
-        
-        HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
-        
-        RandomListNode dummy = new RandomListNode(0);
-        RandomListNode pre = dummy;
-        RandomListNode newNode = dummy;
-        
-        while (head != null) {
-            if (map.get(head) != null) {
-                newNode = map.get(head);
-            } else {
-                newNode = new RandomListNode(head.label);
-                map.put(head, newNode);
-            }
-            
-            //pre和newNode接上
-            pre.next = newNode;
-            
-            
-            if (head.random != null) {
-                newNode.random = new RandomListNode(head.random.label);
-                map.put(head.random, newNode.random);
-            }
-            
-            pre = newNode;
-            head = head.next;
-        }
-        
-        return dummy.next;
-    }
-```
+
 
 
 巧妙解法 O(1) 空间
