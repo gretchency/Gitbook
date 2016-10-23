@@ -84,6 +84,7 @@
    * [Validate Binary Search Tree](validate_binary_search_tree.md)
    * [Inorder successor in BST](inorder_successor_in_bst.md)
    * [Invert Binary Tree](invert_binary_tree.md)
+   * Largest BST Subtree
 * [Dynamic Programming](dynamic_programming.md)
    * [Climbing Stairs](climbing_stairs.md)
    * [Jump Games I II](jump_games_i_ii.md)
