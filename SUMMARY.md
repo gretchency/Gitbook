@@ -8,7 +8,7 @@
    * [Binary Tree 整合](binary_tree_zheng_he.md)
    * [DP 整合](dp_zheng_he.md)
    * [Linked List 整合](linked_list_zheng_he.md)
-   * Arrays & Nums 整合
+   * [Arrays & Nums 整合](arrays_&_nums_zheng_he.md)
 * [待做题](dai_zuo_ti.md)
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
