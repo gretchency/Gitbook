@@ -7,7 +7,7 @@
    * [String处理 整合](stringchu_li_zheng_he.md)
    * [Binary Tree 整合](binary_tree_zheng_he.md)
    * [DP 整合](dp_zheng_he.md)
-   * Linked List 整合
+   * [Linked List 整合](linked_list_zheng_he.md)
 * [待做题](dai_zuo_ti.md)
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
