@@ -28,6 +28,9 @@ public class SwapAandB {
 ---
 
 ### 不能用加号的加法
+http://blog.csdn.net/pwiling/article/details/51842393
+
+* 我们可以基于以上的真值表用&和^运算来实现加法，每一位的^运算得到每一位上的不加进位的和，用&运算得到每一位的进位。
 
 ```java
 public int getSum(int a, int b) {
