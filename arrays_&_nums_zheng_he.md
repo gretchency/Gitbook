@@ -42,8 +42,13 @@ Partition Array & Sort letters by Case
 * 如果不够k/2个数，肯定割另一块数组的前k/2个数
 * base case是k只剩1，比较第一个点就行
 
+---
+
 
 Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_ruan.html)
 * O(m*n) 建立克隆矩阵 放0
 * O(m+n) 对行和列建立两个boolean数组，一旦扫到0就标记该行列boolean为
 * O(1) 用第0行第0列记录每行每列要不要放0，然后从(1, 1)开始遍历。同时两个boolean变量记录第0行第0列是否要变0。
+
+[Majority Elements](https://gretchency.gitbooks.io/leetcode/content/majority_number.html)
+* 搞一个计数器，让每一个数和其他数pk，还是他就计数器++,不是他就计数器--,最后看还存活下来的数是谁
