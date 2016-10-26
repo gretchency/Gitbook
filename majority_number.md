@@ -26,6 +26,7 @@ public class Solution {
 
 中阶：
 * 搞一个计数器，让每一个数和其他数pk，还是他就计数器++,不是他就计数器--,最后看还存活下来的数是谁
+* O(n) , O(1)
 
 ```java
 public class Solution {
