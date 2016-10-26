@@ -75,6 +75,7 @@
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
 * String
    * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
+   * ZigZag Conversion
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
