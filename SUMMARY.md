@@ -81,7 +81,7 @@
 * [String](string.md)
    * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
    * [ZigZag Conversion](zigzag_conversion.md)
-   * Minimum Window Substring
+   * [Minimum Window Substring](minimum_window_substring.md)
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
