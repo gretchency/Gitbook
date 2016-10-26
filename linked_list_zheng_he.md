@@ -37,7 +37,7 @@ Reverse Linked List II
 * preM和prev连首部，mNode和curr连尾部
 
 ---
-Add Two Numbers [link](https://gretchency.gitbooks.io/leetcode/content/add_two_numbers.html) ***高频***
+[Add Two Numbers](https://gretchency.gitbooks.io/leetcode/content/add_two_numbers.html)  ***高频***
 * 用dummy node 构建新list
 * 维护carry的值
 * 分三种情况：l1,l2都没走完，l1没走完,l2没走完、
