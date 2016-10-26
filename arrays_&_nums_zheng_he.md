@@ -54,5 +54,7 @@ Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_rua
 * 搞一个计数器，让每一个数和其他数pk，还是他就计数器++,不是他就计数器--,最后看还存活下来的数是谁
 
 Plus One
-* 维护Carry从后往前走， 如果到最后一位还有carry,直接new一个len+1的数组，第一位是carry
+* 维护Carry从后往前走， 如果到最后一位还有carry,直接new一个len+1的数组，第一位是carry,然后return
+
+
 
