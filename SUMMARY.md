@@ -76,7 +76,7 @@
        * [Longest Common Subsequence](longest_common_subsequence.md)
        * [Interleaving String](interleaving_string.md)
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
-   * House Robber
+   * [House Robber](house_robber.md)
 * [String](string.md)
    * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
    * [ZigZag Conversion](zigzag_conversion.md)
