@@ -33,3 +33,45 @@ public class Solution {
     }
 }
 ```
+
+Follow Up: House Robber II
+
+如果所有人家都在一个环上，最后一家和第一家相连，问最大值
+
+两个dp
+* dp代表从第一个房子开始搜刮，不能搜最后一房
+* dp2代表从第二个房子开始搜刮，可以搜最后一房
+* 最后比一下 谁大取谁
+
+```java
+public class Solution {
+    public int rob(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        
+        //这句一定要加！！
+        if (nums.length == 1) return nums[0];
+        int n = nums.length;
+        int[] dp = new int[n + 1];
+        int[] dp2 = new int[n + 1];
+        //dp代表从第一个房子开始搜刮，不能搜最后一房
+        //dp2代表从第二个房子开始搜刮，可以搜最后一房
+        dp[0] = 0;
+        dp[1] = nums[0];
+        dp2[0] = 0;
+        dp2[1] = 0;
+        for (int i = 2; i <= n; i++) {
+            dp[i] = Math.max(dp[i - 2] + nums[i - 1], dp[i - 1]);
+            dp2[i] = Math.max(dp2[i - 2] + nums[i - 1], dp2[i - 1]);
+        }
+        
+        int startFromFirst = dp[nums.length - 1];
+        
+        
+        int startFromSecond = dp2[nums.length];
+        
+        return Math.max(startFromFirst, startFromSecond);
+    }
+}
+```
+
+
