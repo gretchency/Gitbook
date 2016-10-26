@@ -71,7 +71,7 @@ Word Break
 
 ---
 
-House Robber
+[House Robber](https://gretchency.gitbooks.io/leetcode/content/house_robber.html)
 * 要么搜刮当前家，放弃前一家，要么搜刮前一家，放弃当前家
  * dp[i] = max(dp[i - 2] + num[i], dp[i - 1])
 * RobberII成环的情况下，就是用两个dp，比比不要第一家和不要最后一家谁大
