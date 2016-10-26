@@ -57,7 +57,7 @@
    * [Copy List with Random Pointer](copy_list_with_random_pointer.md)
    * [Convert Sorted List to Balanced BST](convert_sorted_list_to_balanced_bst.md)
    * [Add Two Numbers](add_two_numbers.md)
-   * Odd Even Linked List
+   * [Odd Even Linked List](odd_even_linked_list.md)
 * [Binary Tree](binary_tree.md)
    * [Binary Tree Preorder/ Inorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
