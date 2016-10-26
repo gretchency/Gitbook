@@ -2,7 +2,7 @@
     "plugins": [
         "-prism",
         "fontsettings",
-        "tags"
+        "-tags"
     ],
     "pluginsConfig": {}
 }
