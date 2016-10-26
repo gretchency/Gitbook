@@ -56,6 +56,12 @@ Set Matrix Zeroes [link](https://gretchency.gitbooks.io/leetcode/content/wei_rua
 Plus One
 * 维护Carry从后往前走， 如果到最后一位还有carry,直接new一个len+1的数组，第一位是carry,然后return
 
+Container With Most Water
+典型双指针问题
+
+* 注意短板理论: 
+  * ```height[left] < height[right] left++``` 因为移动left可能变大，而移动right只会变小，因为left是短板，高固定死了,没法补救。反之亦然。
+
 
 
 
