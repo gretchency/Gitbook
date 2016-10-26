@@ -1,6 +1,6 @@
 # Longest Substring Without Repeating Characters
 
-![](Screen Shot 2016-10-25 at 10.19.18 PM.png
+![](Screen Shot 2016-10-25 at 10.19.18.png)
 
 * 滑动窗口法（end:橘色指针，start蓝色指针）
 * 256 boolean数组存储访问状态
