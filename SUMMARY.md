@@ -74,6 +74,7 @@
        * [Interleaving String](interleaving_string.md)
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
 * String
+   * Longest Substring Without Repeating Characters
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
