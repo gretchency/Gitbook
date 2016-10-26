@@ -64,7 +64,6 @@
    * [Inorder successor in BST](inorder_successor_in_bst.md)
    * [Invert Binary Tree](invert_binary_tree.md)
    * [Largest BST Subtree](largest_bst_subtree.md)
-   * String
 * [Dynamic Programming](dynamic_programming.md)
    * [Climbing Stairs](climbing_stairs.md)
    * [Jump Games I II](jump_games_i_ii.md)
@@ -74,6 +73,7 @@
        * [Longest Common Subsequence](longest_common_subsequence.md)
        * [Interleaving String](interleaving_string.md)
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
+* String
 * [Array](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
