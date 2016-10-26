@@ -1,6 +1,6 @@
 # Minimum Window Substring
 
-tags: Two Pointer
+tags:Two Pointer
 
 双指针解决
 * 先根据t建立map,key是字母，value是该字母出现了几次
