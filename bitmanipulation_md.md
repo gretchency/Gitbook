@@ -73,7 +73,8 @@ return bitCount;
 
 ---
 Numbr of 1 Bits
-
+* 每一位与1比较，看是不是1，right shift来比较每一位
+* 由于是32-bit int, 32次循环即可解决问题
 ```java
 public class Solution {
     // you need to treat n as an unsigned value
