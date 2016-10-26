@@ -2,7 +2,7 @@
 
 ![](Screen Shot 2016-10-25 at 10.19.18.png)
 
-![](http://img.blog.csdn.net/20130901224716625)
+
 
 
 * 滑动窗口法（end:橘色指针，start蓝色指针）
