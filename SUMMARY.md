@@ -104,7 +104,6 @@
    * [LRU Cache](lru_cache.md)
    * [data stream median (2 PQ)](data_stream_median_2_pq.md)
    * [Ugly Number](ugly_number.md)
-   * Tags
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
@@ -128,6 +127,7 @@
    * BinarySearch
        * [Sqrtx](sqrtx.md)
    * [ZigZagPrint](zigzagprint.md)
+* Tags
 * [网络](wang_luo.md)
    * [After URL](after_url.md)
 
