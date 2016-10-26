@@ -42,3 +42,7 @@ Add Two Numbers [link](https://gretchency.gitbooks.io/leetcode/content/add_two_n
 * 维护carry的值
 * 分三种情况：l1,l2都没走完，l1没走完,l2没走完、
 * l1,l2都走完以后，如果```carry != 0```, 还要加一下最后一次carry的值
+
+[Odd Even Linked List](https://gretchency.gitbooks.io/leetcode/content/odd_even_linked_list.html)
+* 两个指针来做，odd指向奇节点，even指向偶节点，然后把偶节点even后面的那个奇节点提前到odd的后面，偶节点的next也指向下下个节点, 然后odd和even各自前进一步，此时even又指向偶节点，odd指向当前奇节点的末尾，以此类推直至把所有的奇偶节点都连好，
+* 最后要把奇节点和第一个偶节点连起来
