@@ -1,7 +1,8 @@
 {
     "plugins": [
         "-prism",
-        "fontsettings"
+        "fontsettings",
+        "tags"
     ],
     "pluginsConfig": {}
 }
