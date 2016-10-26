@@ -41,7 +41,7 @@ Balanced Binary Tree
 
 ---
 
-**Largest BST SubTree**
+[**Largest BST SubTree**](https://gretchency.gitbooks.io/leetcode/content/largest_bst_subtree.html)
 
 非常好的一道题目，问题包含了三个block,求最大BST节点个数，求子树节点个数，和判断Valid BST.
 
@@ -49,3 +49,9 @@ Balanced Binary Tree
 1. 递归到了叶子节点，返回1
 2. 遇到了valid bst,返回该tree节点个数（递归求解）
 3. 本身不是valid bst,返回左右子树中最大的valid bst节点个数
+
+[House Robber III](https://gretchency.gitbooks.io/leetcode/content/house_robber_iii.html)
+
+* 还是类比House RobberI II,分成偷当前节点和不偷当前节点两种情况，然后比较哪个大。
+  * 需要维护两个元素的res数组，分别是有root的最大值和没root的最大值
+  * dfs分治求left,right,和root节点比较求解出最大情况
