@@ -35,3 +35,10 @@ Reverse Linked List II
 * 注意最后首尾相连
 * 遍历过程中要存放preM和mNode
 * preM和prev连首部，mNode和curr连尾部
+
+---
+Add Two Numbers [link](https://gretchency.gitbooks.io/leetcode/content/add_two_numbers.html)
+* 用dummy node 构建新list
+* 维护carry的值
+* 分三种情况：l1,l2都没走完，l1没走完,l2没走完、
+* l1,l2都走完以后，如果```carry != 0```, 还要加一下最后一次carry的值
