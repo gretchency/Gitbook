@@ -38,8 +38,6 @@ private boolean isValid(TreeNode root, long max, long min) {
 private int count(TreeNode root) {
     if (root == null) return 0;
 
-    if (root.left == null && root.right == null) return 1;
-
     return count(root.left) + count(root.right) + 1;
 }
 ```
