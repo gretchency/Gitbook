@@ -13,3 +13,7 @@
 * 256 boolean数组存储访问状态
 * 先滑end，走到划不动，开始滑start,全都变为false，直到能滑动为止，每次更新maxLen
 * start + len = s.length()就可以停止了
+
+[ZigZag Conversion](https://gretchency.gitbooks.io/leetcode/content/zigzag_conversion.html)
+
+可以发现规律，每一轮从上往下，再斜上走到第一行之前的长度永远是 2n-2。利用这个规律，可以按行填字，第一行和最后一行，就是按照2n-2的顺序一点点加的。 其他行除了上面那个填字规则，就是还要处理斜着那条线的字，可以发现那条线的字的位置永远是当前列j+(2n-2)-2i(i是行的index）。
