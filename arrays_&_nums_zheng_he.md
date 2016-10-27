@@ -66,6 +66,16 @@ Plus One
 [Happy Number](https://gretchency.gitbooks.io/leetcode/content/happy_number.html)
 * 用HashSet检查重复，如果有重复数字就会陷入死循环，这就不是Happy Number，直到算出和为1
 
+Palindrome Number
+* 回文数翻转后和原来的数一样
+```java
+int rev = 0;
+while (x != 0) {
+    rev = rev * 10 + x % 10;
+    x /= 10;
+}
+```
+
 
 
 
