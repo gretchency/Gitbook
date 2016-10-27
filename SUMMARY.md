@@ -123,7 +123,7 @@
        * [ConstructTree](constructtree.md)
        * [Vertical Order Treversal](vertical_order_treversal.md)
    * [Trie](trie.md)
-       * Dictionary
+       * [Dictionary](dictionary.md)
        * [TabComp](tabcomp.md)
    * [DP](dp.md)
        * [Palindrome](palindrome.md)
