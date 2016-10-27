@@ -127,7 +127,7 @@
        * [TabComp](tabcomp.md)
    * [DP](dp.md)
        * [Palindrome](palindrome.md)
-   * BinarySearch
+   * [BinarySearch](binarysearch.md)
        * [Sqrtx](sqrtx.md)
    * [ZigZagPrint](zigzagprint.md)
 * [网络](wang_luo.md)
