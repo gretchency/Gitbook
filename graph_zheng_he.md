@@ -14,7 +14,7 @@ https://leetcode.com/problems/clone-graph/
 Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topological_sorting.html)
 * 判断有无环的话就是最后结果的length是否小于nodes的个数
 
-**Word Ladder** [link](https://gretchency.gitbooks.io/leetcode/content/wordladder.html
+[**Word Ladder**](https://gretchency.gitbooks.io/leetcode/content/wordladder.html)
 * BFS 用set去重
 * 需要根据size分层，因为每一层都是相同的length
 * getNextWords用a-z 26个字母遍历，时间复杂度O(26Ln)
