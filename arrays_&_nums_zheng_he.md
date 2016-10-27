@@ -63,6 +63,10 @@ Plus One
   * ```height[left] < height[right] left++``` 因为移动left可能变大，而移动right只会变小，因为left是短板，高固定死了,没法补救。反之亦然。
 
 
+[Happy Number](https://gretchency.gitbooks.io/leetcode/content/happy_number.html)
+* 用HashSet检查重复，如果有重复数字就会陷入死循环，这就不是Happy Number，直到算出和为1
+
+
 
 
 
