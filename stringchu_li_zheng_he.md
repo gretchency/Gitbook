@@ -17,3 +17,7 @@
 [ZigZag Conversion](https://gretchency.gitbooks.io/leetcode/content/zigzag_conversion.html)
 
 可以发现规律，每一轮从上往下，再斜上走到第一行之前的长度永远是 2n-2。利用这个规律，可以按行填字，第一行和最后一行，就是按照2n-2的顺序一点点加的。 其他行除了上面那个填字规则，就是还要处理斜着那条线的字，可以发现那条线的字的位置永远是当前列j+(2n-2)-2i(i是行的index）。
+
+[Excel Sheet Column Title](https://gretchency.gitbooks.io/leetcode/content/excel_sheet_column_title.html)
+
+减1再取余就是和A差几步，可以除几次26就代表有几位，最后要reverse一下
