@@ -15,6 +15,7 @@
 * [Java基础](javaji_chu.md)
    * [J2EE](j2ee.md)
 * [算法基础](suan_fa_ji_chu.md)
+   * [ArrayList](arraylist.md)
    * [Data Structure基础知识](data_structure_.md)
        * [ArrayList](arraylist.md)
        * [Hashing](hashing.md)
