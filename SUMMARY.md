@@ -97,7 +97,7 @@
    * [SubArray Sum Closest](subarray_sum_closest.md)
    * [Majority Number](majority_number.md)
    * [Container With Most Water](container_with_most_water.md)
-   * Happy Number
+   * [Happy Number](happy_number.md)
 * [Binary Search](binary_search.md)
    * [Wood Cut(二分答案）](wood_cuter_fen_da_an_ff09.md)
 * [Data Structure](data_structure.md)
