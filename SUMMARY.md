@@ -17,8 +17,6 @@
 * [算法基础](suan_fa_ji_chu.md)
    * [ArrayList](arraylist.md)
    * [Hashing](hashing.md)
-   * [Data Structure基础知识](data_structure_.md)
-       * [Hashing](hashing.md)
 * [面试总结](mian_shi_zong_jie.md)
    * [FreeWheel](freewheel.md)
    * [微软](wei_ruan.md)
