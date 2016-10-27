@@ -34,3 +34,22 @@ public class Solution {
     }
 }
 ```
+
+Related:
+Excel Sheet Column Number
+就是倒过来，String to Integer
+
+```java
+public class Solution {
+    public int titleToNumber(String s) {
+        if (s == null || s.length() == 0) return 0;
+        
+        int res = 0;
+        for (char c: s.toCharArray()) {
+            res = 26 * res + c - 'A' + 1;
+        }
+        
+        return res;
+    }
+}
+```
