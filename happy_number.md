@@ -2,7 +2,7 @@
 
 ![](Screen Shot 2016-10-26 at 10.54.31 PM.png)
 
-* 用HashSet检查重复，如果有重复数字就会陷入死循环，这就不是Happy Number
+* 用HashSet检查重复，如果有重复数字就会陷入死循环，这就不是Happy Number，直到算出和为1
 
 ```java
 public class Solution {
@@ -20,6 +20,7 @@ public class Solution {
         return true;
     }
     
+    //计算下一层的结果
     private int helper(int n) {
         int sum = 0;
         while (n != 0) {
