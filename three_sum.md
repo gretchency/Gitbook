@@ -125,6 +125,10 @@ public class Solution {
 
 Follow UP:
 
+4Sum:
+* 和3Sum的思路一样，在计算4Sum时我们可以先选一个数，然后在剩下的数中计算3Sum。而计算3Sum则同样是先选一个数，然后再剩下的数中计算2Sum
+*一样一样的，只是三重循环也是注意去重
+
 3Sum Closest
 * 维护与target差值最小的sum，每次比一下差多少，比原sum小就更新
 
