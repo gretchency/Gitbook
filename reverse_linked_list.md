@@ -1,5 +1,5 @@
 # Reverse Linked List
-
+Iteration
 ```java
     public ListNode reverse(ListNode head) {
         // Reverse head.next to previous element
@@ -13,6 +13,26 @@
         }
         return prev;
     }
+```
+
+Recursion:
+```java
+public class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null || head.next == null) return head; 
+        
+        ListNode curr = head;
+        return helper(curr, null);
+    }
+    
+    private ListNode helper(ListNode curr, ListNode prev) {
+        if (curr == null) return prev;
+        
+        ListNode tmp = curr.next;
+        curr.next = prev;
+        return helper(tmp, curr);
+    }
+}
 ```
 
 翻转从m到n
