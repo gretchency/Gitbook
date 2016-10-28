@@ -35,6 +35,7 @@ public int[] twoSum(int[] numbers, int target) {
 
 Follow Up:
 
-What if it is a sorted array?
+Two Sum II
+* What if it is a sorted array?
 
 双指针做， O(1)空间
