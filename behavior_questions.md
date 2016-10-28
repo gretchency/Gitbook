@@ -9,6 +9,11 @@
 | Enjoy Most | real-time analysis, correct conclusion, judges were impressed  | use my own app to run and get fitness summary | get 92% cross validation rate | Testing |
 | Conflicts with Teammates | Team management(Asana) | Did little and no communication. Had a talk and split work more in detail | Wanna do same work, list strength and experience, split work in small componenets, rank the first three, coordinate each person has their favor work to do | do little, he was sick, we had to cover his work, we are a team, we need to handle this kind of situation |
 
+---
+What's your weakness?
+
+I cannot maintain high work efficiency and may lose focus on work when I am in a bad mood or get frustrated. When this time happens, I normally stop continuing current work and I may go to have a big meal or go to the gym, do a lot of weight lifting to get myself chill up again.
+
 
 ![](Screen Shot 2016-10-11 at 10.15.46 AM.png)
 
