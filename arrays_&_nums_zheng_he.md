@@ -25,8 +25,9 @@ Maximum SubarrayII & Best time to buy Stock III
 **Longest Consecutive Sequence** [link](https://gretchency.gitbooks.io/leetcode/content/longest_consecutive_sequence.html)
 * Hashset 左右找最大可能
 
-Three Sums Cloest
+[Three Sums Cloest](https://gretchency.gitbooks.io/leetcode/content/three_sum.html)
 * 注意比的是3sum和target绝对值之差最小，但返回要返回sum
+* 维护与target差值最小的sum，每次比一下差多少，比原sum小就更新
 ```java
 if (Math.abs(sum - target) < Math.abs(min - target)) {
                     min = sum;
