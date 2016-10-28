@@ -10,7 +10,22 @@
 | Conflicts with Teammates | Team management(Asana) | Did little and no communication. Had a talk and split work more in detail | Wanna do same work, list strength and experience, split work in small componenets, rank the first three, coordinate each person has their favor work to do | do little, he was sick, we had to cover his work, we are a team, we need to handle this kind of situation |
 
 ---
-What's your weakness?
+
+### Self Introduction
+
+
+
+**1. Current Role:** I graduated from Carnegie Mellon University and majored in Information Technology in SCS.
+
+**2. Current Role(Detail):** During my school time, I developed several web applications, I also conducted some machine learing and NLP related projects. Because I am interested in ios app development, I developed an Fitness IOS app.
+
+**3. Wrap Up:** I'm looking for a full time software engineering job and your company caught my eye. I've always been interested in creating something new so I'd like to talk more with you about the SE position in your company.
+
+
+
+### What's your weakness?
+
+
 
 I cannot maintain high work efficiency and may lose focus on work when I am in a bad mood or get frustrated. When this time happens, I normally stop continuing current work and I may go to have a big meal or go to the gym, do a lot of weight lifting to get myself chill up again.
 
