@@ -122,3 +122,38 @@ public class Solution {
     }
 }
 ```
+
+Follow UP:
+
+3Sum Closest
+* 维护与target差值最小的sum，每次比一下差多少，比原sum小就更新
+
+```java
+public class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        if (nums == null || nums.length < 3) return Integer.MIN_VALUE;
+        
+        Arrays.sort(nums);
+        int min = nums[0] + nums[1] + nums[2];
+
+        for (int i = 0; i < nums.length - 2; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            
+            int left = i + 1;
+            int right = nums.length - 1;
+            
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (Math.abs(sum - target) < Math.abs(min - target)) {
+                    min = sum;
+                }
+                if (sum == target) return sum;
+                if (sum > target) right--;
+                if (sum < target) left++;
+            }
+        }
+        
+        return min;
+    }
+}
+```
