@@ -89,7 +89,7 @@
    * [Median of Two Sorted Arrays](median_of_two_sorted_arrays.md)
    * [Maximum Subarray](maximum_subarray.md)
    * [Two Sum](two_sum.md)
-   * [Three Sum](three_sum.md)
+   * [Three Sum & 3Sum Closest](three_sum.md)
    * [Partition Array](partition_array.md)
    * [Sort Colors](sort_colors.md)
    * [Longest Consecutive Sequence](longest_consecutive_sequence.md)
