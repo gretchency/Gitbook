@@ -37,3 +37,7 @@ public class Solution {
 }
 ```
 
+
+Solution 2:
+
+将被覆盖的部分存到临时数组
