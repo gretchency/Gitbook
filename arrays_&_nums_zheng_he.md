@@ -77,6 +77,11 @@ while (x != 0) {
 }
 ```
 
+Rotate Array
+* 注意k可能超出array的length，要先%一下
+* 先全局reverse,再分两个局部reverse
+
+
 
 
 
