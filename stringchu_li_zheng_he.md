@@ -21,3 +21,7 @@
 [Excel Sheet Column Title](https://gretchency.gitbooks.io/leetcode/content/excel_sheet_column_title.html)
 
 减1再取余就是和A差几步，可以除几次26就代表有几位，最后要reverse一下
+
+[Group Anagram](https://gretchency.gitbooks.io/leetcode/content/group_anagram.html)
+
+* Sort + HashMap. 根据sort后的string建key, 把sorted后一样的string都作为value.根据题设按字母顺序输出，最后还要sort一遍再加入result.
