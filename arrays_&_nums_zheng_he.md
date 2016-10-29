@@ -77,7 +77,7 @@ while (x != 0) {
 }
 ```
 
-Rotate Array
+[Rotate Array](https://gretchency.gitbooks.io/leetcode/content/rotate_array.html)
 * 注意k可能超出array的length，要先%一下
 * 先全局reverse,再分两个局部reverse
 
