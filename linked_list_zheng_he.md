@@ -10,6 +10,7 @@ Remove Duplicates from Sorted List II
 * 如果相等存一个value 和head.next比较
 
 Convert Sorted Array to Binary Search Tree
+* 注意边界条件， start = end的时候在叶子节点,需要包括在递归过程中
 
 ***Convert Sorted List to Binary Search Tree***
 [leet](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) [link](https://gretchency.gitbooks.io/leetcode/content/convert_sorted_list_to_balanced_bst.html)
