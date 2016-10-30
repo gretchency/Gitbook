@@ -44,8 +44,7 @@ maxValue = Math.max(maxValue, left + right + node.val);
 public class Solution {
     //全局变量maxValue记录全局最大和
     //递归函数返回root的子树到root节点(含)路径长度的最大值
-    //在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
-    //巧妙利用0。若子树为负，则取值0
+    //巧妙利用0。若子树和为负，则取值0
     int maxValue;
     public int maxPathSum(TreeNode root) {
         if (root == null) return Integer.MIN_VALUE;
