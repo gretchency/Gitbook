@@ -1,4 +1,5 @@
 # Find all anagrams in a String
+tags: anagrams
 
 ![](Screen Shot 2016-10-29 at 9.18.02 PM.png)
 
