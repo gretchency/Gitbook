@@ -55,7 +55,7 @@ public class Solution {
         int left = Math.max(0, maxPathDown(root.left));
         int right = Math.max(0, maxPathDown(root.right));
         maxValue = Math.max(maxValue, left + right + root.val);
-        
+        //****选取最大子树
         return Math.max(left, right) + root.val;
     }
 }
