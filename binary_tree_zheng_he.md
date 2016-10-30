@@ -57,6 +57,6 @@ Balanced Binary Tree
   * 需要维护两个元素的res数组，分别是有root的最大值和没root的最大值
   * dfs分治求left,right,和root节点比较求解出最大情况
 
-Unique BST
+[Unique BST](https://gretchency.gitbooks.io/leetcode/content/unique_bst_dp.html)
 * 选取一个结点为根，就把结点切成左右子树，以这个结点为根的可行二叉树数量就是左右子树可行二叉树数量的乘积
 * 总的数量是将以所有结点为根的可行结果累加起来
