@@ -27,7 +27,7 @@
 * Sort + HashMap. 根据sort后的string建key, 把sorted后一样的string都作为value.根据题设按字母顺序输出，最后还要sort一遍再加入result.
 
 [Find all anagrams in a String](https://gretchency.gitbooks.io/leetcode/content/find_all_anagrams_in_a_string.html)
-* 两个hash array
+* 两个hash array(256)
 * 先构建好target array
 * 然后用resource array来凑，每凑够target array长度的array时候比较一下，若相同加入result，然后把最开始的hash element抹去一个然后往后加入一个再比较，直到全比较完。
 * 注意array比较不能 ```==```,要用```Arrays.equals```
