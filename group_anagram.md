@@ -1,5 +1,5 @@
 # Group Anagram
-tags: anagrams
+tags: anagram
 ![](Screen Shot 2016-10-29 at 5.40.25 PM.png)
 * Sort + HashMap. 根据sort后的string建key, 把sorted后一样的string都作为value.根据题设按字母顺序输出，最后还要sort一遍再加入result.
 ```java
