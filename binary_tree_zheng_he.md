@@ -5,10 +5,11 @@ Maximum depth of a Binary Tree
 Binary Tree Preorder Travesal
 
 ***Binary Tree Maximum Path Sum*** [leet](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+* 要使路径和最大，则必然要使左子树和右子树中的路径长度都取最大。
 * 全局变量maxValue记录全局最大和
 * 递归函数返回root的子树到root节点(含)路径长度的最大值
-* 在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
-* 巧妙利用0。若子树为负，则取值0
+* 在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值,巧妙利用0。若子树为负，则取值0
+* 不断更新maxValue
 
 Binary Tree Maximum Path Sum II
 * 注意最后如果小于0就不要
