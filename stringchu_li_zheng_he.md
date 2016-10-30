@@ -25,3 +25,6 @@
 [Group Anagram](https://gretchency.gitbooks.io/leetcode/content/group_anagram.html)
 
 * Sort + HashMap. 根据sort后的string建key, 把sorted后一样的string都作为value.根据题设按字母顺序输出，最后还要sort一遍再加入result.
+
+Find all anagrams in a String
+
