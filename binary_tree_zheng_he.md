@@ -6,7 +6,7 @@ Binary Tree Preorder Travesal
 
 ***Binary Tree Maximum Path Sum*** [leet](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
 * 全局变量maxValue记录全局最大和
-* 递归函数返回子树中经过当前节点的局部最大和
+* 递归函数返回root的子树到root节点(含)路径长度的最大值
 * 在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
 * 巧妙利用0。若子树为负，则取值0
 
