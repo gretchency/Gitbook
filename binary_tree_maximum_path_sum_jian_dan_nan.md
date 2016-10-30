@@ -41,31 +41,30 @@ maxValue = Math.max(maxValue, left + right + node.val);
 
 ![](cc.png)
 ```java
-//维护一个全局变量
-int maxValue;
-    
+public class Solution {
+    //全局变量maxValue记录全局最大和
+    //递归函数返回子树中经过当前节点的局部最大和
+    //在求局部最大值的时候，需要当前节点的值加上左右子树中的最大值
+    //巧妙利用0。若子树为负，则取值0
+    int maxValue;
     public int maxPathSum(TreeNode root) {
-        // write your code here
         if (root == null) return Integer.MIN_VALUE;
+        
         maxValue = Integer.MIN_VALUE;
         maxPathDown(root);
+        
         return maxValue;
     }
     
-    public int maxPathDown(TreeNode node) {
-        if (node == null) {
-            return 0;
-        }
-        //分治
-        //和0比较，如果< 0，直接放弃这一段节点
-        int left = Math.max(0, maxPathDown(node.left));
-        int right = Math.max(0, maxPathDown(node.right));
+    private int maxPathDown(TreeNode root) {
+        if (root == null) return 0;
         
-        //更新全局变量，若maxValue > left + right + node.val, 说明最大在左边或者右边
-        maxValue = Math.max(maxValue, left + right + node.val);
+        int left = Math.max(0, maxPathDown(root.left));
+        int right = Math.max(0, maxPathDown(root.right));
+        maxValue = Math.max(maxValue, left + right + root.val);
         
-        注意要把node.val加进来
-        return Math.max(left, right) + node.val;
+        return Math.max(left, right) + root.val;
     }
+}
 ```
 
