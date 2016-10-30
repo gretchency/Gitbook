@@ -84,6 +84,7 @@
    * [Minimum Window Substring](minimum_window_substring.md)
    * [Excel Sheet Column Title](excel_sheet_column_title.md)
    * [Group Anagram](group_anagram.md)
+   * Find all anagrams in a String
 * [Array & Number](array.md)
    * [Merge Sorted Array](merge_sorted_array.md)
    * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
