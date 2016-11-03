@@ -6,6 +6,7 @@
 
 
 Quick Select:
+* Quick Sort相同思路，只是每次选择一半，如果```k <= 右指针j```，说明k在左边的一半（left, j），如果```k >=左指针i```， 说明k在右边一半(i,right), 若都不是，说明k就在pivot位置,
 
 ```java
 public class Solution {
@@ -38,7 +39,7 @@ public class Solution {
         if (k <= j) return quickSelect(nums, k, left, j);
         if (k >= i) return quickSelect(nums, k, i, right);
         //此时k就是已经排好序的pivot
-        return nums[k];
+        return pivot;
     }
     
     private void swap(int[] nums, int i, int j) {
