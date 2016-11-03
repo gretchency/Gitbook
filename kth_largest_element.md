@@ -36,8 +36,9 @@ public class Solution {
         }
         
         if (k <= j) return quickSelect(nums, k, left, j);
-        
-        return quickSelect(nums, k, i, right);
+        if (k >= i) return quickSelect(nums, k, i, right);
+        //此时k就是pivot位置
+        return nums[k];
     }
     
     private void swap(int[] nums, int i, int j) {
