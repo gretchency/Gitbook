@@ -37,7 +37,7 @@ public class Solution {
         
         if (k <= j) return quickSelect(nums, k, left, j);
         if (k >= i) return quickSelect(nums, k, i, right);
-        //此时k就是pivot位置
+        //此时k就是已经排好序的pivot
         return nums[k];
     }
     
