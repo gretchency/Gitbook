@@ -14,7 +14,7 @@ public class Solution {
     }
     
     private int quickSelect(int[] nums, int k, int left, int right) {
-        if (left == right) return nums[k];
+        if (left >= right) return nums[k];
         
         int pivot = nums[left + (right - left) / 2];
         int i = left;
