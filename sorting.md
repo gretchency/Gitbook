@@ -73,6 +73,8 @@ Quick Sort
 
 i, j各自移不动的时候swap, 终止条件i <= j
 
+**Worst Case: Pivot选的不好，每次选了最小的数或者最大的数，这样到最后只排好一个数，有n个数所以有n层，每层都要处理n个数，时间复杂度O(n^2)**
+
 ```java
     private void quickSort(int[] A, int left, int right) {
         if (left >= right) {
