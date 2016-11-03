@@ -81,7 +81,7 @@ while (x != 0) {
 * 注意k可能超出array的length，要先%一下
 * 先全局reverse,再分两个局部reverse
 
-Kth Largest Element in an array
+[Kth Largest Element in an array](https://gretchency.gitbooks.io/leetcode/content/kth_largest_element.html)
 * Quick Select:
 * 找第k大，用倒序，找第k-1个数
 * Quick Sort相同思路，只是每次选择一半，如果```k <= 右指针j```，说明k在左边的一半（left, j），如果```k >=左指针i```， 说明k在右边一半(i,right), 若都不是，说明k就在pivot位置
