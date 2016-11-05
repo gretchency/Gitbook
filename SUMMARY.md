@@ -114,6 +114,7 @@
    * [LRU Cache](lru_cache.md)
    * [data stream median (2 PQ)](data_stream_median_2_pq.md)
    * [Ugly Number](ugly_number.md)
+   * Meeting Room
 * [SnapChat](snapchat.md)
    * [DFSBFS](dfsbfs.md)
        * [24点](24dian.md)
