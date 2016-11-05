@@ -8,6 +8,8 @@ Output:  True  //There is a subset (4, 5) with sum 9.
 ```
 
 Naive Recurrsive Way
+
+时间复杂度指数级别
 ```java
  static boolean isSubsetSumRecurrsive(int[] set, int sum) {
         if (set == null || set.length == 0) return false;
@@ -28,4 +30,16 @@ Naive Recurrsive Way
         //ignore last element or substrat the last element 
         return helper(set, n - 1 , sum) || helper(set, n - 1, sum - set[n - 1]);
     }
+```
+
+DP:
+状态方程:
+
+dp[i][j]代表sum为i时，是否能从set[0]~set[j-1]个数中相加得到sum
+
+
+```
+要么不要最后一位，要么减去最后一位看能否得到
+if i >= set[j - 1]
+dp[i][j] = dp[i][j - 1] || dp[i - set[j-1]][j - 1]
 ```
