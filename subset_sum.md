@@ -61,7 +61,9 @@ dp[i][j] = dp[i][j - 1] || dp[i - set[j-1]][j - 1]
         
         for (int i = 1; i <= sum; i++) {
             for (int j = 1; j <= n; j++) {
+                //先不考虑最后一位的情况
                 dp[i][j] = dp[i][j - 1];
+                //如果最后一位可以操作，有两种方法，忽略或者减掉最后一位的值
                 if (i >= set[j - 1]) {
                     dp[i][j] = dp[i][j] || dp[i - set[j - 1]][j - 1];
                 }
