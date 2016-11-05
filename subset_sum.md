@@ -33,6 +33,7 @@ Naive Recurrsive Way
 ```
 
 DP: 0(sum*n)
+
 状态方程:
 
 dp[i][j]代表sum为i时，是否能从set[0]~set[j-1]个数中相加得到sum
