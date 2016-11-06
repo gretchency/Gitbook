@@ -20,6 +20,11 @@ Ugly Number ||
 * HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
 
 
+Meeting Room II
+* 给一堆时间 求最少需要几个meeting room
+* 利用最小堆将能合并的开会时间合并到一个屋子，计算需要几个屋子
+
+
 ---
 ### Hashing
 
