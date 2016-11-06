@@ -70,6 +70,7 @@
    * [Largest BST Subtree](largest_bst_subtree.md)
    * [House Robber III](house_robber_iii.md)
    * [Unique BST (DP)](unique_bst_dp.md)
+   * Binary Tree Vertical Order Treversal
 * [Dynamic Programming](dynamic_programming.md)
    * [Climbing Stairs](climbing_stairs.md)
    * [Jump Games I II](jump_games_i_ii.md)
