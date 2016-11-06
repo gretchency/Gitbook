@@ -61,6 +61,7 @@
 * [Binary Tree](binary_tree.md)
    * [Binary Tree Preorder/ Inorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
+   * Binary Tree Vertical Order Treversal
    * [Lowest Common Ancester](lowest_common_ancester.md)
    * [Binary Tree Maximum Path Sum 简单 难](binary_tree_maximum_path_sum_jian_dan_nan.md)
    * [BFS Binary Tree](bfs_binary_tree.md)
@@ -70,7 +71,6 @@
    * [Largest BST Subtree](largest_bst_subtree.md)
    * [House Robber III](house_robber_iii.md)
    * [Unique BST (DP)](unique_bst_dp.md)
-   * Binary Tree Vertical Order Treversal
 * [Dynamic Programming](dynamic_programming.md)
    * [Climbing Stairs](climbing_stairs.md)
    * [Jump Games I II](jump_games_i_ii.md)
