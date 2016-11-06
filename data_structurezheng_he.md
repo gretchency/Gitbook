@@ -20,7 +20,7 @@ Ugly Number ||
 * HashMap + Min_Heap 注意Map的遍历写法 O(nlog(k))
 
 
-Meeting Room II
+[Meeting Room II](https://gretchency.gitbooks.io/leetcode/content/meeting_room.html)
 * 给一堆时间 求最少需要几个meeting room
 * 利用最小堆将能合并的开会时间合并到一个屋子，计算需要几个屋子
 
