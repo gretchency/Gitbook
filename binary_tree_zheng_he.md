@@ -60,3 +60,8 @@ Balanced Binary Tree
 [Unique BST](https://gretchency.gitbooks.io/leetcode/content/unique_bst_dp.html)
 * 选取一个结点为根，就把结点切成左右子树，以这个结点为根的可行二叉树数量就是左右子树可行二叉树数量的乘积
 * 总的数量是将以所有结点为根的可行结果累加起来
+
+Binary Tree Vertical Order Traversal
+* 两个Queue,一个装TreeNode,一个装它所在的col
+* 用map记录每一列的TreeNode val
+* 同时维护min max col，从而最后输出结果
