@@ -4,7 +4,7 @@
 * 同一个单词中的字母先后顺序没有任何意义；
 * 相邻单词之间，按照 Lexicographical order 排列的意义是，双方字符串中第一个不 match 的字符代表这一条 directed edge，即字符的先后顺序；
 * 如果发现字典 Graph 中有环，返回空字符串；
-* 加入新入度的时候，记得查重，不要重复加入度
+* 加入新入度的时候，记得查重，同一条edge不要重复加入度
 
 ```java
 public class Solution {
