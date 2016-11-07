@@ -31,7 +31,7 @@
 * [Graph & Search](graph_&_search.md)
    * [Clone Graph](clone_graph.md)
    * [Topological Sorting](topological_sorting.md)
-       * Alien Dictionary
+       * [Alien Dictionary](alien_dictionary.md)
    * [Word Ladder BFS (ii BFS + DFS)](wordladder.md)
    * [Course Schedule](course_schedule.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
