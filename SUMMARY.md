@@ -31,6 +31,7 @@
 * [Graph & Search](graph_&_search.md)
    * [Clone Graph](clone_graph.md)
    * [Topological Sorting](topological_sorting.md)
+       * Alien Dictionary
    * [Word Ladder BFS (ii BFS + DFS)](wordladder.md)
    * [Course Schedule](course_schedule.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
@@ -61,7 +62,6 @@
 * [Binary Tree](binary_tree.md)
    * [Binary Tree Preorder/ Inorder Treversal](binary_tree_preorder_treversal.md)
    * [Maximum Depth of Binary Tree](maximum_depth_of_binary_tree.md)
-   * [Binary Tree Vertical Order Treversal](binary_tree_vertical_order_treversal.md)
    * [Lowest Common Ancester](lowest_common_ancester.md)
    * [Binary Tree Maximum Path Sum 简单 难](binary_tree_maximum_path_sum_jian_dan_nan.md)
    * [BFS Binary Tree](bfs_binary_tree.md)
