@@ -39,7 +39,7 @@ public class Solution {
 ```
 解法二： 先sort后merge
 
-时间： O(nlog(n))
+时间： O(nlog(n))  空间:O(n)
 ```java
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
