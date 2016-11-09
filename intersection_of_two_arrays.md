@@ -10,6 +10,8 @@ The result can be in any order.
 ```
 
 1.两个Set,第一个set存第一个array的元素，然后看第二个array里元素在不在第一个set里，在的话加入第二个set. 最后遍历set输出
+
+时间： O(m + n)  空间：O(m)
 ```java
 public class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
