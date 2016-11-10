@@ -44,6 +44,25 @@ A,B分居左右，祖先root
 
 告诉Parent节点
 
+二刷 Set找祖先
+
+```java
+  public TreeNode lca(TreeNode root, TreeNode a, TreeNode b) {
+    Set<TreeNode> set = new HashSet<>();
+    while (a != null) {
+        set.add(a);
+        a = a.parent;
+    }
+
+    while (b != null) {
+        if (set.contains(b)) return b;
+        b = b.parent;
+    }
+
+    return null;
+}
+```
+
 两个ArratList存A,B到root路径，从后往前比，取到最近的公共祖先
 
 
