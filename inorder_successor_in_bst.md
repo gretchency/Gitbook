@@ -56,3 +56,29 @@ public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         return res;
     }
 ```
+
+还有一种只告诉目标Node的情况，这时候需要parent node来找到successor
+
+```java
+public static TreeNode getSuccessor(TreeNode node) {
+        //node有右子树,找右子树里最左点
+        if (node.right != null) {
+            TreeNode res = getMin(node.right);
+            return res;
+        }
+        
+        //找parent里第一个比node大的
+        TreeNode parent = node.parent;
+        while (parent != null && parent.val < node.val) {
+            parent = parent.parent;
+        }
+        return parent;
+    }
+    
+    private static TreeNode getMin(TreeNode node) {
+        while (node.left != null) {
+            node = node.left;
+        }
+        return node;
+    }
+```
