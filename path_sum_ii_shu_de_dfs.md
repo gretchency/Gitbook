@@ -18,9 +18,10 @@ return
 ```
 
 * 经典树的DFS
-  * 在 leaf node 上backtracking，因为后面的两个 dfs 都没有做，不走到底是不会回溯的，要由到了 leaf node 那一层递归进行处理。
-  * 处理完左右子树dfs后再backtracking,将用过的根节点删掉
+  * 在 leaf node 符合要求加入结果集后backtracking，**因为后面的两个 dfs 都没有做，不走到底是不会回溯的**
   * 这点和常见的 subsets 和 permutations 不太一样，那两题中收尾直接 add 然后 return 就可以了，而回溯在 dfs 之后做
+  * 处理完左右子树dfs后再backtracking,将用过的根节点删掉
+ 
 
 ```java
 public class Solution {
