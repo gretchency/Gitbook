@@ -17,3 +17,39 @@ return
 ]
 ```
 
+* 经典树的DFS
+  * 在 leaf node 上backtracking，因为后面的两个 dfs 都没有做，不走到底是不会回溯的，要由到了 leaf node 那一层递归进行处理。
+  * 处理完左右子树dfs后再backtracking,将用过的根节点删掉
+  * 这点和常见的 subsets 和 permutations 不太一样，那两题中收尾直接 add 然后 return 就可以了，而回溯在 dfs 之后做
+
+```java
+public class Solution {
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        
+        List<Integer> list = new ArrayList<>();
+        dfs(root, sum, res, list);
+        return res;
+    }
+    
+    private void dfs(TreeNode root, int sum, List<List<Integer>> res, List<Integer> list) {
+        if (root == null) return;
+        
+        if (root.left == null && root.right == null) {
+            if (sum == root.val) {
+                list.add(root.val);
+                res.add(new ArrayList<>(list));
+                //***注意这里加入结果集合要remove掉***
+                list.remove(list.size() - 1);
+            }
+            return;
+        }
+        
+        list.add(root.val);
+        dfs(root.left, sum - root.val, res, list);
+        dfs(root.right, sum - root.val, res, list);
+        list.remove(list.size() - 1);
+    }
+}
+```
