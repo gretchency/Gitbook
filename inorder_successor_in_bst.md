@@ -1,39 +1,41 @@
 # Inorder successor in BST
 
 
-successor变量记录root的父亲结点，当while循环结束时，如果原本的root = Null或者p不存在与BST中(那么此刻root = null)，都返回Null
+BST 里面，任意位置，任意楼层，都可以通过 value 的比较确定相对位置，这是 BST 一个最好用的性质。
 
-找到p之后，如果p没有右儿子，则第一个比它大的数字就是刚刚记录的successor
-
-找到p之后，如果有右儿子，则找到右子树中的最左边的值(最小值)
+因此在 BST 里面，确定起来就很简单了，从 root 往下走，每次往左拐的时候，存一下，记录着最近一个看到的比 p.val 大的 node 就行了。
 
 ```java
 public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
-
-    TreeNode successor = null;
-    
-    //两个终止条件，一个是没找到，一个是找到p
-    while(root != null && root.val != p.val) {
-        if (root.val > p.val) {
-            successor = root;
-            root = root.left;
-        } else {
-            root = root.right;
+        if (root == null) return null;
+        TreeNode res = null;
+        while (root != null) {
+            if (root.val > p.val) {
+                res = root;
+                root = root.left;
+            } else {
+                root = root.right;
+            }
         }
+        
+        return res;
     }
-    
-    //原本的root = null 或者 p不存在与BST中，此刻root = null
-    if (root == null) return null;
-    
-    //找到p之后，如果p没有右儿子，则第一个比它大的数字就是刚刚记录的successor
-    if (root.right == null) return successor;
-    
-    //p有右儿子，则找到右子树中的最左边的值（最小值）
-    root = root.right;
-    while (root.left != null) {
-        root = root.left;
+```
+
+Presuccessor
+```java
+public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        if (root == null) return null;
+        TreeNode res = null;
+        while (root != null) {
+            if (root.val > p.val) {
+                root = root.left;
+            } else {
+                res = root;
+                root = root.right;
+            }
+        }
+        
+        return res;
     }
-    
-    return root;
-}
 ```
