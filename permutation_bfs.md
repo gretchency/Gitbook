@@ -86,6 +86,9 @@ N-queen
 
 Subsets
 
+![](https://algorithm.yuanbin.me/shared-files/images/subsets.jpg)
+
+
 ```java
     public ArrayList<ArrayList<Integer>> subsets(int[] nums) {
         // write your code here
