@@ -41,7 +41,7 @@
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
        * [Restore IP Addresses](restore_ip_addresses.md)
        * [Permutation& Subsets 模板类问题](permutation_bfs.md)
-       * Path Sum II (树的dfs)
+       * [Path Sum II (树的dfs)](path_sum_ii_shu_de_dfs.md)
        * [Word Search (2D)](word_search_2d.md)
        * [N-Queen I II](n-queen.md)
    * [BFS](bfs.md)
