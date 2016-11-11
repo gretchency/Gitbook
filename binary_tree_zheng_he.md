@@ -17,8 +17,9 @@ Binary Tree Maximum Path Sum II
 
 
 
-inorder successor in binary search tree
-* inorder travesal 在traversal的过程中有一个Boolean 一开始false 后面相等时变true,下一个节点就是successor
+[inorder successor in binary search tree](https://gretchency.gitbooks.io/leetcode/content/inorder_successor_in_bst.html)
+* BST 里面，任意位置，任意楼层，都可以通过 value 的比较确定相对位置，这是 BST 一个最好用的性质。
+* 因此在 BST 里面，确定起来就很简单了，从 root 往下走，每次往左拐的时候，存一下，记录着最近一个看到的比 p.val 大的 node 就行了。
 
 Validate Binary Search Tree
 * 递归要用long
