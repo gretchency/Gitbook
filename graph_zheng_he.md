@@ -30,6 +30,14 @@ Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topol
 
 **基础DFS:**
 
+
+### 树的DFS
+
+Path Sum II
+* 一定要在符合条件加入结果集后remove一下回溯
+* DFS左右子树后再remove一下
+
+
 Combination Sum I II III
 两种方法跳过重复数字
 * for loop一开始： 
