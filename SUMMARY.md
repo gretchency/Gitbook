@@ -40,7 +40,7 @@
        * [Detect Cycle In a directed graph](detect_cycle_in_a_directed_graph.md)
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
        * [Restore IP Addresses](restore_ip_addresses.md)
-       * [Permutation DFS](permutation_bfs.md)
+       * [Permutation& Subsets 模板类问题](permutation_bfs.md)
        * [Word Search (2D)](word_search_2d.md)
        * [N-Queen I II](n-queen.md)
    * [BFS](bfs.md)
