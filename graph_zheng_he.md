@@ -11,6 +11,15 @@ https://leetcode.com/problems/palindrome-partitioning/
 https://leetcode.com/problems/clone-graph/
 * Queue + HashMap
 
+[**Word Ladder**](https://gretchency.gitbooks.io/leetcode/content/wordladder.html)
+* BFS 用set去重
+* 需要根据size分层，因为每一层都是相同的length
+* getNextWords用a-z 26个字母遍历，时间复杂度O(26Ln)
+
+
+### 拓扑排序
+
+
 Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topological_sorting.html)
 * 判断有无环的话就是最后结果的length是否小于nodes的个数
 
@@ -20,25 +29,26 @@ Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topol
 * 如果发现字典 Graph 中有环，返回空字符串；
 * 加入新入度的时候，记得查重，同一条edge不要重复加入度
 
-[**Word Ladder**](https://gretchency.gitbooks.io/leetcode/content/wordladder.html)
-* BFS 用set去重
-* 需要根据size分层，因为每一层都是相同的length
-* getNextWords用a-z 26个字母遍历，时间复杂度O(26Ln)
 
 
 
 
-**基础DFS:**
 
 
-### 树的DFS
+### **基础DFS:**
 
-Path Sum II
+
+
+
+### 树的DFS：
+
+[Path Sum II](https://gretchency.gitbooks.io/leetcode/content/path_sum_ii_shu_de_dfs.html)
 * 一定要在符合条件加入结果集后remove一下回溯
 * DFS左右子树后再remove一下
 
 
-Combination Sum I II III
+**Combination Sum I II III**
+
 两种方法跳过重复数字
 * for loop一开始： 
  
@@ -48,7 +58,10 @@ Combination Sum I II III
 ```while(i < nums.length() - 1 && nums[i] == nums[i + 1]) i++;```
 提前预判 避免重复
 
-中级DFS
+
+### 中级DFS
+
+
 
 **Generate Parentheses** [leet](https://leetcode.com/problems/generate-parentheses/)
 
@@ -71,7 +84,10 @@ Combination Sum I II III
 * 一个字符串，可以本身substring来缩短s长度，s为0时候就return
 * substring(beginindex)里beiginindex可以为自身长度，此时返回""
 
-二维DFS
+
+### 二维DFS
+
+
 
 **Surrounded Regions DFS&BFS** [link](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)
 * 类比[Number of Islands](https://leetcode.com/problems/number-of-islands/): 遍历矩阵找1，找到1后count++；dfs周围所有1，标记为2；接着找1
