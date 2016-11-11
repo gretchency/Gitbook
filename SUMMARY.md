@@ -43,6 +43,7 @@
        * [Permutation& Subsets 模板类问题](permutation_bfs.md)
        * [Word Search (2D)](word_search_2d.md)
        * [N-Queen I II](n-queen.md)
+       * Path Sum II (树的dfs)
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
        * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
