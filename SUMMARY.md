@@ -83,6 +83,7 @@
    * [Longest Increasing Subsequence](longest_increasing_subsequence.md)
    * [House Robber](house_robber.md)
    * [Subset Sum](subset_sum.md)
+   * Coin Change
 * [String](string.md)
    * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
    * [ZigZag Conversion](zigzag_conversion.md)
