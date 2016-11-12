@@ -1,6 +1,8 @@
 # Coin Change
 ![](Screen Shot 2016-11-12 at 4.11.52 PM.png)
-
+* dp[i]表示达到i面额需要的最少硬币数
+* 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
+* dp[i] = min(dp[i], dp[i - coins[j]] + 1)
 
 ```java
 public class Solution {
