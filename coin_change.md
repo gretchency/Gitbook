@@ -1,2 +1,36 @@
 # Coin Change
+![](Screen Shot 2016-11-12 at 4.11.52 PM.png)
 
+
+```java
+public class Solution {
+    public int coinChange(int[] coins, int amount) {
+        //dp[i]表示达到i面额需要的最少硬币数
+        //dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+        
+        if (coins == null || coins.length == 0) return -1;
+        if (amount == 0) return 0;
+        if (amount < 0) return -1;
+        
+        int[] dp = new int[amount + 1];
+        
+        for (int i = 1; i <= amount; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        
+        for (int i = 1; i <= amount; i++) {
+            for (int j = 0; j < coins.length; j++) {
+                //硬币面值比需要的大
+                if (coins[j] > i) continue;
+                //去掉这块硬币，取不到值
+                if (dp[i - coins[j]] == Integer.MAX_VALUE) continue;
+                //表示要么不要这块硬币，要么用到这块硬币，看哪个值小取哪个
+                dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+            }
+        }
+         
+        if (dp[amount] == Integer.MAX_VALUE) return -1;
+        return dp[amount];
+    }
+}
+```
