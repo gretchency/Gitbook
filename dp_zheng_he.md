@@ -76,5 +76,11 @@ Word Break
  * dp[i] = max(dp[i - 2] + num[i], dp[i - 1])
 * RobberII成环的情况下，就是用两个dp，比比不要第一家和不要最后一家谁大
 
+
+[Coin Change](https://gretchency.gitbooks.io/leetcode/content/coin_change.html)
+* dp[i]表示达到i面额需要的最少硬币数，初始化为无限大
+* 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
+* dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+
 [Subset Sum](https://gretchency.gitbooks.io/leetcode/content/subset_sum.html)
 dp[i][j]代表sum为i时，是否能从set[0]~set[j-1]个数中相加得到sum
