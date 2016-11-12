@@ -4,6 +4,7 @@
 * 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
 * dp[i] = min(dp[i], dp[i - coins[j]] + 1)
 
+[Youtube讲解](https://www.youtube.com/watch?annotation_id=annotation_2195265949&feature=iv&src_vid=Y0ZqKpToTic&v=NJuKJ8sasGk)
 ```java
 public class Solution {
     public int coinChange(int[] coins, int amount) {
