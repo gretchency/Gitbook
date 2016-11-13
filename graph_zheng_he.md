@@ -85,8 +85,15 @@ Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topol
 * substring(beginindex)里beiginindex可以为自身长度，此时返回""
 
 
-### 二维DFS
 
+#二维DFS
+
+### [走迷宫问题](https://gretchency.gitbooks.io/leetcode/content/zou_mi_gong_wen_ti_dfs_&_bfs.html)
+关于打印路径
+* DFS打印路径简单 只要不断记录加入的值，最后reverse一下就行了（reverse是因为深度优先找到结果值才会逐层返回）
+
+* BFS 打印路径就烦一点，要有个map key存符合的点，value存他是从哪个点来的，根据map打印出来 在reverse一下
+  * 注意map打包x,y做key的时候要用List<Integer>, array不能作为map的key
 
 
 **Surrounded Regions DFS&BFS** [link](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)
