@@ -47,6 +47,7 @@
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
        * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
+   * 走迷宫问题 DFS & BFS
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
