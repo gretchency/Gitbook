@@ -36,7 +36,7 @@
    * [Course Schedule](course_schedule.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
-   * 走迷宫问题 DFS & BFS
+   * [走迷宫问题 DFS & BFS](zou_mi_gong_wen_ti_dfs_&_bfs.md)
    * [DFS](dfs.md)
        * [Detect Cycle In a directed graph](detect_cycle_in_a_directed_graph.md)
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
