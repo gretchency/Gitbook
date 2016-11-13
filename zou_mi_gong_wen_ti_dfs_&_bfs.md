@@ -17,6 +17,7 @@
 * DFS打印路径简单 只要不断记录加入的值，最后reverse一下就行了（reverse是因为深度优先找到结果值才会逐层返回）
 
 * BFS 打印路径就烦一点，要有个map key存符合的点，value存他是从哪个点来的，根据map打印出来 在reverse一下
+  * 注意打包x,y做key的时候要用List<Integer>, array不能作为map的key
 
 
 ### DFS解法
@@ -78,6 +79,7 @@ public class MazeBFSDFS {
 
 
 ### BFS解法
+
 ```java
     public static boolean canReach(int[][] maze) {
         if (maze == null) return false;
@@ -128,7 +130,6 @@ public class MazeBFSDFS {
         res.add(Arrays.asList(x, y));
         while (path.containsKey(Arrays.asList(x, y))) {
             res.add(path.get(Arrays.asList(x, y)));
-            //System.out.println(res);
             int a = path.get(Arrays.asList(x, y)).get(0);
             int b = path.get(Arrays.asList(x, y)).get(1);
             x = a;
