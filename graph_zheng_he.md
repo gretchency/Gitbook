@@ -96,7 +96,7 @@ Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topol
   * 注意map打包x,y做key的时候要用List<Integer>, array不能作为map的key
 
 
-**Surrounded Regions DFS&BFS** [link](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)
+**[Surrounded Regions DFS&BFS](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)** 
 * 类比[Number of Islands](https://leetcode.com/problems/number-of-islands/): 遍历矩阵找1，找到1后count++；dfs周围所有1，标记为2；接着找1
 * 发现四条边的O都不能翻牌，就找到这些O并对每个O DFS 找到所有领接的O,把这些O标记成Y
 * 遍历矩阵 Y的变回O,还是O的就可以翻牌。
