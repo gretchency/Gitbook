@@ -11,13 +11,16 @@
 ```
 
 
+### 两种方法都要```visited[][]```去重
+
+
 ### 关于打印路径
 
 
 * DFS打印路径简单 只要不断记录加入的值，最后reverse一下就行了（reverse是因为深度优先找到结果值才会逐层返回）
 
 * BFS 打印路径就烦一点，要有个map key存符合的点，value存他是从哪个点来的，根据map打印出来 在reverse一下
-  * 注意打包x,y做key的时候要用List<Integer>, array不能作为map的key
+  * 注意map打包x,y做key的时候要用List<Integer>, array不能作为map的key
 
 
 ### DFS解法
