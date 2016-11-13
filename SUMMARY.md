@@ -36,6 +36,7 @@
    * [Course Schedule](course_schedule.md)
    * [Palindrome Partitioning I](palindrome_partitioning_i.md)
    * [Surrounded Regions DFS&BFS](surrounded_regions_dfs&bfs.md)
+   * 走迷宫问题 DFS & BFS
    * [DFS](dfs.md)
        * [Detect Cycle In a directed graph](detect_cycle_in_a_directed_graph.md)
        * [Letter Combinations of a Phone Number](letter_combinations_of_a_phone_number.md)
@@ -47,7 +48,6 @@
    * [BFS](bfs.md)
        * [Walls And Gates (2D)](walls_and_gates.md)
        * [Dijkstra算法实现](dijkstrasuan_fa_shi_xian.md)
-   * 走迷宫问题 DFS & BFS
 * [Linked List](linked_list.md)
    * [Linked List Cycle I  II](1_linked_list_cycle.md)
    * [Remove Duplicates from Sorted List I II](remove_duplicates_from_sorted_list_i_ii.md)
