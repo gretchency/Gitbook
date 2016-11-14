@@ -2,9 +2,14 @@
 
 http://www.lintcode.com/en/problem/palindrome-partitioning-ii/#
 
+```
 Given s = "aab",
 
 Return 1 since the palindrome partitioning ["aa", "b"] could be produced using 1 cut.
+```
+
+
+**dp[i]代表最少0-i个字符最少需要切几刀变回文**
 
 把一个字符串分成j, j + 1 ~ i，
 
