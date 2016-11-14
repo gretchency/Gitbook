@@ -85,7 +85,7 @@
    * [House Robber](house_robber.md)
    * [Subset Sum](subset_sum.md)
    * [Coin Change](coin_change.md)
-   * Coins In a Line
+   * [Coins In a Line](coins_in_a_line.md)
 * [String](string.md)
    * [Longest Substring Without Repeating Characters](longest_substring_without_repeating_characters.md)
    * [ZigZag Conversion](zigzag_conversion.md)
