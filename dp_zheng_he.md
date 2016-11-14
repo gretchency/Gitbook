@@ -3,26 +3,21 @@
 
 ### LADDER
 
-### DP （坐标型：小人在跳来跳去）
+### DP （坐标型：小人在跳来跳去/ 矩阵型）
 
 Unique Paths I
 
 Unique Paths II
 * 判断如果 ==1 路径数为0
 
-Climbing Stairs
+
 
 Minimum Path Sum
 
 Triangle
 * 三角形两边初始化，top-down，比较最后一行
 
-Jump Game I
-* 注意循环里一旦为True就break
 
-Jump Game II
-* dp[i] = Min(dp[j] + 1) && j + nums[j] >= i:循环j比较当前i的最小值
-* 或者从头开始走j走到第一个满足的就是最小值 break;
 
 ***Longest Increasing Subsequence***
 * dp[i]代表前i个数字中以第i个数结尾的lis
@@ -31,7 +26,37 @@ Jump Game II
 
 ---
 
-### DP II （序列）
+### 单序列DP
+Climbing Stairs
+
+Jump Game I
+* 注意循环里一旦为True就break
+
+Jump Game II
+* dp[i] = Min(dp[j] + 1) && j + nums[j] >= i:循环j比较当前i的最小值
+* 或者从头开始走j走到第一个满足的就是最小值 break;
+
+Word Break
+* i - j <= MaxLen 来节省时间
+
+***[Palindrome Partitioning II](https://gretchency.gitbooks.io/leetcode/content/palindrome_partitioning_ii.html)***
+* 区间动归来省时间 O(n^2)
+* 序列动归：ispal(s(j~i-1)) dp[i] = min(dp[i], dp[j] + 1)
+* 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
+
+
+[House Robber](https://gretchency.gitbooks.io/leetcode/content/house_robber.html)
+* 要么搜刮当前家，放弃前一家，要么搜刮前一家，放弃当前家
+ * dp[i] = max(dp[i - 2] + num[i], dp[i - 1])
+* RobberII成环的情况下，就是用两个dp，比比不要第一家和不要最后一家谁大
+
+
+[Coin Change](https://gretchency.gitbooks.io/leetcode/content/coin_change.html)
+* dp[i]表示达到i面额需要的最少硬币数，初始化为无限大
+* 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
+* dp[i] = min(dp[i], dp[i - coins[j]] + 1)
+
+### 双序列DP
 **Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
 * dp[i][j] 分为最后一位相等或不等两种情况
 
@@ -61,26 +86,13 @@ S1 S2 能否凑成 S3
 2. dp[i][j - 1] 然后s2和s3相应位置最后一位相等
 
 
-Word Break
-* i - j <= MaxLen 来节省时间
 
-***Palindrome Partitioning II***
-* 区间动归来省时间 O(n^2)
-* 序列动归：ispal(s(j~i-1)) dp[i] = min(dp[i], dp[j] + 1)
-* 区间动归的for loop很有特色 第一层**for len**, 第二层for start，这杨才能保证start不越界并且慢慢增加区间长度
+
+
 
 ---
 
-[House Robber](https://gretchency.gitbooks.io/leetcode/content/house_robber.html)
-* 要么搜刮当前家，放弃前一家，要么搜刮前一家，放弃当前家
- * dp[i] = max(dp[i - 2] + num[i], dp[i - 1])
-* RobberII成环的情况下，就是用两个dp，比比不要第一家和不要最后一家谁大
 
-
-[Coin Change](https://gretchency.gitbooks.io/leetcode/content/coin_change.html)
-* dp[i]表示达到i面额需要的最少硬币数，初始化为无限大
-* 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
-* dp[i] = min(dp[i], dp[i - coins[j]] + 1)
 
 [Subset Sum](https://gretchency.gitbooks.io/leetcode/content/subset_sum.html)
 dp[i][j]代表sum为i时，是否能从set[0]~set[j-1]个数中相加得到sum
