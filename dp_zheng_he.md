@@ -3,7 +3,7 @@
 
 ### LADDER
 
-### DP I
+### DP （坐标型：小人在跳来跳去）
 
 Unique Paths I
 
@@ -31,7 +31,7 @@ Jump Game II
 
 ---
 
-### DP II
+### DP II （序列）
 **Edit Distance** [leet](https://leetcode.com/problems/edit-distance/)
 * dp[i][j] 分为最后一位相等或不等两种情况
 
@@ -84,3 +84,19 @@ Word Break
 
 [Subset Sum](https://gretchency.gitbooks.io/leetcode/content/subset_sum.html)
 dp[i][j]代表sum为i时，是否能从set[0]~set[j-1]个数中相加得到sum
+
+
+### DPIII (区间型)
+
+
+
+### [Coins in a line](https://gretchency.gitbooks.io/leetcode/content/coins_in_a_line.html)
+
+
+经典区间动归
+* dp[i][j] 代表从i到j这个区间取到的最大金币
+* 初始化：
+  * i和j一样时候就取coins[i]
+  * i和j相邻去max(coins[i], coins[j])
+* 方程：
+  * 比较取左取右哪个大，取左的话，再加上等待对手取完多的金币的那一部分，取右同理（因为假设对手很聪明，他肯定会取剩下的里多的金币，那你只能取剩下的那块区间）
