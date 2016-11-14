@@ -1,4 +1,5 @@
 # Coins In a Line
+tags: Google
 
 ```
 一串数，两个玩家，每次轮流选一个数并且只能选最左或最右，
