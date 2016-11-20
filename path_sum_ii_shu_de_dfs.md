@@ -18,7 +18,7 @@ return
 ```
 
 二刷（不用回溯）
-* 每次操作前先new一个newPath,在newPath上操作
+* 每次操作前先new一个newPath,在newPath上操作，这样老的path就没有变，可以直接递归
 
 ```java
 public class Solution {
@@ -33,7 +33,7 @@ public class Solution {
     private void dfs(TreeNode root, int sum, List<List<Integer>> res, List<Integer> path) {
         if (root == null) return;
         
-        
+        //每次递归中要声明一个新的arraylist,这样才不会错误
         List<Integer> newPath = new ArrayList<>(path);
         sum -= root.val;
         newPath.add(root.val);
