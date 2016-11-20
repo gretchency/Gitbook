@@ -18,8 +18,8 @@ return
 ```
 
 二刷（不用回溯）
-* 每次操作前先new一个newPath,在newPath上操作，这样老的path就没有变，可以直接递归
-* 注意dfs左子树和右子树也是传newPath进去
+* 每次操作前先new一个新的arrayList (newPath),在newPath上操作，这样老的path就没有变，可以直接递归
+* **注意dfs左子树和右子树也是传newPath进去**
 
 ```java
 public class Solution {
