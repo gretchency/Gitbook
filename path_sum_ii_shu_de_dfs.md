@@ -17,6 +17,37 @@ return
 ]
 ```
 
+二刷（不用回溯）
+* 每次操作前先new一个newPath,在newPath上操作
+
+```java
+public class Solution {
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        List<List<Integer>> res = new ArrayList<>();
+        if (root == null) return res;
+        List<Integer> path = new ArrayList<>();
+        dfs(root, sum, res, path);
+        return res;
+    }
+    
+    private void dfs(TreeNode root, int sum, List<List<Integer>> res, List<Integer> path) {
+        if (root == null) return;
+        
+        
+        List<Integer> newPath = new ArrayList<>(path);
+        sum -= root.val;
+        newPath.add(root.val);
+        if (root.left == null && root.right == null && sum == 0) {
+            res.add(newPath);
+            return;
+        }
+        
+        dfs(root.left, sum, res, newPath);
+        dfs(root.right, sum, res, newPath);
+    }
+}
+```
+
 * 经典树的DFS
   * 在 leaf node 符合要求加入结果集后backtracking，**因为后面的两个 dfs 都没有做，不走到底是不会回溯的**
   * 这点和常见的 subsets 和 permutations 不太一样，那两题中收尾直接 add 然后 return 就可以了，而回溯在 dfs 之后做
