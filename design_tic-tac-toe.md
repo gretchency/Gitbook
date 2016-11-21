@@ -54,6 +54,10 @@ toe.move(2, 1, 1); -> Returns 1 (player 1 wins)
 naive:矩阵扫一遍
 
 高级：
+
+* 用数组存每个row和col的状态，player1就给相应行和列加一，player2就减一，对角线和反对角线用一个数记录就行，看最后绝对值能否到n的长度，到了就赢了
+* 反对角线：```row == size - col - 1```
+
 ```java
 public class TicTacToe {
     int[] rows;
