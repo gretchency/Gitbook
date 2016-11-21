@@ -57,6 +57,7 @@ naive:矩阵扫一遍
 
 * 用数组存每个row和col的状态，player1就给相应行和列加一，player2就减一，对角线和反对角线用一个数记录就行，看最后绝对值能否到n的长度，到了就赢了
 * 反对角线：```row == size - col - 1```
+* O(n) time complexity
 
 ```java
 public class TicTacToe {
