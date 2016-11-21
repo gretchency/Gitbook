@@ -14,6 +14,53 @@ Given a 2D board and a word, find if the word exists in the grid.
 
 Time : m*n*4^(k-1). 也就是m*n*4^k
 
+二刷
+* 注意要在前面判断i和j是否valid，而不是在for循环里面判断，否则只有一个元素的情况过不了。
+
+```java
+public class Solution {
+    private int[][] dict = {{-1,1,0,0},{0,0,-1,1}};
+    public boolean exist(char[][] board, String word) {
+        if (word == null || word.length() == 0) return true;
+        
+        int m = board.length;
+        int n = board[0].length;
+        char[] chars = word.toCharArray();
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == chars[0]) {
+                    if(dfs(board, i, j, chars, 0)) return true;
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    
+    
+    private boolean dfs(char[][] board, int i, int j, char[] word, int start) {
+        if (start == word.length) return true;
+        
+        //****在前面判断****
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word[start]) return false;
+        char c = board[i][j];
+        board[i][j] = '#';
+        for (int k = 0; k < dict[0].length; k++) {
+            int newI = i + dict[0][k];
+            int newJ = j + dict[1][k];
+            
+            
+            if (dfs(board, newI, newJ, word, start + 1)) {
+                return true;
+            }
+        }
+        board[i][j] = c;
+        return false;
+    }
+}
+```
+
 ```java
 public class Solution {
     public boolean exist(char[][] board, String word) {
