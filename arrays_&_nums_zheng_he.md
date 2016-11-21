@@ -86,7 +86,7 @@ while (x != 0) {
 * 找第k大，用倒序，找第k-1个数
 * Quick Sort相同思路，只是每次选择一半，如果```k <= 右指针j```，说明k在左边的一半（left, j），如果```k >=左指针i```， 说明k在右边一半(i,right), 若都不是，说明k就在pivot位置
 
-Design Tic-Tac-Toe
+[Design Tic-Tac-Toe](https://gretchency.gitbooks.io/leetcode/content/design_tic-tac-toe.html)
 * 用数组存每个row和col的状态，player1就给相应行和列加一，player2就减一，对角线和反对角线用一个数记录就行，看最后绝对值能否到n的长度，到了就赢了
 * 反对角线：```row == size - col - 1```
 * O(n) time complexity
