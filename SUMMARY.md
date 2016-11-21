@@ -111,6 +111,7 @@
    * [Rotate Array](rotate_array.md)
    * [Kth Largest Element](kth_largest_element.md)
    * [Intersection of Two Arrays](intersection_of_two_arrays.md)
+   * Design Tic-Tac-Toe
 * [Binary Search](binary_search.md)
    * [Wood Cut(二分答案）](wood_cuter_fen_da_an_ff09.md)
 * [Data Structure](data_structure.md)
