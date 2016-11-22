@@ -71,3 +71,52 @@ public class Solution {
     }
 }
 ```
+
+
+## DP优化：
+
+```java
+public class Solution {
+    public boolean isMatch(String s, String p) {
+        if (s == null || p == null) return false;
+        
+        int m = p.length();
+        int n = s.length();
+        //dp[i][j] stands for (0, i - 1) p can eat (0, j-1)s
+        boolean[][] dp = new boolean[m + 1][n + 1];
+        
+        dp[0][0] = true;
+        for (int i = 2; i <= m; i++) {
+            //like p*p*p*
+            if (p.charAt(i - 1) == '*' && dp[i - 2][0]) dp[i][0] = true;
+        }
+        
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (p.charAt(i - 1) == '*') {
+                    if (!compare(p.charAt(i - 2), s.charAt(j - 1))) {
+                        dp[i][j] = dp[i - 2][j];
+                    } else {
+                        dp[i][j] = dp[i - 2][j] || dp[i][j - 1];
+                    }
+                } else {
+                    if (compare(p.charAt(i - 1), s.charAt(j - 1))) {
+                        dp[i][j] = dp[i - 1][j - 1];
+                    } else {
+                        dp[i][j] = false;
+                    }
+                }
+            }
+        }
+        
+        return dp[m][n];
+        
+    }
+    
+    private boolean compare(char a, char b) {
+        return a == b || a == '.';
+    }
+}
+```
+
+
