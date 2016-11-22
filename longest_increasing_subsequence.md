@@ -1,5 +1,5 @@
 # Longest Increasing Subsequence
-
+tags:Google
 ![](Screen Shot 2016-10-09 at 8.40.49 PM.png)
 二刷：
 * 初始化长度应该为num array的长度，因为要看前i个数第i个数结尾的lis,这样dp[i]能和nums[i]对应
