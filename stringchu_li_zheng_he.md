@@ -31,3 +31,7 @@
 * 先构建好target array
 * 然后用resource array来凑，每凑够target array长度的array时候比较一下，若相同加入result，然后把最开始的hash element抹去一个然后往后加入一个再比较，直到全比较完。
 * 注意array比较不能 ```==```,要用```Arrays.equals```
+
+[Regular Expression Match](https://gretchency.gitbooks.io/leetcode/content/regular_expression_match.html)
+* 递归或是DP
+* 当p1*的情况时，星号可用可不用，注意分情况讨论。
