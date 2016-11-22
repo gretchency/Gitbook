@@ -74,6 +74,10 @@ public class Solution {
 
 
 ## DP优化：
+* dp[i][j]代表p(0~i-1)是否能match s(0~j-1)
+* 初始化时要把p*p*p*这种时dp[i][0]设为true
+* 当最后一位是*,倒数第二位和s最后一位相同时分情况讨论
+  * dp[i][j] = dp[i - 2][j] || dp[i][j - 1]
 
 ```java
 public class Solution {
@@ -94,9 +98,10 @@ public class Solution {
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (p.charAt(i - 1) == '*') {
+                    //不等就要消耗p
                     if (!compare(p.charAt(i - 2), s.charAt(j - 1))) {
                         dp[i][j] = dp[i - 2][j];
-                    } else {
+                    } else {//相等的话可以选择用或不用p
                         dp[i][j] = dp[i - 2][j] || dp[i][j - 1];
                     }
                 } else {
