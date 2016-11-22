@@ -1,7 +1,10 @@
 # Longest Increasing Subsequence
 
 ![](Screen Shot 2016-10-09 at 8.40.49 PM.png)
+二刷：
+* 初始化长度应该为num array的长度，这样前i个数和nums[i]能对应
 
+---
 * dp[i]代表前i个数字中以第i个数结尾的lis
 
   这里如果dp[i]代表i长度array最长的lis,就没法写状态转移方程了，发现没法直接取得最大值，所以要转个弯，从每个数字入手
