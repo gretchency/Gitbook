@@ -1,4 +1,6 @@
 # Number Of Islands
+tags:Google
+
 DFS BFS均可
 
 将用过的1标记为2去重，最后再把2变为1
