@@ -95,6 +95,8 @@ Topological Sorting [link](https://gretchency.gitbooks.io/leetcode/content/topol
 * BFS 打印路径就烦一点，要有个map key存符合的点，value存他是从哪个点来的，根据map打印出来 在reverse一下
   * 注意map打包x,y做key的时候要用List<Integer>, array不能作为map的key
 
+[Number Of Islands && Largest Island](https://gretchency.gitbooks.io/leetcode/content/number_of_islands.html)
+* 标记去重，最后再标记回来
 
 **[Surrounded Regions DFS&BFS](https://gretchency.gitbooks.io/leetcode/content/surrounded_regions_dfs&bfs.html)** 
 * 类比[Number of Islands](https://leetcode.com/problems/number-of-islands/): 遍历矩阵找1，找到1后count++；dfs周围所有1，标记为2；接着找1
