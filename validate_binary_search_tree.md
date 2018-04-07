@@ -72,26 +72,7 @@ O\(log\(n\)\)是平衡二叉树的复杂度
 
 左根右递增 递归整棵树 看min 和 max是否fit in
 
-```java
-public boolean isValidBST(TreeNode root) {
-        //一定要用Long
-        return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
-    }
-
-    public boolean helper(TreeNode node, long min, long max) {
-        //终止条件
-        if (node == null) {
-            return true;
-        }
-
-        if (node.val <= min || node.val >= max {
-            return false;
-        }
-
-        //左根右递增 左<根 右>根
-        return helper(node.left, min, node.val) && helper(node.right, node.val, max);
-    }
-```
+    
 
 
 
