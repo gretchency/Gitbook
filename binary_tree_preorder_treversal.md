@@ -1,15 +1,20 @@
 # Binary Tree Preorder Treversal
 
-http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/#
+[http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/\#](http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/#)
+
+二刷\(2018\)
+
+https://segmentfault.com/a/1190000005763360
 
 递归
+
 ```java
     public ArrayList<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         traverse (root, result);
         return result;
     }
-    
+
     private void traverse(TreeNode root, ArrayList<Integer> result) {
         if (root == null) return;
         //根左右
@@ -25,11 +30,12 @@ http://www.lintcode.com/en/problem/binary-tree-preorder-traversal/#
 
 result记录结果
 
-**While stack不为空，pop,push right,push left
+**While stack不为空，pop,push right,push left  
 **
 
-**注意while里先push右子树，再push左子树（stack 先进后出）
+**注意while里先push右子树，再push左子树（stack 先进后出）  
 **
+
 ```java
 public ArrayList<Integer> preorderTraversal(TreeNode root) {
         Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -43,23 +49,23 @@ public ArrayList<Integer> preorderTraversal(TreeNode root) {
             if (node.right != null) {
                 stack.push(node.right);
             }
-            
+
             if (node.left != null) {
                 stack.push(node.left);
             }
         }
-        
+
         return result;
     }
 ```
 
 Inorder
 
- Binary Search Tree Iterator
- 
- http://www.lintcode.com/en/problem/binary-search-tree-iterator/
- 
- ```java
+Binary Search Tree Iterator
+
+[http://www.lintcode.com/en/problem/binary-search-tree-iterator/](http://www.lintcode.com/en/problem/binary-search-tree-iterator/)
+
+```java
  public class BSTIterator {
     private TreeNode curr;
     private Stack<TreeNode> stack = new Stack<TreeNode>();
@@ -72,7 +78,7 @@ Inorder
     public boolean hasNext() {
         return (curr != null || !stack.isEmpty());
     }
-    
+
     //@return: return next node
     public TreeNode next() {
     //先一直压左，然后 到底了就pop, 加入结果， 最后往右
@@ -84,8 +90,11 @@ Inorder
         curr = stack.pop();
         TreeNode node = curr;
         curr = curr.right;
-        
+
         return node;
     }
 }
- ```
+```
+
+
+
