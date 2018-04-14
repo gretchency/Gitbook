@@ -1,6 +1,5 @@
 # Inorder successor in BST
 
-
 BST 里面，任意位置，任意楼层，都可以通过 value 的比较确定相对位置，这是 BST 一个最好用的性质。
 
 因此在 BST 里面，确定起来就很简单了，从 root 往下走，每次往左拐的时候，存一下，记录着最近一个看到的比 p.val 大的 node 就行了。
@@ -17,7 +16,7 @@ public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
                 root = root.right;
             }
         }
-        
+
         return res;
     }
 ```
@@ -40,6 +39,7 @@ public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
 ```
 
 Presuccessor
+
 ```java
 public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         if (root == null) return null;
@@ -52,7 +52,7 @@ public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
                 root = root.right;
             }
         }
-        
+
         return res;
     }
 ```
@@ -66,7 +66,7 @@ public static TreeNode getSuccessor(TreeNode node) {
             TreeNode res = getMin(node.right);
             return res;
         }
-        
+
         //找parent里第一个比node大的
         TreeNode parent = node.parent;
         while (parent != null && parent.val < node.val) {
@@ -74,7 +74,7 @@ public static TreeNode getSuccessor(TreeNode node) {
         }
         return parent;
     }
-    
+
     private static TreeNode getMin(TreeNode node) {
         while (node.left != null) {
             node = node.left;
@@ -82,3 +82,6 @@ public static TreeNode getSuccessor(TreeNode node) {
         return node;
     }
 ```
+
+
+
