@@ -12,7 +12,7 @@ When you pass array to this method, you **pass it by value** - that is, you make
 ```java
    public void sortIntegers(int[] A) {
         // Write your code here
-        int[] B = mergeSort(A);
+        int[] B = sort(A);
         for (int i = 0; i < A.length; i++) {
             A[i] = B[i];
         }
