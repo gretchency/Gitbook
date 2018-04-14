@@ -1,14 +1,13 @@
 # Sorting
+
 * Stable: Bubble, Insertion, MergeSort
 * Non-Stable: Selection, QuickSort
 
 MergeSort
 
-* void函数里不能直接A = mergeSort(A)
+* void函数里不能直接A = mergeSort\(A\), main函数里的A其实没有改变
 
 When you pass array to this method, you **pass it by value** - that is, you make a brand new variable that ALSO points to the same object. If you edit the variable array in your method to point to a new array, it doesn't also make the other variable point to your new array - it still points to the old array. So when you return you haven't done any edits to the array that was passed in.
-
-
 
 ```java
    public void sortIntegers(int[] A) {
@@ -18,22 +17,22 @@ When you pass array to this method, you **pass it by value** - that is, you make
             A[i] = B[i];
         }
     }
-    
+
     public static int[] sort(int[] A) {
         if (A.length <= 1) {
             return A;
         }
         return mergeSort(A, 0, A.length - 1);
     }
-    
+
     public static int[] mergeSort(int[] A, int start, int end) {
         //BASE CASE不能忘！
         if (start == end) return new int[]{A[start]};
-        
+
         int mid = start + (end - start) / 2;
         int[] left = mergeSort(A, start, mid);
         int[] right = mergeSort(A, mid + 1, end);
-        
+
         return merge(left, right);
     }
 
@@ -68,12 +67,11 @@ When you pass array to this method, you **pass it by value** - that is, you make
     }
 ```
 
-
 Quick Sort
 
-i, j各自移不动的时候swap, 终止条件i <= j
+i, j各自移不动的时候swap, 终止条件i &lt;= j
 
-**Worst Case: Pivot选的不好，每次选了最小的数或者最大的数，这样到最后只排好一个数，有n个数所以有n层，每层都要处理n个数，时间复杂度O(n^2)**
+**Worst Case: Pivot选的不好，每次选了最小的数或者最大的数，这样到最后只排好一个数，有n个数所以有n层，每层都要处理n个数，时间复杂度O\(n^2\)**
 
 ```java
     private void quickSort(int[] A, int left, int right) {
@@ -155,3 +153,6 @@ public void insertionSort(int[] A) {
     }
 }
 ```
+
+
+
