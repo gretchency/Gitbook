@@ -7,7 +7,7 @@
 
 使用fast和slow ListNode
 
-坑：先把fast和head连起来，如果先连dummy node，slow.next可能为null\(0-&gt;1-&gt;null\)
+坑：先把fast和head连起来，如果先连head = slow.next，slow.next可能为null\(0-&gt;1-&gt;null\)
 
 ```java
 public class Solution {
@@ -37,13 +37,12 @@ public class Solution {
             fast = fast.next;
         }
 
-        ListNode dummy = new ListNode(0);
-        //!注意 先把尾巴和头连起来，否则dummy.next可能为null!!!
+        //!注意 先把尾巴和头连起来，否则head可能为null!!!
         fast.next = head;
-        dummy.next = slow.next;
+        head = slow.next;
         slow.next = null;
-
-        return dummy.next;
+        
+        return head;
     }
 ```
 
