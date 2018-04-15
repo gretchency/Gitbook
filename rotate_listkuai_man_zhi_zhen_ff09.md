@@ -5,6 +5,10 @@
 ![](Screen Shot 2016-09-01 at 3.43.20 PM.png)  
 二刷
 
+使用fast和slow ListNode
+
+坑：先把fast和head连起来，如果先连dummy node，slow.next可能为null\(0-&gt;1-&gt;null\)
+
 ```java
 public class Solution {
     /**
@@ -15,30 +19,30 @@ public class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         // write your code here
         if (head == null || head.next == null) return head;
-        
+
         int length = getLength(head);
-        
+
         int steps = k % length;
-        
+
         ListNode fast = head;
         ListNode slow = head;
-        
+
         while (steps > 0) {
             fast = fast.next;
             steps--;
         }
-        
+
         while (fast.next != null) {
             slow = slow.next;
             fast = fast.next;
         }
-        
+
         ListNode dummy = new ListNode(0);
         //!注意 先把尾巴和头连起来，否则dummy.next可能为null!!!
         fast.next = head;
         dummy.next = slow.next;
         slow.next = null;
-        
+
         return dummy.next;
     }
 ```
