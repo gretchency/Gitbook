@@ -4,8 +4,6 @@
 
 自顶向下的方法，先找到root然后对左右子树分别递归调用。
 
-
-
 快慢指针找中点建树递归
 
 ```java
@@ -35,6 +33,50 @@ public TreeNode sortedListToBST(ListNode head) {
         return root;
     }
 ```
+
+建树比较方便的方法是递归，对于有序链表，高度平衡BST的根节点是其中点，然后该根节点的左子树的根节点，又是左半边的中点，该根节点的右子树的根节点，又是右半边的中点，以此往复，链表第一个节点，就是最左边左子树的根节点，而最左边左子树的左节点和右节点都是空。我们可以用start和end两个值来限定子树在链表中的位置，通过递归的方式，实际上可以实现顺序遍历链表然后建树的过程。不过java中，需要将链表当前遍历到节点作为全局变量，保证递归过程中链表也是顺序遍历的。
+
+```java
+public class Solution {
+    
+    ListNode curr;
+    
+    public TreeNode sortedListToBST(ListNode head) {
+        curr = head;
+        int len = 0;
+        // 先计算出链表的长度
+        while(head != null){
+            head = head.next;
+            len++;
+        }
+        // 开始建树
+        return buildTree(0, len - 1);
+    }
+    
+    private TreeNode buildTree(int start, int end){
+        // 如果start>end，说明子树已经小到没有节点了，直接返回null
+        if(start > end){
+            return null;
+        }
+        // 找到中点
+        int mid = start + (end - start) / 2;
+        // 先递归的计算左子树
+        TreeNode left = buildTree(start, mid - 1);
+        // 然后建立根节点
+        TreeNode root = new TreeNode(curr.val);
+        // 链表顺序遍历
+        curr = curr.next;
+        // 最后计算右子树
+        TreeNode right = buildTree(mid + 1, end);
+        // 将三个节点连接起来
+        root.left = left;
+        root.right = right;
+        return root;
+    }
+}
+```
+
+
 
 二刷
 
