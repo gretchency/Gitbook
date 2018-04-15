@@ -11,6 +11,8 @@ hashset存每个ListNode
 
 
 
+
+
 不使用额外空间
 
 TC: O\(n\)
@@ -43,14 +45,14 @@ TC: O\(n\)
 
 Follow Up:
 
-**环的长度是多少？  
+**环的长度是多少？    
 **
 
 设：链表头是X，环的第一个节点是Y，slow和fast第一次的交点是Z。各段的长度分别是a,b,c，如图所示。环的长度是L。slow和fast的速度分别是qs,qf。
 
 第一次相遇后，让fast停着不走了，slow继续走，记录到下次相遇时循环了几次。
 
-**如何找到环中第一个节点（即Linked List Cycle II）？  
+**如何找到环中第一个节点（即Linked List Cycle II）？    
 **
 
 [http://www.lintcode.com/en/problem/linked-list-cycle-ii/](http://www.lintcode.com/en/problem/linked-list-cycle-ii/)  
@@ -95,12 +97,12 @@ TC: O\(n\)
     }
 ```
 
-**如何将有环的链表变成单链表（解除环）？  
+**如何将有环的链表变成单链表（解除环）？    
 **
 
 在上一个问题的最后，将c段中Y点之前的那个节点与Y的链接切断即可。
 
-**如何判断两个单链表是否有交点？如何找到第一个相交的节点？  
+**如何判断两个单链表是否有交点？如何找到第一个相交的节点？    
 **
 
 Intersection of Two Linked Lists
