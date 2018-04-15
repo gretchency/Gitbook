@@ -2,37 +2,39 @@
 
 三刷（暴力解）
 
+自顶向下的方法，先找到root然后对左右子树分别递归调用。
+
+
+
 快慢指针找中点建树递归
 
 ```java
 public TreeNode sortedListToBST(ListNode head) {
         // write your code here
         if (head == null) return null;
-        
+
         ListNode fast = head;
         ListNode slow = head;
         ListNode prev = null;
-        
+
         while (fast.next != null && fast.next.next != null) {
             prev = slow;
             slow = slow.next;
             fast = fast.next.next;
         }
-        
+
         if (prev != null) {
             prev.next = null;
         } else {
             head = null;
         }
-        
+
         TreeNode root = new TreeNode(slow.val);
         root.left = sortedListToBST(head);
         root.right = sortedListToBST(slow.next);
         return root;
     }
 ```
-
-
 
 二刷
 
@@ -90,6 +92,8 @@ public class Solution {
 
 分治的思想  
 curr做根节点 慢慢往后挪
+
+网上又看到一种自底向上的方法，算法复杂度为O\(N\)。先递归构建左子树，在构建左子树的同时不断移动链表的头指针，链表的头指针永远是对应当前子树位置的。一直到左叶子节点，左叶子节点对应的就是链表的第一个元素，生成左叶子节点之后移动链表当前指针
 
 ```java
 public class Solution {
