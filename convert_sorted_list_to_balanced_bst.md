@@ -38,9 +38,9 @@ public TreeNode sortedListToBST(ListNode head) {
 
 ```java
 public class Solution {
-    
+
     ListNode curr;
-    
+
     public TreeNode sortedListToBST(ListNode head) {
         curr = head;
         int len = 0;
@@ -52,7 +52,7 @@ public class Solution {
         // 开始建树
         return buildTree(0, len - 1);
     }
-    
+
     private TreeNode buildTree(int start, int end){
         // 如果start>end，说明子树已经小到没有节点了，直接返回null
         if(start > end){
@@ -75,8 +75,6 @@ public class Solution {
     }
 }
 ```
-
-
 
 二刷
 
