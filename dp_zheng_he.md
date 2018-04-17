@@ -79,7 +79,9 @@ _**Distinct Subsequences**_ [leet](https://leetcode.com/problems/distinct-subseq
 Longest Common Substring
 
 * substring必须要相连，所以普通状态转移不行
-* dp\[i\]\[j\]表示A的前i个字符和B的前j个字符的LCS且**A\[i - 1\] == B\[j - 1\]**,否则不连续不构成substring，清0重新算
+* dp\[i\]\[j\]表示A的第i个字符和B的第j个字符结尾的LCS
+
+* **`A[i - 1] == B[j - 1] dp[i][j] = dp[i - 1][j - 1]+1`**,否则不连续不构成substring，清0重新算
 
 * 最后双重循环找到最大的
 
