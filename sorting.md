@@ -1,4 +1,4 @@
-# Sorting
+Sorting
 
 * Stable: Bubble, Insertion, MergeSort
 * Non-Stable: Selection, QuickSort
@@ -53,14 +53,12 @@ When you pass array to this method, you **pass it by value** - that is, you make
             index++;
         }
 
-        if (indexLeft < left.length) {
-            for (int i = indexLeft; i < left.length; i++) {
-                merged[index++] = left[i];
-            }
-        } else {
-            for (int i = indexRight; i < right.length; i++) {
-                merged[index++] = right[i];
-            }
+        while (indexLeft < left.length) {
+            merged[index++] = left[indexLeft++];
+        }
+
+        while (indexRight < right.length) {
+            merged[index++] = right[indexRight++];
         }
 
         return merged;
