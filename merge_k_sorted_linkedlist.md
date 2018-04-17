@@ -112,6 +112,10 @@ Merge sort
 
 Related:
 
+[Merge K Sorted Array](http://www.lintcode.com/en/problem/merge-k-sorted-arrays/)
+
+递归一样做，非递归PQ必须得记录走到array的哪个index，当poll\(\)的时候把下一个index offer进pq
+
 Merge Two Sorted Lists
 
 ```java
