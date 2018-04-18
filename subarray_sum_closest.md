@@ -5,9 +5,10 @@
 #### [Subarray Sum](http://www.lintcode.com/en/problem/subarray-sum/#)
 
 sum\[i - j\] = 0  
-sum\[j\] - sum\[i - 1\] = 0
-
+sum\[j\] - sum\[i - 1\] = 0  
 sum\[j\] = sum\[i - 1\]
+
+用HashMap记录当前sum和index, 注意corner case: 先存入\(0, -1\) 解决第一个数为0等情况
 
 ## 分析
 
