@@ -10,6 +10,8 @@ sum\[j\] = sum\[i - 1\]
 
 用HashMap记录当前sum和index, 注意corner case: 先存入\(0, -1\) 解决第一个数为0等情况
 
+## SubArray Sum Closest
+
 ## 分析
 
 1. 遍历一遍数组求得子串和
