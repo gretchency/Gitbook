@@ -14,6 +14,7 @@ Kadane's Algorithm
 * 如果之前数组和为负，则自立门户，自己就是目前为止最高的maxSubarray中的值
 
 * 如果之前数组和为正，则热烈投入其怀抱，加入其中
+
 * 即 dp\[i\] = dp\[i-1\]&gt;0? dp\[i-1\]+nums\[i\] : nums\[i\]
 
 ```java
@@ -167,6 +168,25 @@ Maximum Subarray II
 Minimum Subarray
 
 [http://www.lintcode.com/en/problem/minimum-subarray/](http://www.lintcode.com/en/problem/minimum-subarray/)
+
+```java
+public int minSubArray(List<Integer> nums) {
+        // write your code here
+        if (nums == null || nums.size() == 0) return 0;
+        
+        int size = nums.size();
+    
+        int minCurr = nums.get(0);
+        int minAll = nums.get(0);
+        
+        for (int i = 1; i < size; i++) {
+            minCurr = Math.min(minCurr + nums.get(i), nums.get(i));
+            minAll = Math.min(minAll, minCurr);
+        }
+        
+        return minAll;
+    }
+```
 
 取相反数 算Maximum SubArray, 最后再反一下
 
