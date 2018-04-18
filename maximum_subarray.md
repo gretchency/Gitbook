@@ -1,7 +1,6 @@
 # Maximum Subarray
 
-[http://www.lintcode.com/en/problem/maximum-subarray/](http://www.lintcode.com/en/problem/maximum-subarray/)  
-
+[http://www.lintcode.com/en/problem/maximum-subarray/](http://www.lintcode.com/en/problem/maximum-subarray/)
 
 [https://www.youtube.com/watch?v=epTQfFlhQBo](https://www.youtube.com/watch?v=epTQfFlhQBo)
 
@@ -13,12 +12,13 @@ Kadane's Algorithm
 * maxCur 表示以nums\[i\]结尾的子序列的最大和
 
 * 如果之前数组和为负，则自立门户，自己就是目前为止最高的maxSubarray中的值
+
 * 如果之前数组和为正，则热烈投入其怀抱，加入其中
 * 即 dp\[i\] = dp\[i-1\]&gt;0? dp\[i-1\]+nums\[i\] : nums\[i\]
 
 ```java
 public int maxSubArray(int[] nums) {
-        
+
         int maxCur = nums[0];
         int maxAll = nums[0];
 
@@ -84,7 +84,7 @@ Best Time to Buy and Sell Stock
         int maxAll = 0;
 
         for (int i = 1; i < prices.length; i++) {
-            maxCur = Math.max(0, maxCur + (prices[i] - prices[i - 1]));
+            maxCur = Math.max(maxCur + (prices[i] - prices[i - 1]), prices[i] - prices[i - 1]);
             maxAll = Math.max(maxCur, maxAll);
         }
 
