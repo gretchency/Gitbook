@@ -1,9 +1,15 @@
 # SubArray Sum Closest
 
+## easy:
+
+#### [Subarray Sum](http://www.lintcode.com/en/problem/subarray-sum/#)
+
+sum\[i - j\] = 0  
+sum\[j\] - sum\[i - 1\] = 0
+
+sum\[j\] = sum\[i - 1\]
 
 ## 分析
-
-
 
 1. 遍历一遍数组求得子串和
 2. 对子串和有小到大排序
@@ -14,7 +20,7 @@
 
 获取index注意
 
-**sum[i~j] = sum[j] - sum[i - 1],所以小的index要加一存入res**
+**sum\[i~j\] = sum\[j\] - sum\[i - 1\],所以小的index要加一存入res**
 
 ```java
     class Pair {
@@ -25,12 +31,12 @@
             this.index = index;
         }
     }
-    
+
     public int[] subarraySumClosest(int[] nums) {
         //跟subarray sum类似，用一个array存从0到i的sum,然后sort一下，相邻两个找最小的差值
         int[] res = new int[2];
         if (nums == null || nums.length == 0) return res;
-        
+
 
         Pair[] sums = new Pair[nums.length];
         int sum = 0;
@@ -38,15 +44,15 @@
             sum += nums[i];
             sums[i] = new Pair(sum, i);
         }
-        
+
         Arrays.sort(sums, new Comparator<Pair>() {
             public int compare(Pair a, Pair b) {
                 return a.sum - b.sum;
             }
         });
-        
+
         int minValue = Integer.MAX_VALUE;
-        
+
         for (int i = 1; i < sums.length; i++) {
             int currValue = sums[i].sum - sums[i - 1].sum;
             if (minValue > currValue) {
@@ -61,26 +67,22 @@
                 res[1] = tmp[1];
             }
         }
-        
+
         return res;
     }
 ```
 
+### 时间复杂度： O\(nlog\(n\)\)
 
-### 时间复杂度： O(nlog(n)) 
+* 遍历原数组O\(n\)
+* sort O\(nlog\(n\)\)
+* 遍历pair数组来取得最小差值O\(n\)
 
-* 遍历原数组O(n)
-* sort O(nlog(n))
-* 遍历pair数组来取得最小差值O(n)
+总的来说O\(nlog\(n\)\)
 
-总的来说O(nlog(n))
+### 空间：O\(n\)
 
-
-### 空间：O(n)
-
-* 空间上维护了一个pair数组 O(n)
-
-
+* 空间上维护了一个pair数组 O\(n\)
 
 
 
