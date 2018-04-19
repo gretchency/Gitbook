@@ -41,7 +41,7 @@
 
 (1) A[cur] = 1：已经就位，cur++即可
 (2) A[cur] = 0：交换A[cur]和A[left]。由于A[left]=1或left=cur，所以交换以后A[cur]已经就位，cur++，left++
-(3) A[cur] = 2：交换A[cur]和A[right]，right--。由于xm的值未知(万一又换了个2回来)，cur不能增加，继续判断xm。
+(3) A[cur] = 2：交换A[cur]和A[right]，right--。由于xm的值未知(1或0)，cur不能增加，继续判断xm。
 
     if(nums == null || nums.length == 0)  
     return;
