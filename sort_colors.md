@@ -71,6 +71,10 @@
 
 [Sort Colors II](http://www.lintcode.com/en/problem/sort-colors-ii/)
 
+rainbowSort实现的是将colors数组的索引范围start到end位置排序，排序的大小范围是colorFrom到colorTo
+
+Time Complexity: `O(nlog(k))`
+
 ```java
 class Solution {
     /**
@@ -81,18 +85,18 @@ class Solution {
     public void sortColors2(int[] colors, int k) {
         // write your code here
         if (colors == null || colors.length == 0) return;
-        
+
         rainbowSort(colors, 0, colors.length - 1, 1, k);
     }
-    
+
     //sort the colors between index start-> end, colors range are from colorFrom to colorTo
     private void rainbowSort(int[] colors, int start, int end, int colorFrom, int colorTo) {
         if (start >= end) return;
-        
+
         if (colorFrom >= colorTo) return;
-        
+
         int colorMid = colorFrom + (colorTo - colorFrom) / 2;
-        
+
         int left = start;
         int right = end;
         while (i <= j) {
@@ -100,22 +104,22 @@ class Solution {
             while (left <= right && colors[left] <= colorMid) {
                 left++;
             }
-            
+
             while (left <= right && colors[right] > colorMid) {
                 right--;
             }
-            
+
             if (left <= right) {
                 swap(colors, left, right);
                 left++;
                 right--;
             }
         }
-        
+
         rainbowSort(colors, start, right, colorFrom, colorMid);
         rainbowSort(colors, left, end, colorMid + 1, colorTo);
     }
-    
+
     private void swap(int[] colors, int a, int b) {
         int tmp = colors[a];
         colors[a] = colors[b];
