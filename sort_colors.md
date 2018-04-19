@@ -5,14 +5,15 @@
 二刷
 
 * 先把0，2的走完 这样逻辑更清楚
-```java
-public class Solution {
+
+  ```java
+  public class Solution {
     public void sortColors(int[] nums) {
         if (nums == null || nums.length == 0) return;
-        
+
         int left = 0;
         int right = nums.length - 1;
-        
+
         while(left < nums.length && nums[left] == 0) {
             left++;
         }
@@ -20,13 +21,12 @@ public class Solution {
         while(right >= 0 && nums[right] == 2) {
             right--;
         }    
-        
-        int i = left;
-        
-        ...
-}
-```
 
+        int i = left;
+
+        ...
+  }
+  ```
 
 ```java
     public void sortColors(int[] nums) {
@@ -42,7 +42,7 @@ public class Solution {
 (1) A[cur] = 1：已经就位，cur++即可
 (2) A[cur] = 0：交换A[cur]和A[left]。由于A[left]=1或left=cur，所以交换以后A[cur]已经就位，cur++，left++
 (3) A[cur] = 2：交换A[cur]和A[right]，right--。由于xm的值未知，cur不能增加，继续判断xm。
-    
+
     if(nums == null || nums.length == 0)  
     return;
     int left = 0;
@@ -61,10 +61,13 @@ public class Solution {
         }
     }
     }
-    
+
     private void swap (int[] nums, int a, int b) {
         int temp = nums[a];
         nums[a] = nums[b];
         nums[b] = temp;
     }
 ```
+
+
+
