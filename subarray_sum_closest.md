@@ -20,7 +20,7 @@ sum\[j\] = sum\[i - 1\]
 4. 相邻两个子串和相减，找到差值的绝对值最小的两个子串和
 5. 然后取得subarray的index
 
-注意这里要用Pair class来保存下sum和index，这样最后才能根据sum来获取index
+注意这里要用Pair class来保存下sum和index而不用Map，这样才能排序并且最后才能根据sum来获取index
 
 获取index注意
 
@@ -46,18 +46,18 @@ public class Solution {
         // write your code here
         int[] res = new int[2];
         if (nums == null || nums.length <= 1) return res;
-        
+
         int sum = 0;
-        
+
         Pair[] sumArray = new Pair[nums.length];
         for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
             Pair pair = new Pair(sum, i);
             sumArray[i] = pair;
         }
-        
+
         Arrays.sort(sumArray, pairComparator);
-        
+
         int minVal = Integer.MAX_VALUE;
         int tmp[] = new int[2];
         for (int i = 1; i < nums.length; i++) {
@@ -68,17 +68,17 @@ public class Solution {
                 tmp[1] = sumArray[i - 1].index;
             }
         }
-        
+
         //谁小谁大不一定，要排序
         Arrays.sort(tmp);
-        
+
         //sum[i~j] = sum[j] - sum[i - 1] 所以res的index为sum的index加1
         res[0] = tmp[0] + 1;
         res[1] = tmp[1];
-        
+
         return res;
     }
-    
+
     private Comparator<Pair> pairComparator = new Comparator<Pair>() {
         @Override
         public int compare(Pair p1, Pair p2) {
