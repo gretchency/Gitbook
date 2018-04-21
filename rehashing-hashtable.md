@@ -1,6 +1,10 @@
 # Rehashing
 
-http://www.lintcode.com/en/problem/rehashing/\#
+[http://www.lintcode.com/en/problem/rehashing/\#](http://www.lintcode.com/en/problem/rehashing/#)
+
+
+
+这里采用的是Open Hashing \(LinkedList实现\)，注意有可能key为负，不能简单的取模找index
 
 ```java
 public class Solution {
@@ -11,13 +15,13 @@ public class Solution {
     public ListNode[] rehashing(ListNode[] hashTable) {
         // write your code here
         if (hashTable == null || hashTable.length == 0) return null;
-        
+
         int oldSize = hashTable.length;
         int newSize = 2 * oldSize;
-        
+
         ListNode[] oldArray = hashTable;
         hashTable = new ListNode[newSize];
-        
+
         for (ListNode node: oldArray) {
             if (node != null) {
                 ListNode curr = node;
@@ -27,19 +31,19 @@ public class Solution {
                 }
             }
         }
-        
+
         return hashTable;
     }
-    
+
     private void insert(int key, ListNode[] hashTable) {
         // if key is negative value
         int hashVal = (key % hashTable.length + hashTable.length) % hashTable.length;
-        
+
         if (hashTable[hashVal] == null) {
             hashTable[hashVal] = new ListNode(key);
             return;
         }
-        
+
         ListNode head = hashTable[hashVal];
         ListNode curr = head;
         while (curr.next != null) {
@@ -47,7 +51,7 @@ public class Solution {
         }
         curr.next = new ListNode(key);
     }
-    
+
 };
 ```
 
