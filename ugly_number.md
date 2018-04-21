@@ -73,17 +73,19 @@ DP:
 
 ## [Super Ugly Number](/Super Ugly Number )
 
+## 注意单独起一个循环判断是否增加index,因为有可能多于一个乘积是相等的
+
 ```java
 public int nthSuperUglyNumber(int n, int[] primes) {
         // write your code here
-        
+
         if (n == 0) return -1;
-        
+
         int[] pIndex = new int[primes.length];
         for (int i = 0; i < primes.length; i++) {
             pIndex[i] = 1;
         }
-        
+
         int[] res = new int[n + 1];
         res[1] = 1;
         for (int i = 2; i <= n; i++) {
@@ -95,7 +97,7 @@ public int nthSuperUglyNumber(int n, int[] primes) {
                 if (res[pIndex[j]] * primes[j] == res[i]) pIndex[j]++;
             }
         }
-        
+
         return res[n];
     }
 ```
