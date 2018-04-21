@@ -18,22 +18,22 @@ public int nthUglyNumber(int n) {
         // write your code here
         if (n <= 0) return -1;
         if (n == 1) return 1;
-        
+
         Set<Long> set = new HashSet<>();
         PriorityQueue<Long> pq = new PriorityQueue<>();
-        
+
         set.add((long)1);
         pq.offer((long)1);
         long num = 0;
-        
+
         long[] primes = new long[3];
         primes[0] = (long)2;
         primes[1] = (long)3;
         primes[2] = (long)5;
-        
+
         for (int i = 1; i <= n; i++) {
             num = pq.poll();
-            
+
             for (int j = 0; j < 3; j++) {
                 if (!set.contains(primes[j] * num)) {
                     set.add(primes[j] * num);
@@ -41,7 +41,7 @@ public int nthUglyNumber(int n) {
                 }
             }
         }
-        
+
         return (int)num;
     }
 ```
@@ -68,6 +68,35 @@ DP:
         }
 
         return dp[n];
+    }
+```
+
+## [Super Ugly Number](/Super Ugly Number )
+
+```java
+public int nthSuperUglyNumber(int n, int[] primes) {
+        // write your code here
+        
+        if (n == 0) return -1;
+        
+        int[] pIndex = new int[primes.length];
+        for (int i = 0; i < primes.length; i++) {
+            pIndex[i] = 1;
+        }
+        
+        int[] res = new int[n + 1];
+        res[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            res[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < primes.length; j++) {
+                res[i] = Math.min(res[i], res[pIndex[j]] * primes[j]);
+            }
+            for (int j = 0; j < primes.length; j++) {
+                if (res[pIndex[j]] * primes[j] == res[i]) pIndex[j]++;
+            }
+        }
+        
+        return res[n];
     }
 ```
 
