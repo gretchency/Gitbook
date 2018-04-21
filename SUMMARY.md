@@ -125,6 +125,7 @@
   * [data stream median \(2 PQ\)](data_stream_median_2_pq.md)
   * [Ugly Number](ugly_number.md)
   * [Meeting Room](meeting_room.md)
+  * [Rehashing \(HashTable\)](rehashing-hashtable.md)
 * [SnapChat](snapchat.md)
   * [DFSBFS](dfsbfs.md)
     * [24点](24dian.md)
