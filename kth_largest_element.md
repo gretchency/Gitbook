@@ -57,6 +57,8 @@ Related:
 
 ## [Median](http://www.lintcode.com/en/problem/median/)
 
+找中间大的数
+
 ```java
 public int median(int[] nums) {
         // write your code here
