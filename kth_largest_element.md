@@ -8,7 +8,7 @@ Quick Select:
 
 * 找第k大，用倒序，找第k-1个数
 * Quick Sort相同思路，只是每次选择一半，如果`k <= 右指针j`，说明k在左边的一半（left, j），如果`k >=左指针i`， 说明k在右边一半\(i,right\), 若都不是，说明k就在pivot位置
-* Why O\(n\)?
+* [Why O\(n\)](https://stackoverflow.com/questions/8783408/why-is-the-runtime-of-the-selection-algorithm-on?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)?
   * n + n/2+n/4+...+1\(log\(n\) times\) = 2n
 
 ```java
