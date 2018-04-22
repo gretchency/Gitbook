@@ -53,23 +53,23 @@ public class Solution {
 
 Related:
 
-Median
+## [Median](http://www.lintcode.com/en/problem/median/)
 
 ```java
 public int median(int[] nums) {
         // write your code here
         if (nums == null || nums.length == 0) return -1;
-        
+
         if (nums.length % 2 == 1) {
             return findKthNum(nums, 0, nums.length - 1, nums.length / 2);
         } else {
             return findKthNum(nums, 0, nums.length - 1, nums.length / 2 - 1);
         }
     }
-    
+
     private int findKthNum(int[] nums, int start, int end, int k) {
         if (start == end) return nums[k];
-        
+
         int i = start;
         int j = end;
         int pivot = nums[start + (end - start) / 2];
@@ -77,23 +77,23 @@ public int median(int[] nums) {
             while (i <= j && nums[i] < pivot) {
                 i++;
             }
-            
+
             while (i <= j && nums[j] > pivot) {
                 j--;
             }
-            
+
             if (i <= j) {
                 swap(nums, i, j);
                 i++;
                 j--;
             }
         }
-        
+
         if (k <= j) return findKthNum(nums, start, j, k);
         if (k >= i) return findKthNum(nums, i, end, k);
         return pivot;
     }
-    
+
     private void swap(int[] nums, int i, int j) {
         int tmp = nums[i];
         nums[i] = nums[j];
