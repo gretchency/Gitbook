@@ -7,6 +7,8 @@
 * 只需要一个int array存放col位置，其index就是row位置
 * 对角线用`Math.abs`
 
+Ref: https://blog.csdn.net/zhang245754954/article/details/52612784
+
 ![](/assets/import.png)
 
 * **N-Queen II 注意**：不能直接把int value放里面传. 因为java函数的参数如果是int的话传的是值，所以每个sum都不一样。有三种解决方法，一种是函数返回int，也就是sum；第二种是用全局变量（不推荐）；第三种是用一个类的对象来记录sum，因为参数如果是对象的话传的是引用。
