@@ -48,6 +48,7 @@ for (int i = 0; i < nums.length; i++) {
         return res;
     }
     
+    //helper函数：把以list里数开头的所有结果加入result
     private void helper(ArrayList<List<Integer>> res, ArrayList<Integer> list, int[] nums) {
         //base case
         if (list.size() == nums.length) {
