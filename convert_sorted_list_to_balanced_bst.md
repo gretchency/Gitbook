@@ -52,8 +52,8 @@ public class Solution {
         // 开始建树
         return buildTree(0, len - 1);
     }
-    
-    //build以curr node开头，start~end长度的树
+
+    //build以curr node开头，start~end长度的树返回，并且把curr挪到end+1点的位置
     private TreeNode buildTree(int start, int end){
         // 如果start>end，说明子树已经小到没有节点了，直接返回null
         if(start > end){
