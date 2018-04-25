@@ -36,7 +36,7 @@ int[] max = new int[1];
 ```java
 public class Solution {
     //全局变量maxValue记录全局最大和
-    //递归函数返回root的子树到root节点(含)路径长度的最大值
+    //递归函数返回root的子树到root节点(含)路径长度的最大值（不一定要到叶子节点）
     //巧妙利用0。若子树和为负，则取值0
     int maxValue;
     public int maxPathSum(TreeNode root) {
