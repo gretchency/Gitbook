@@ -26,9 +26,7 @@ Output:
 **Follow up:**  
 What if the BST is modified \(insert/delete operations\) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
 
-
-
-思路：
+# 思路：
 
 非递归inorder traversal 整个BST，用一个index记录traversal到第几个了，到第k个时候输出结果
 
