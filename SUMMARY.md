@@ -75,6 +75,7 @@
   * [Invert Binary Tree](invert_binary_tree.md)
   * [Largest BST Subtree](largest_bst_subtree.md)
   * [House Robber III](house_robber_iii.md)
+  * [Kth Smallest Element in a BST](kth-smallest-element-in-a-bst.md)
 * [Dynamic Programming](dynamic_programming.md)
   * [Climbing Stairs](climbing_stairs.md)
   * [Jump Games I II](jump_games_i_ii.md)
