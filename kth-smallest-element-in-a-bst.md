@@ -21,7 +21,6 @@ Input:
 
 Output:
  3
-
 ```
 
 **Follow up:**  
@@ -29,13 +28,21 @@ What if the BST is modified \(insert/delete operations\) often and you need to f
 
 
 
+思路：
+
+非递归inorder traversal 整个BST，用一个index记录traversal到第几个了，到第k个时候输出结果
+
+时间复杂度:`O(k)`
+
+空间复杂度:`O(h)`, h为bst的高度
+
 ```java
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         if (root == null) return -1;
         return inorderHelper(root, k);
     }
-    
+
     private int inorderHelper(TreeNode root, int k) {
         Stack<TreeNode> stack = new Stack<>();
         pushToLeft(stack, root);
@@ -48,10 +55,10 @@ class Solution {
                 pushToBottom(stack, curr.right);
             }
         }
-        
+
         return -1;
     }
-    
+
     private void pushToLeft(Stack<TreeNode> stack, TreeNode root) {
         while (root != null) {
             stack.push(root);
