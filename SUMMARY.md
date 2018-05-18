@@ -77,6 +77,7 @@
   * [House Robber III](house_robber_iii.md)
   * [Kth Smallest Element in a BST](kth-smallest-element-in-a-bst.md)
   * [Serialize and Deserialize Binary Tree](serialize-and-deserialize-binary-tree.md)
+  * [Populating Next Right Pointers in Each Node](populating-next-right-pointers-in-each-node.md)
 * [Dynamic Programming](dynamic_programming.md)
   * [Climbing Stairs](climbing_stairs.md)
   * [Jump Games I II](jump_games_i_ii.md)
