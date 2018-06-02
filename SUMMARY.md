@@ -15,6 +15,7 @@
 * [待做题](dai_zuo_ti.md)
 * [Java基础](javaji_chu.md)
   * [J2EE](j2ee.md)
+  * [length\(\) vs length vs size\(\)](length-vs-length-vs-size.md)
 * [算法基础](suan_fa_ji_chu.md)
   * [ArrayList](arraylist.md)
   * [Hashing](hashing.md)
