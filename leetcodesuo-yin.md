@@ -1,4 +1,4 @@
-Tree
+* [ ] Tree
 
 | Sequence | Problem | Level | Tags | Additional Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19,6 +19,15 @@ Array & Number
 | :--- | :--- | :--- | :--- | :--- |
 | [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [Kth Largest Element in an Array](https://legacy.gitbook.com/book/gretchency/leetcode/edit#/edit/master/kth_largest_element.md?_k=wrza7y) | Mid | PQ / Quick Select |  |
 |  |  |  |  |  |
+|  |  |  |  |  |
+
+
+
+DP
+
+| Sequence | Problem | Level | Tags | Additional Links |
+| :--- | :--- | :--- | :--- | :--- |
+| [322](https://leetcode.com/problems/coin-change/description/) | [Coin Change](https://legacy.gitbook.com/book/gretchency/leetcode/edit#/edit/master/coin_change.md?_k=s89faq) | Mid | Sequence DP |  |
 |  |  |  |  |  |
 
 
