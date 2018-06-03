@@ -7,13 +7,11 @@ Tree
 | [297](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | [Serialize and Deserialize Binary Tree](https://legacy.gitbook.com/book/gretchency/leetcode/edit#/edit/master/serialize-and-deserialize-binary-tree.md?_k=tc75n9) | Hard | Preorder Traversal，Queue |  |
 |  |  |  |  |  |
 
-
-
 String
 
 | Sequence | Problem | Level | Tags | Additional Links |
 | :--- | :--- | :--- | :--- | :--- |
-| [415](https://leetcode.com/problems/add-strings/description/) | Add Strings | Easy | ascii |  |
+| [415](https://leetcode.com/problems/add-strings/description/) | [Add Strings](https://legacy.gitbook.com/book/gretchency/leetcode/edit#/edit/master/add-strings.md?_k=e34nj0) | Easy | ascii |  |
 
 
 
