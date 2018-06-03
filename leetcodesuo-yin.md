@@ -9,3 +9,11 @@ Tree
 
 
 
+String
+
+| Sequence | Problem | Level | Tags | Additional Links |
+| :--- | :--- | :--- | :--- | :--- |
+| [415](https://leetcode.com/problems/add-strings/description/) | Add Strings | Easy | ascii |  |
+
+
+
