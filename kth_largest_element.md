@@ -4,7 +4,28 @@
 2. Min Heap: O\(nlog\(k\)\), O\(k\)
 3. Quick Select: O\(n\), O\(1\)    \(worst: O\(n^2\), O\(1\)
 
-Quick Select:
+Easy: Min Heap
+
+思路：维护一个k大小的PQ,超过k size就踢出去一个最小的，最后剩下的k个数，最小的那个就是第k
+
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        for (int num: nums) {
+            pq.offer(num);
+            if (pq.size() > k) {
+                pq.poll();
+            }
+        }
+
+        return pq.poll();
+    }
+}
+```
+
+Best:Quick Select:
 
 * 找第k大，用倒序，找第k-1个数
 * Quick Sort相同思路，只是每次选择一半，如果`k <= 右指针j`，说明k在左边的一半（left, j），如果`k >=左指针i`， 说明k在右边一半\(i,right\), 若都不是，说明k就在pivot位置
@@ -18,6 +39,7 @@ public class Solution {
     }
 
     private int quickSelect(int[] nums, int k, int left, int right) {
+        //此时就一个数: nums[k] = nums[left] = nums[right]
         if (left >= right) return nums[k];
 
         int pivot = nums[left + (right - left) / 2];
