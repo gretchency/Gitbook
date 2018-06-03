@@ -101,6 +101,7 @@
   * [Group Anagram](group_anagram.md)
   * [Find all anagrams in a String](find_all_anagrams_in_a_string.md)
   * [Regular Expression Match](regular_expression_match.md)
+  * [Add Strings](add-strings.md)
 * [Array & Number](array.md)
   * [Merge Sorted Array](merge_sorted_array.md)
   * [Merge K Sorted Arrays](merge_k_sorted_arrays.md)
