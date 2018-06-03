@@ -1,10 +1,13 @@
 # Coin Change
 
-![](Screen Shot 2016-11-12 at 4.11.52 PM.png)
+![](Screen Shot 2016-11-12 at 4.11.52 PM.png)思路
 
 * dp\[i\]表示达到i面额需要的最少硬币数，初始化为无限大
 * 要么不用当前硬币，要么用到当前硬币，比较哪个需要的硬币少
 * dp\[i\] = min\(dp\[i\], dp\[i - coins\[j\]\] + 1\)
+
+时间复杂度 O\(amount \* coins.length\)   
+空间复杂度 O\(amount\)
 
 [Youtube讲解](https://www.youtube.com/watch?annotation_id=annotation_2195265949&feature=iv&src_vid=Y0ZqKpToTic&v=NJuKJ8sasGk)
 
