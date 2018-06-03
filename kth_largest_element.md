@@ -6,7 +6,7 @@
 
 Easy: Min Heap
 
-思路：维护一个k大小的PQ,超过k size就踢出去一个最小的，最后剩下的k个数，最小的那个就是第k
+思路：维护一个k大小的PQ,超过k size就踢出去一个最小的，最后剩下的k个数，最小的那个就是第k大
 
 ```java
 class Solution {
