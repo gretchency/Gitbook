@@ -13,5 +13,13 @@ String
 | :--- | :--- | :--- | :--- | :--- |
 | [415](https://leetcode.com/problems/add-strings/description/) | [Add Strings](https://legacy.gitbook.com/book/gretchency/leetcode/edit#/edit/master/add-strings.md?_k=e34nj0) | Easy | ascii |  |
 
+Array & Number
+
+| Sequence | Problem | Level | Tags | Additional Links |
+| :--- | :--- | :--- | :--- | :--- |
+| [215](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Kth Largest Element in an Array | Mid | PQ / Quick Select |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
 
 
